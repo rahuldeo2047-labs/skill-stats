@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-22T17:01:04.053007+05:30",
-  "generated_at_human": "2026-03-22 17:01 IST",
+  "generated_at": "2026-03-22T17:09:13.849946+05:30",
+  "generated_at_human": "2026-03-22 17:09 IST",
   "next_post": "21:30 IST (queue empty \u2014 will skip)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "2h 56m",
+    "uptime": "3h 5m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1488.8,
     "disk_free_gb": 2446.9,
     "disk_pct": 37.8,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4160,
-    "mem_free_mb": 3653,
-    "mem_pct": 53.2,
-    "load_1m": 1.15,
-    "load_5m": 1.9,
-    "load_15m": 1.42
+    "mem_used_mb": 4229,
+    "mem_free_mb": 3584,
+    "mem_pct": 54.1,
+    "load_1m": 1.79,
+    "load_5m": 1.22,
+    "load_15m": 1.21
   },
   "services": [
     {
@@ -221,11 +221,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "17b358c refactor: docs/ \u2192 skill-stats submodule (public GitHub Pages)",
+      "390a5c2 dashboard: Tasks/Memory/HumanOS tabs, no-change skip, djb2 auth fix",
       "6300563 fix: replace crypto.subtle with djb2 (works on HTTP from any device)",
       "77bd140 dashboard: full system stats (skills, system, logs, cron) + mobile fix",
-      "a2f615c dashboard: hardcode passkey hash (tslab2026)",
-      "bdf6d8b dashboard: 4 new reels posted, queue cleared, 7 total posts",
-      "be3c7a8 feat: autonomous dashboard + daily posting pipeline"
+      "a2f615c dashboard: hardcode passkey hash (tslab2026)"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
