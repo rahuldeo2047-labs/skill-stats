@@ -1,0 +1,678 @@
+{
+  "generated_at": "2026-03-22T17:01:04.053007+05:30",
+  "generated_at_human": "2026-03-22 17:01 IST",
+  "next_post": "21:30 IST (queue empty \u2014 will skip)",
+  "system": {
+    "hostname": "rick-nas",
+    "lan_ips": [
+      "192.168.0.100",
+      "192.168.0.11",
+      "10.0.3.1"
+    ],
+    "uptime": "2h 56m",
+    "disk_total_gb": 3935.7,
+    "disk_used_gb": 1488.8,
+    "disk_free_gb": 2446.9,
+    "disk_pct": 37.8,
+    "mem_total_mb": 7813,
+    "mem_used_mb": 4160,
+    "mem_free_mb": 3653,
+    "mem_pct": 53.2,
+    "load_1m": 1.15,
+    "load_5m": 1.9,
+    "load_15m": 1.42
+  },
+  "services": [
+    {
+      "name": "Dashboard",
+      "port": 8080,
+      "up": true,
+      "url": "http://rick-nas.local:8080"
+    },
+    {
+      "name": "NAS App",
+      "port": 50000,
+      "up": true,
+      "url": "http://rick-nas.local:50000"
+    }
+  ],
+  "instagram": {
+    "accounts": [
+      {
+        "handle": "@technology.spiritual",
+        "ig_id": "17841462814013579",
+        "role": "learning/lab",
+        "phase": 1,
+        "token_days": 59,
+        "token_from": "2026-03-22",
+        "followers": 123,
+        "status": "active"
+      },
+      {
+        "handle": "@rahuldeo2047",
+        "ig_id": "17841408407454953",
+        "role": "builder",
+        "token_note": "MISSING instagram_basic \u2014 fix before next ad deploy",
+        "ad_account": "act_136931240",
+        "status": "paused"
+      }
+    ],
+    "total_posted": 7,
+    "d3_count": 0,
+    "d7_count": 0,
+    "queue_depth": 0,
+    "queue_next": null,
+    "queue_topics": [],
+    "recent_posts": [
+      {
+        "post_id": "17875179789437595",
+        "topic": "kanada-paramanu-vedic-atomic-theory-cern",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-22T16:07",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "17874813000554617",
+        "topic": "deepx-dx-m2-100b-5w-edge-ai",
+        "hook_type": "stat-shock",
+        "ts_posted": "2026-03-22T16:07",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18119431129618170",
+        "topic": "lecun-ami-labs-world-models-vs-llms",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-22T16:06",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "17930949009240667",
+        "topic": "quantum-computing-transistor-moment-2026",
+        "hook_type": "revelation",
+        "ts_posted": "2026-03-22T16:05",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18085306223585717",
+        "topic": "deepx-dx-m2-100b-5w-edge-ai",
+        "hook_type": "demonstration",
+        "ts_posted": "2026-03-22T15:19",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "17935514565037349",
+        "topic": "lecun-ami-labs-world-models-vs-llms",
+        "hook_type": "contradiction",
+        "ts_posted": "2026-03-22T15:19",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18099122614768885",
+        "topic": "quantum-computing-transistor-moment-2026",
+        "hook_type": "revelation",
+        "ts_posted": "2026-03-22T15:19",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d3": false,
+        "has_d7": false
+      }
+    ],
+    "phase": 1,
+    "phase_note": "Organic only. Need 12+ posts (currently 7) and 3+ posts with saves>2% reach.",
+    "phase_pct": 58,
+    "topic_rotation": [
+      "Quantum Computing",
+      "Physical AI / World Models",
+      "Edge AI / Semiconductors",
+      "Vedic Science + Physics",
+      "Robotics & Embodied AI",
+      "Hard Sci-Fi + Theory",
+      "Consciousness + Neuroscience",
+      "Quantum Mechanics"
+    ]
+  },
+  "renders": {
+    "files": [
+      {
+        "name": "reel001_quantum.mp4",
+        "size_mb": 1.8,
+        "modified": "03-22 15:43",
+        "final": false
+      },
+      {
+        "name": "reel001_quantum_final.mp4",
+        "size_mb": 1.1,
+        "modified": "03-22 15:43",
+        "final": true
+      },
+      {
+        "name": "reel002_worldmodels.mp4",
+        "size_mb": 2.0,
+        "modified": "03-22 15:44",
+        "final": false
+      },
+      {
+        "name": "reel002_worldmodels_final.mp4",
+        "size_mb": 1.3,
+        "modified": "03-22 15:45",
+        "final": true
+      },
+      {
+        "name": "reel003_edgeai.mp4",
+        "size_mb": 1.8,
+        "modified": "03-22 15:46",
+        "final": false
+      },
+      {
+        "name": "reel003_edgeai_final.mp4",
+        "size_mb": 1.2,
+        "modified": "03-22 15:46",
+        "final": true
+      },
+      {
+        "name": "reel004_vedic.mp4",
+        "size_mb": 2.3,
+        "modified": "03-22 15:47",
+        "final": false
+      },
+      {
+        "name": "reel004_vedic_final.mp4",
+        "size_mb": 1.4,
+        "modified": "03-22 15:47",
+        "final": true
+      }
+    ],
+    "count": 8,
+    "final_count": 4
+  },
+  "backup": {
+    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
+    "last_error": "backup.py: error: unrecognized arguments: --check-large",
+    "recent_commits": [
+      "6300563 fix: replace crypto.subtle with djb2 (works on HTTP from any device)",
+      "77bd140 dashboard: full system stats (skills, system, logs, cron) + mobile fix",
+      "a2f615c dashboard: hardcode passkey hash (tslab2026)",
+      "bdf6d8b dashboard: 4 new reels posted, queue cleared, 7 total posts",
+      "be3c7a8 feat: autonomous dashboard + daily posting pipeline"
+    ],
+    "repo": "rahuldeo2047-labs/claude-skills"
+  },
+  "skills": [
+    {
+      "id": "sysmon-skill",
+      "name": "KAVACH",
+      "desc": "System monitor + internet check",
+      "installed": true,
+      "scripts": 8
+    },
+    {
+      "id": "backup-skill",
+      "name": "VAULT",
+      "desc": "Git backup \u2014 daily + large-change",
+      "installed": true,
+      "scripts": 3
+    },
+    {
+      "id": "instagram-skill",
+      "name": "REACH",
+      "desc": "3-account IG management + learning loop",
+      "installed": true,
+      "scripts": 7
+    },
+    {
+      "id": "instagram_content_skill",
+      "name": "SRIJAN-IG",
+      "desc": "Remotion/ffmpeg reel assembly",
+      "installed": true,
+      "scripts": 1
+    },
+    {
+      "id": "meta-ads-skill",
+      "name": "PRACHAR",
+      "desc": "Meta Ads \u2014 boost Reels via Graph API",
+      "installed": true,
+      "scripts": 3
+    },
+    {
+      "id": "meta_ad_runner_skill",
+      "name": "PRACHAR-V1",
+      "desc": "DORMANT (superseded by PRACHAR)",
+      "installed": true,
+      "scripts": 0
+    },
+    {
+      "id": "content-plan-skill",
+      "name": "SRIJAN",
+      "desc": "10 hooks, 3 reel formats, carousel per topic",
+      "installed": true,
+      "scripts": 4
+    },
+    {
+      "id": "task-dashboard-skill",
+      "name": "KARMA",
+      "desc": "Autonomous task queue + web UI",
+      "installed": true,
+      "scripts": 4
+    },
+    {
+      "id": "memory-skill",
+      "name": "SMRITI",
+      "desc": "Project memory across sessions",
+      "installed": true,
+      "scripts": 5
+    },
+    {
+      "id": "cron-skill",
+      "name": "NIYAM",
+      "desc": "Scheduled automation + morning digest",
+      "installed": true,
+      "scripts": 3
+    },
+    {
+      "id": "ceo-skill",
+      "name": "DRISHTI",
+      "desc": "CEO/CTO/CFO advisor \u2014 weekly business pulse",
+      "installed": true,
+      "scripts": 1
+    },
+    {
+      "id": "cloud-meter-skill",
+      "name": "METER",
+      "desc": "Colab/Roboflow/Claude/Meta API quotas",
+      "installed": true,
+      "scripts": 2
+    },
+    {
+      "id": "freecad-skill",
+      "name": "VISHWAKARMA",
+      "desc": "Parametric CAD headless via Python API",
+      "installed": true,
+      "scripts": 4
+    },
+    {
+      "id": "rpi5-h10-skill",
+      "name": "SILICON",
+      "desc": "RPi5+Hailo inference deployment",
+      "installed": true,
+      "scripts": 2
+    },
+    {
+      "id": "human-skill",
+      "name": "SIDDHANTH",
+      "desc": "Personal OS \u2014 health/wealth/family",
+      "installed": true,
+      "scripts": 3
+    },
+    {
+      "id": "ml-skills",
+      "name": "ML-BRAIN",
+      "desc": "Researcher + Roboflow + Colab training",
+      "installed": true,
+      "scripts": 0
+    }
+  ],
+  "cron": {
+    "categorised": {
+      "Instagram Posting": [
+        "30 1 * * 1-5 IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/daily_post.py >> /tmp/ig_daily_post.log 2>&1",
+        "30 6 * * 1-5 IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/daily_post.py >> /tmp/ig_daily_post.log 2>&1",
+        "30 11 * * 1-5 IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/daily_post.py >> /tmp/ig_daily_post.log 2>&1",
+        "30 16 * * 1-5 IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/daily_post.py >> /tmp/ig_daily_post.log 2>&1",
+        "30 1 * * 6,0 IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/daily_post.py >> /tmp/ig_daily_post.log 2>&1",
+        "30 3 * * 6,0 IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/daily_post.py >> /tmp/ig_daily_post.log 2>&1",
+        "30 6 * * 6,0 IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/daily_post.py >> /tmp/ig_daily_post.log 2>&1",
+        "30 11 * * 6,0 IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/daily_post.py >> /tmp/ig_daily_post.log 2>&1",
+        "30 16 * * 6,0 IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/daily_post.py >> /tmp/ig_daily_post.log 2>&1"
+      ],
+      "Metrics": [
+        "35 3 * * 1 IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" IG_LEARNING_PAGE_ID=\"1011153858746508\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/validate_config.py >> /tmp/ig_token_check.log 2>&1",
+        "5 4 * * * IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/record_metrics.py --account learning --last 3 --day 3 >> /tmp/ig_learning.log 2>&1",
+        "0 4 * * * IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/record_metrics.py --account learning --last 10 --day 7 >> /tmp/ig_learning.log 2>&1",
+        "30 4 * * 0 IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/learning_report.py --apply >> /tmp/ig_learning.log 2>&1"
+      ],
+      "Backup": [
+        "30 3 * * * CLAUDE_CODE_SKILL_MEMORY_BACKUP_GITHUB_REPO=git@github.com:rahuldeo2047-labs/claude-skills.git python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/backup-skill/scripts/backup.py >> /tmp/claude_backup.log 2>&1",
+        "30 15 * * * CLAUDE_CODE_SKILL_MEMORY_BACKUP_GITHUB_REPO=git@github.com:rahuldeo2047-labs/claude-skills.git python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/backup-skill/scripts/backup.py >> /tmp/claude_backup.log 2>&1",
+        "*/30 * * * * CLAUDE_CODE_SKILL_MEMORY_BACKUP_GITHUB_REPO=git@github.com:rahuldeo2047-labs/claude-skills.git python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/backup-skill/scripts/backup.py --check-large >> /tmp/claude_backup.log 2>&1",
+        "0 */2 * * * CLAUDE_CODE_SKILL_MEMORY_BACKUP_GITHUB_REPO=git@github.com:rahuldeo2047-labs/claude-skills.git python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/backup-skill/scripts/backup.py --recover >> /tmp/claude_backup.log 2>&1",
+        "30 3 * * 1 CLAUDE_CODE_SKILL_MEMORY_BACKUP_GITHUB_REPO=git@github.com:rahuldeo2047-labs/claude-skills.git python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/backup-skill/scripts/backup.py --heartbeat >> /tmp/claude_backup.log 2>&1"
+      ],
+      "Dashboard": [
+        "*/30 * * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/push_dashboard.sh >> /tmp/ig_dashboard.log 2>&1",
+        "@reboot sleep 30 && python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/dashboard_server.py >> /tmp/ig_dashboard_server.log 2>&1"
+      ],
+      "System": [
+        "@reboot /bin/bash -c 'source /home/rick/Documents/nas_app/nas_env/bin/activate && /home/rick/Documents/nas_app/nas_env/bin/python3 /home/rick/Documents/nas_app/app.py'"
+      ],
+      "Other": [
+        "30 3 23 3 * IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /tmp/post_reel003.py >> /tmp/ig_post_reel003.log 2>&1"
+      ]
+    },
+    "total": 22
+  },
+  "logs": {
+    "ig_post": [
+      "[2026-03-22 16:07:38 IST] Posting slot 16:07 IST \u2014 kanada-paramanu-vedic-atomic-theory-cern",
+      "[2026-03-22 16:08:09 IST] Published kanada-paramanu-vedic-atomic-theory-cern: 17875179789437595",
+      "[2026-03-22 16:08:09 IST] Queue: 0 remaining",
+      "[2026-03-22 16:30:01 IST] WARNING: post_queue.jsonl is empty \u2014 no reels to post. Refill via generate_batch.py",
+      "[2026-03-22 16:30:01 IST] WARNING: post_queue.jsonl is empty \u2014 no reels to post. Refill via generate_batch.py"
+    ],
+    "ig_learning": [],
+    "backup": [
+      "backup.py: error: unrecognized arguments: --check-large",
+      "usage: backup.py [-h] [--status] [--msg MSG]",
+      "backup.py: error: unrecognized arguments: --check-large"
+    ],
+    "dashboard": [
+      "    TS=$(date \"+%Y-%m-%d %H:%M IST\")",
+      "       ^",
+      "SyntaxError: invalid syntax"
+    ]
+  },
+  "memory": {
+    "projects": [
+      {
+        "name": "_Global",
+        "status": "always_loaded",
+        "icon": "\u2b50",
+        "type": "project",
+        "description": "Cross-project preferences, hardware inventory, content strategy",
+        "open_items": [],
+        "last_updated": "2026-03-22 15:00 IST"
+      },
+      {
+        "name": "NeckGuardian",
+        "status": "current_active",
+        "icon": "\ud83d\udfe2",
+        "type": "project",
+        "description": "Robotic spine V3 \u2014 servo bracket, URDF, manual, content",
+        "open_items": [
+          "Record narration for the reel (script is ready, timecodes locked)",
+          "Verify processed_video.mp4 ~30s mark is the correct V3 clean tracking footage in Studio",
+          "Provide detailed MG90S bracket context (arm assembly dimensions, joint axis, clearances) for CAD iter_002",
+          "Final render: `npx remotion render NeckGuardianReel /path/to/output/neckguardian_v3_reel.mp4`"
+        ],
+        "last_updated": "2026-03-22 01:01 IST"
+      },
+      {
+        "name": "AIuRaceCar",
+        "status": "background_active",
+        "icon": "\ud83d\udd35",
+        "type": "project",
+        "description": "Smallest self-aware micro race car \u2014 RPI5 + H10 + depth camera",
+        "open_items": [
+          "Initialize project context with Rahul"
+        ],
+        "last_updated": "2026-03-22"
+      },
+      {
+        "name": "Novel_FinalObserver",
+        "status": "background_active",
+        "icon": "\ud83d\udd35",
+        "type": "project",
+        "description": "Hard sci-fi novel \u2014 @the_final_observer, KUL/ANUKUL AI companion",
+        "open_items": [
+          "Initialize project context with Rahul"
+        ],
+        "last_updated": "2026-03-22"
+      },
+      {
+        "name": "FreeCAD_CAD",
+        "status": "tool_active",
+        "icon": "\ud83d\udd27",
+        "type": "project",
+        "description": "FreeCAD parametric CAD \u2014 support tool for robotics builds",
+        "open_items": [
+          "Initialize project context with Rahul"
+        ],
+        "last_updated": "2026-03-22"
+      },
+      {
+        "name": "instagram_content_skill",
+        "status": "tool_active",
+        "icon": "\ud83d\udd27",
+        "type": "skill",
+        "description": "Instagram content pipeline \u2014 Reels, Carousels, Posts, Stories for both accounts",
+        "open_items": [],
+        "last_updated": "2026-03-22"
+      },
+      {
+        "name": "sysmon-skill",
+        "status": "tool_active",
+        "icon": "\ud83d\udd27",
+        "type": "skill",
+        "description": "System resource monitoring, safe cleanup, anomaly/unauthorized process detection",
+        "open_items": [],
+        "last_updated": null
+      },
+      {
+        "name": "human-skill",
+        "status": "tool_active",
+        "icon": "\ud83d\udd27",
+        "type": "skill",
+        "description": "Personal development OS \u2014 health, sleep, output, wealth, family pattern tracking",
+        "open_items": [],
+        "last_updated": null
+      },
+      {
+        "name": "ml-skills/researcher-skill",
+        "status": "tool_active",
+        "icon": "\ud83d\udd27",
+        "type": "skill",
+        "description": "ML model research, architecture decision, training orchestration \u2014 runs FIRST in",
+        "open_items": [],
+        "last_updated": null
+      },
+      {
+        "name": "ml-skills/roboflow-skill",
+        "status": "tool_active",
+        "icon": "\ud83d\udd27",
+        "type": "skill",
+        "description": "Roboflow dataset management, Universe search, cloud training, model deployment/i",
+        "open_items": [],
+        "last_updated": null
+      },
+      {
+        "name": "ml-skills/colab-skill",
+        "status": "tool_active",
+        "icon": "\ud83d\udd27",
+        "type": "skill",
+        "description": "Google Colab cloud GPU/TPU training via MCP \u2014 executes training notebooks from V",
+        "open_items": [],
+        "last_updated": null
+      },
+      {
+        "name": "rpi5-h10-skill",
+        "status": "tool_active",
+        "icon": "\ud83d\udd27",
+        "type": "skill",
+        "description": "RPi5 + Hailo-10H deployment \u2014 inference offload, HEF compilation, NFS dataset se",
+        "open_items": [],
+        "last_updated": null
+      },
+      {
+        "name": "meta-ads-skill",
+        "status": "tool_active",
+        "icon": "\ud83d\udd27",
+        "type": "skill",
+        "description": "Meta Ads \u2014 boost existing Reels or deploy fresh video campaigns via Graph API; d",
+        "open_items": [],
+        "last_updated": null
+      },
+      {
+        "name": "content-plan-skill",
+        "status": "tool_active",
+        "icon": "\ud83d\udd27",
+        "type": "skill",
+        "description": "Full content strategy plan \u2014 10 hooks, 3 reel formats, carousel, posting sequenc",
+        "open_items": [],
+        "last_updated": null
+      },
+      {
+        "name": "backup-skill",
+        "status": "tool_active",
+        "icon": "\ud83d\udd27",
+        "type": "skill",
+        "description": "GitHub + Google Drive backup for all skills, memory, HumanOS, tasks \u2014 daily cron",
+        "open_items": [],
+        "last_updated": null
+      },
+      {
+        "name": "KKT",
+        "status": "paused",
+        "icon": "\u23f8",
+        "type": "project",
+        "description": "Project Kshana-Kshetra-Tarani \u2014 matter teleportation research",
+        "open_items": [
+          "Initialize project context with Rahul"
+        ],
+        "last_updated": "2026-03-22"
+      },
+      {
+        "name": "LoGeR",
+        "status": "paused",
+        "icon": "\u23f8",
+        "type": "project",
+        "description": "DINOv2 + TTT/SWA memory \u2014 AGX Orin deployment",
+        "open_items": [
+          "Initialize project context with Rahul"
+        ],
+        "last_updated": "2026-03-22"
+      },
+      {
+        "name": "Quantum_DIY",
+        "status": "paused",
+        "icon": "\u23f8",
+        "type": "project",
+        "description": "DIY quantum lab \u2014 NV-center diamond, NMR, NCT loophole",
+        "open_items": [
+          "Initialize project context with Rahul"
+        ],
+        "last_updated": "2026-03-22"
+      },
+      {
+        "name": "EEG_Hypertension",
+        "status": "paused",
+        "icon": "\u23f8",
+        "type": "project",
+        "description": "EEG-based hypertension detection \u2014 resumes August",
+        "open_items": [
+          "Initialize project context with Rahul"
+        ],
+        "last_updated": "2026-03-22"
+      },
+      {
+        "name": "meta_ad_runner_skill",
+        "status": "dormant",
+        "icon": "\ud83d\udca4",
+        "type": "skill",
+        "description": "Meta (Facebook/Instagram) ad campaign runner \u2014 DORMANT until discussed",
+        "open_items": [],
+        "last_updated": null
+      }
+    ],
+    "open_tasks": [
+      {
+        "project": "NeckGuardian",
+        "task": "Record narration for the reel (script is ready, timecodes locked)",
+        "status": "current_active"
+      },
+      {
+        "project": "NeckGuardian",
+        "task": "Verify processed_video.mp4 ~30s mark is the correct V3 clean tracking footage in Studio",
+        "status": "current_active"
+      },
+      {
+        "project": "NeckGuardian",
+        "task": "Provide detailed MG90S bracket context (arm assembly dimensions, joint axis, clearances) for CAD iter_002",
+        "status": "current_active"
+      },
+      {
+        "project": "NeckGuardian",
+        "task": "Final render: `npx remotion render NeckGuardianReel /path/to/output/neckguardian_v3_reel.mp4`",
+        "status": "current_active"
+      },
+      {
+        "project": "AIuRaceCar",
+        "task": "Initialize project context with Rahul",
+        "status": "background_active"
+      },
+      {
+        "project": "Novel_FinalObserver",
+        "task": "Initialize project context with Rahul",
+        "status": "background_active"
+      },
+      {
+        "project": "FreeCAD_CAD",
+        "task": "Initialize project context with Rahul",
+        "status": "tool_active"
+      },
+      {
+        "project": "KKT",
+        "task": "Initialize project context with Rahul",
+        "status": "paused"
+      },
+      {
+        "project": "LoGeR",
+        "task": "Initialize project context with Rahul",
+        "status": "paused"
+      },
+      {
+        "project": "Quantum_DIY",
+        "task": "Initialize project context with Rahul",
+        "status": "paused"
+      },
+      {
+        "project": "EEG_Hypertension",
+        "task": "Initialize project context with Rahul",
+        "status": "paused"
+      }
+    ],
+    "total_open": 11
+  },
+  "human_os": {
+    "wellbeing": {
+      "soft_close": "23:00 IST",
+      "hard_close": "00:00 IST",
+      "flexible": "Friday, Saturday",
+      "note": "Autonomous tasks continue after hard close; no Rahul input requested."
+    },
+    "boundary": null,
+    "logs": [],
+    "human_base": "/home/rick/Documents/playground/Claude_Code_Skills/HumanOS",
+    "initialized": false
+  }
+}

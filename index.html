@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>technology.spiritual · Command Centre</title>
+<meta http-equiv="refresh" content="1800">
+<style>
+:root{--bg:#050508;--bg2:#0d0d15;--bg3:#13131f;--border:#1e1e30;
+--acc:#c084fc;--gold:#f59e0b;--green:#00ff88;--cyan:#00e5ff;--red:#ff4466;
+--white:#f0f0f0;--dim:#666680;--mono:'Courier New',monospace;--sans:-apple-system,'Helvetica Neue',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--white);font-family:var(--sans);min-height:100vh}
+/* Gate */
+#gate{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;
+justify-content:center;z-index:999;flex-direction:column;gap:16px}
+#gate h1{font-size:22px;color:var(--acc);letter-spacing:.1em}
+#gate p{color:var(--dim);font-family:var(--mono);font-size:11px}
+#gate input{background:var(--bg3);border:1px solid var(--border);color:var(--white);
+padding:12px 20px;border-radius:8px;font-size:16px;font-family:var(--mono);
+width:260px;outline:none;text-align:center;letter-spacing:.2em}
+#gate input:focus{border-color:var(--acc)}
+#gate button{background:var(--acc);color:#000;border:none;padding:12px 32px;
+border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;width:260px}
+.err{color:var(--red);font-size:13px;font-family:var(--mono)}
+/* App */
+#app{display:none;padding:16px;max-width:1280px;margin:0 auto}
+.header{display:flex;align-items:center;justify-content:space-between;
+margin-bottom:20px;flex-wrap:wrap;gap:10px}
+.header h1{font-size:18px;color:var(--acc);letter-spacing:.06em}
+.ts{font-family:var(--mono);font-size:11px;color:var(--dim)}
+.btn{background:var(--bg3);border:1px solid var(--border);color:var(--acc);
+padding:7px 14px;border-radius:6px;font-family:var(--mono);font-size:11px;cursor:pointer}
+/* Tabs */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.tab{padding:7px 16px;border-radius:6px;font-size:12px;font-family:var(--mono);
+cursor:pointer;border:1px solid var(--border);color:var(--dim);background:var(--bg2)}
+.tab.active{background:var(--acc);color:#000;border-color:var(--acc);font-weight:700}
+.pane{display:none}.pane.active{display:block}
+/* Grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-bottom:14px}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:18px}
+.card.wide{grid-column:1/-1}
+.card h2{font-size:10px;letter-spacing:.14em;color:var(--dim);text-transform:uppercase;
+margin-bottom:14px;font-family:var(--mono)}
+/* KPIs */
+.kpi-row{display:flex;gap:10px;flex-wrap:wrap}
+.kpi{background:var(--bg3);border:1px solid var(--border);border-radius:8px;
+padding:10px 16px;flex:1;min-width:90px}
+.kpi .val{font-size:28px;font-weight:800;line-height:1;font-family:var(--mono)}
+.kpi .lbl{font-size:10px;color:var(--dim);margin-top:3px;letter-spacing:.08em;text-transform:uppercase}
+.kpi.acc .val{color:var(--acc)}.kpi.grn .val{color:var(--green)}
+.kpi.gld .val{color:var(--gold)}.kpi.cyn .val{color:var(--cyan)}
+.kpi.red .val{color:var(--red)}
+/* Bar */
+.bar{background:var(--bg3);height:6px;border-radius:3px;margin:10px 0;overflow:hidden}
+.bar-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--acc),var(--gold))}
+/* Table */
+.tbl{width:100%;border-collapse:collapse;font-size:12px}
+.tbl th{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--dim);
+text-transform:uppercase;padding:5px 8px;text-align:left;border-bottom:1px solid var(--border)}
+.tbl td{padding:7px 8px;border-bottom:1px solid #0d0d15;vertical-align:top}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr:hover td{background:var(--bg3)}
+/* Tags */
+.tag{display:inline-block;padding:2px 7px;border-radius:4px;font-family:var(--mono);font-size:10px}
+.tg-acc{background:#1a0a2e;color:var(--acc)}.tg-grn{background:#0a2015;color:var(--green)}
+.tg-gld{background:#1a1000;color:var(--gold)}.tg-red{background:#2e0a0a;color:var(--red)}
+.tg-dim{background:var(--bg3);color:var(--dim)}
+/* List rows */
+.row{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--border)}
+.row:last-child{border-bottom:none}
+.row-num{font-family:var(--mono);font-size:10px;color:var(--dim);min-width:20px}
+/* Dot */
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
+.d-grn{background:var(--green);box-shadow:0 0 5px var(--green)}
+.d-gld{background:var(--gold)}.d-red{background:var(--red)}.d-dim{background:var(--dim)}
+/* Progress ring alternative — simple text */
+.metric-big{font-size:36px;font-weight:800;font-family:var(--mono);line-height:1}
+/* Chips */
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{background:var(--bg3);border:1px solid var(--border);padding:4px 12px;
+border-radius:20px;font-size:11px;font-family:var(--mono);color:var(--acc)}
+/* Log lines */
+.log-line{font-family:var(--mono);font-size:10px;color:var(--dim);padding:3px 0;
+border-bottom:1px solid #0d0d15;word-break:break-all}
+.log-line:last-child{border-bottom:none}
+/* Cron */
+.cron-cat{margin-bottom:12px}
+.cron-cat h3{font-size:10px;color:var(--acc);font-family:var(--mono);letter-spacing:.1em;
+text-transform:uppercase;margin-bottom:6px}
+.cron-line{font-family:var(--mono);font-size:10px;color:var(--dim);padding:2px 0;
+word-break:break-all;border-bottom:1px solid #0d0d15}
+/* Skill grid */
+.skill-item{display:flex;align-items:flex-start;gap:10px;padding:8px 0;
+border-bottom:1px solid var(--border)}
+.skill-item:last-child{border-bottom:none}
+.skill-name{font-family:var(--mono);font-size:12px;color:var(--acc);min-width:110px}
+.skill-id{font-family:var(--mono);font-size:10px;color:var(--dim)}
+.skill-desc{font-size:12px;color:var(--white)}
+/* Sys bars */
+.sys-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.sys-label{font-family:var(--mono);font-size:11px;color:var(--dim);min-width:60px}
+.sys-bar{flex:1;background:var(--bg3);height:6px;border-radius:3px;overflow:hidden}
+.sys-bar-fill{height:100%;border-radius:3px}
+.sys-val{font-family:var(--mono);font-size:11px;color:var(--white);min-width:60px;text-align:right}
+footer{text-align:center;padding:24px;font-family:var(--mono);font-size:10px;color:var(--dim)}
+#loading{text-align:center;padding:60px;font-family:var(--mono);color:var(--dim)}
+@media(max-width:600px){
+  #app{padding:10px}.kpi .val{font-size:22px}
+  .tbl td,.tbl th{padding:5px 4px;font-size:10px}.header h1{font-size:15px}
+  .tab{padding:6px 10px;font-size:11px}
+}
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <h1>technology.spiritual</h1>
+  <p>COMMAND CENTRE · PRIVATE</p>
+  <input type="password" id="pin" placeholder="passkey" autocomplete="off"
+         onkeydown="if(event.key==='Enter')auth()">
+  <button onclick="auth()">ENTER</button>
+  <p class="err" id="err"></p>
+</div>
+
+<div id="app">
+  <div class="header">
+    <div>
+      <h1>@technology.spiritual · Command Centre</h1>
+      <div class="ts" id="ts-gen">—</div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <div class="ts" id="ts-next">—</div>
+      <button class="btn" onclick="loadStats()">↻ Refresh</button>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('overview')">Overview</div>
+    <div class="tab" onclick="showTab('instagram')">Instagram</div>
+    <div class="tab" onclick="showTab('tasks')">Tasks <span id="tab-task-badge"></span></div>
+    <div class="tab" onclick="showTab('memory')">Memory</div>
+    <div class="tab" onclick="showTab('human')">Human OS</div>
+    <div class="tab" onclick="showTab('skills')">Skills</div>
+    <div class="tab" onclick="showTab('system')">System</div>
+    <div class="tab" onclick="showTab('logs')">Logs & Cron</div>
+  </div>
+
+  <div id="loading">Loading…</div>
+  <div id="content" style="display:none">
+
+    <!-- ── OVERVIEW ── -->
+    <div id="pane-overview" class="pane active">
+      <div class="grid">
+        <!-- KPI strip -->
+        <div class="card wide">
+          <h2>System at a Glance</h2>
+          <div class="kpi-row">
+            <div class="kpi acc"><div class="val" id="o-phase">—</div><div class="lbl">IG Phase</div></div>
+            <div class="kpi grn"><div class="val" id="o-posted">—</div><div class="lbl">Posts</div></div>
+            <div class="kpi gld"><div class="val" id="o-queue">—</div><div class="lbl">Queue</div></div>
+            <div class="kpi cyn"><div class="val" id="o-skills">—</div><div class="lbl">Skills</div></div>
+            <div class="kpi"   ><div class="val" id="o-disk">—</div><div class="lbl">Disk %</div></div>
+            <div class="kpi"   ><div class="val" id="o-ram">—</div><div class="lbl">RAM %</div></div>
+            <div class="kpi"   ><div class="val" id="o-load">—</div><div class="lbl">Load</div></div>
+            <div class="kpi"   ><div class="val" id="o-uptime">—</div><div class="lbl">Uptime</div></div>
+          </div>
+        </div>
+        <!-- Next post + phase -->
+        <div class="card">
+          <h2>Next Post</h2>
+          <div class="metric-big" id="o-nextpost" style="color:var(--cyan)">—</div>
+          <div style="font-size:12px;color:var(--dim);margin-top:6px" id="o-nexttopic"></div>
+          <div class="bar"><div class="bar-fill" id="o-phasebar" style="width:0%"></div></div>
+          <div style="font-size:11px;color:var(--dim)" id="o-phasenote"></div>
+        </div>
+        <!-- Services -->
+        <div class="card">
+          <h2>Services</h2>
+          <div id="o-services"></div>
+        </div>
+        <!-- Accounts -->
+        <div class="card">
+          <h2>IG Accounts</h2>
+          <div id="o-accounts"></div>
+        </div>
+      </div>
+      <!-- Recent posts mini -->
+      <div class="grid">
+        <div class="card wide">
+          <h2>Recent Posts</h2>
+          <div style="overflow-x:auto"><table class="tbl"><thead><tr>
+            <th>Topic</th><th>Hook</th><th>Posted</th>
+            <th>D3 Reach</th><th>D3 Saves</th><th>D7 Reach</th><th>D7 Saves</th>
+          </tr></thead><tbody id="o-posttable"></tbody></table></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── INSTAGRAM ── -->
+    <div id="pane-instagram" class="pane">
+      <div class="grid">
+        <div class="card">
+          <h2>@technology.spiritual — Phase 1</h2>
+          <div class="kpi-row">
+            <div class="kpi acc"><div class="val" id="ig-posted">—</div><div class="lbl">Posted</div></div>
+            <div class="kpi gld"><div class="val" id="ig-queue">—</div><div class="lbl">Queue</div></div>
+            <div class="kpi grn"><div class="val" id="ig-d3">—</div><div class="lbl">D3 Done</div></div>
+            <div class="kpi cyn"><div class="val" id="ig-d7">—</div><div class="lbl">D7 Done</div></div>
+          </div>
+          <div class="bar" style="margin-top:14px"><div class="bar-fill" id="ig-phasebar" style="width:0%"></div></div>
+          <div style="font-size:11px;color:var(--dim);margin-top:4px" id="ig-phasenote"></div>
+        </div>
+        <div class="card">
+          <h2>Queue</h2>
+          <div id="ig-queuelist"></div>
+        </div>
+        <div class="card">
+          <h2>Topic Rotation</h2>
+          <div class="chips" id="ig-chips"></div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card wide">
+          <h2>All Posts</h2>
+          <div style="overflow-x:auto"><table class="tbl"><thead><tr>
+            <th>#</th><th>Topic</th><th>Hook</th><th>Posted</th>
+            <th>D3 Reach</th><th>D3 Saves</th><th>D7 Reach</th><th>D7 Saves</th><th>Status</th>
+          </tr></thead><tbody id="ig-alltable"></tbody></table></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TASKS ── -->
+    <div id="pane-tasks" class="pane">
+      <div class="grid">
+        <div class="card wide">
+          <h2>Open Tasks Across All Projects (<span id="tk-total">—</span>)</h2>
+          <div id="tk-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── MEMORY ── -->
+    <div id="pane-memory" class="pane">
+      <div class="grid">
+        <div class="card wide">
+          <h2>Projects — Categorised Chronological Memory</h2>
+          <div id="mem-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HUMAN OS ── -->
+    <div id="pane-human" class="pane">
+      <div class="grid">
+        <div class="card">
+          <h2>Session Wellbeing</h2>
+          <div id="hos-wellbeing"></div>
+        </div>
+        <div class="card">
+          <h2>Boundary Status</h2>
+          <div id="hos-boundary"></div>
+        </div>
+        <div class="card">
+          <h2>HumanOS Logs</h2>
+          <div id="hos-logs"></div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card wide" style="background:linear-gradient(135deg,#0d0d15,#13091f)">
+          <h2>About Human OS (SIDDHANTH)</h2>
+          <div style="font-size:12px;color:var(--dim);line-height:1.8">
+            Rahul's personal development OS. Loads silently at session start.<br>
+            Observes health · sleep · output · wealth · family patterns across sessions.<br>
+            Surfaces insights <em>only</em> when genuinely useful — never noise.<br>
+            <br>
+            <span style="color:var(--acc)">North star:</span> Get the best version of Rahul expressed into the world, without adding friction.<br>
+            <span style="color:var(--acc)">Rule:</span> Speak once. Specificity over generality. Pattern over incident.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SKILLS ── -->
+    <div id="pane-skills" class="pane">
+      <div class="grid">
+        <div class="card wide">
+          <h2>Skills Inventory (<span id="sk-count">—</span> installed)</h2>
+          <div id="sk-list"></div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card wide">
+          <h2>Render Files</h2>
+          <div id="sk-renders"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SYSTEM ── -->
+    <div id="pane-system" class="pane">
+      <div class="grid">
+        <div class="card">
+          <h2>Host</h2>
+          <div style="margin-bottom:10px">
+            <div style="font-family:var(--mono);font-size:14px;color:var(--acc)" id="sys-hostname">—</div>
+            <div style="font-family:var(--mono);font-size:11px;color:var(--dim);margin-top:4px" id="sys-ips"></div>
+            <div style="font-family:var(--mono);font-size:11px;color:var(--dim)" id="sys-uptime"></div>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Resources</h2>
+          <div id="sys-bars"></div>
+        </div>
+        <div class="card">
+          <h2>Services</h2>
+          <div id="sys-services"></div>
+        </div>
+        <div class="card">
+          <h2>Backup (VAULT)</h2>
+          <div id="sys-backup"></div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card wide">
+          <h2>Recent Git Commits</h2>
+          <div id="sys-commits"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── LOGS & CRON ── -->
+    <div id="pane-logs" class="pane">
+      <div class="grid">
+        <div class="card wide">
+          <h2>Active Cron Jobs (<span id="cr-total">—</span>)</h2>
+          <div id="cr-cats"></div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card"><h2>IG Posting Log</h2><div id="log-post"></div></div>
+        <div class="card"><h2>IG Metrics Log</h2><div id="log-metrics"></div></div>
+        <div class="card"><h2>Backup Log</h2><div id="log-backup"></div></div>
+        <div class="card"><h2>Dashboard Log</h2><div id="log-dash"></div></div>
+      </div>
+    </div>
+
+  </div><!-- #content -->
+</div><!-- #app -->
+<footer>technology.spiritual · autonomous system · private · updates every 30 min</footer>
+
+<script>
+// ── Auth ──────────────────────────────────────────────────────────────────────
+// Simple djb2 hash — works on HTTP (no secure context needed)
+const PASS_HASH = 2664954123; // djb2("tslab2026")
+const AUTH_KEY  = "ts_auth_ok";
+
+function djb2(s) {
+  let h = 5381;
+  for (let i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0;
+  return h;
+}
+function auth() {
+  const pin = document.getElementById('pin').value.trim();
+  if (!pin) return;
+  if (djb2(pin) === PASS_HASH) {
+    sessionStorage.setItem(AUTH_KEY, '1');
+    document.getElementById('gate').style.display='none';
+    document.getElementById('app').style.display='block';
+    loadStats();
+  } else {
+    document.getElementById('err').textContent='incorrect passkey';
+    document.getElementById('pin').value='';
+  }
+}
+if (sessionStorage.getItem(AUTH_KEY)==='1') {
+  document.getElementById('gate').style.display='none';
+  document.getElementById('app').style.display='block';
+}
+
+// ── Tabs ──────────────────────────────────────────────────────────────────────
+function showTab(id) {
+  document.querySelectorAll('.pane').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('pane-'+id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// ── Data loading ──────────────────────────────────────────────────────────────
+async function loadStats() {
+  document.getElementById('loading').style.display='block';
+  document.getElementById('content').style.display='none';
+  let data = null;
+  for (const url of ['http://rick-nas.local:8080/stats','http://192.168.0.100:8080/stats',
+                     'http://192.168.0.11:8080/stats','stats.json?t='+Date.now()]) {
+    try {
+      const r = await fetch(url, {signal: AbortSignal.timeout(2500)});
+      if (r.ok) { data = await r.json(); break; }
+    } catch(_) {}
+  }
+  if (!data) { document.getElementById('loading').textContent='Failed to load stats.'; return; }
+  render(data);
+}
+
+function fmt(v) {
+  return (v===null||v===undefined||v==='—') ? '<span style="color:var(--dim)">—</span>' : v;
+}
+function dot(up) {
+  return `<span class="dot ${up?'d-grn':'d-red'}"></span>`;
+}
+
+function render(d) {
+  document.getElementById('loading').style.display='none';
+  document.getElementById('content').style.display='block';
+  document.getElementById('ts-gen').textContent = 'Data: '+(d.generated_at_human||'');
+  startCountdown(1800);
+
+  const ig  = d.instagram  || {};
+  const sys = d.system     || {};
+  const bkp = d.backup     || {};
+  const rnd = d.renders    || {};
+  const skl = d.skills     || [];
+  const crn = d.cron       || {};
+  const svc = d.services   || [];
+  const log = d.logs       || {};
+
+  // ── Overview ──
+  const installed = skl.filter(s=>s.installed).length;
+  document.getElementById('o-phase').textContent   = ig.phase ?? '—';
+  document.getElementById('o-posted').textContent  = ig.total_posted ?? '—';
+  document.getElementById('o-queue').textContent   = ig.queue_depth ?? '—';
+  document.getElementById('o-skills').textContent  = installed+'/'+skl.length;
+  document.getElementById('o-disk').textContent    = sys.disk_pct ?? '—';
+  document.getElementById('o-ram').textContent     = sys.mem_pct ?? '—';
+  document.getElementById('o-load').textContent    = sys.load_1m ?? '—';
+  document.getElementById('o-uptime').textContent  = sys.uptime ?? '—';
+
+  document.getElementById('o-nextpost').textContent = d.next_post ?? '—';
+  document.getElementById('o-nexttopic').textContent = ig.queue_next ? 'Next: '+ig.queue_next : 'Queue empty';
+  document.getElementById('o-phasebar').style.width = (ig.phase_pct||0)+'%';
+  document.getElementById('o-phasenote').textContent = ig.phase_note || '';
+
+  document.getElementById('o-services').innerHTML = svc.map(s=>`
+    <div class="row">${dot(s.up)}
+      <span style="font-size:13px">${s.name}</span>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--dim)">:${s.port}</span>
+    </div>`).join('');
+
+  document.getElementById('o-accounts').innerHTML = (ig.accounts||[]).map(a=>`
+    <div class="row">
+      ${dot(a.status==='active')}
+      <div>
+        <div style="font-size:13px;color:var(--acc)">${a.handle}</div>
+        <div style="font-size:10px;color:var(--dim);font-family:var(--mono)">${a.role}${a.token_note?'&nbsp;<span class="tag tg-red">'+a.token_note+'</span>':''}</div>
+      </div>
+    </div>`).join('');
+
+  const posts = ig.recent_posts || [];
+  document.getElementById('o-posttable').innerHTML = posts.length
+    ? posts.map(p=>`<tr>
+        <td style="max-width:180px;word-break:break-word;font-size:11px">${p.topic}</td>
+        <td><span class="tag tg-acc">${p.hook_type}</span></td>
+        <td style="font-family:var(--mono);font-size:10px;color:var(--dim)">${p.ts_posted}</td>
+        <td style="font-family:var(--mono)">${fmt(p.d3_reach)}</td>
+        <td style="font-family:var(--mono);color:var(--green)">${fmt(p.d3_saves)}</td>
+        <td style="font-family:var(--mono)">${fmt(p.d7_reach)}</td>
+        <td style="font-family:var(--mono);color:var(--green)">${fmt(p.d7_saves)}</td>
+      </tr>`).join('')
+    : '<tr><td colspan="7" style="color:var(--dim);text-align:center;padding:16px">No posts yet</td></tr>';
+
+  // ── Instagram tab ──
+  document.getElementById('ig-posted').textContent  = ig.total_posted ?? '—';
+  document.getElementById('ig-queue').textContent   = ig.queue_depth ?? '—';
+  document.getElementById('ig-d3').textContent      = ig.d3_count ?? '—';
+  document.getElementById('ig-d7').textContent      = ig.d7_count ?? '—';
+  document.getElementById('ig-phasebar').style.width = (ig.phase_pct||0)+'%';
+  document.getElementById('ig-phasenote').textContent = ig.phase_note || '';
+
+  document.getElementById('ig-queuelist').innerHTML = (ig.queue_topics||[]).length
+    ? (ig.queue_topics).map((t,i)=>`<div class="row"><span class="row-num">${i+1}</span><span style="font-size:12px">${t}</span></div>`).join('')
+    : '<div style="color:var(--dim);font-size:12px">Empty — generate next batch</div>';
+
+  document.getElementById('ig-chips').innerHTML = (ig.topic_rotation||[]).map(t=>`<div class="chip">${t}</div>`).join('');
+
+  document.getElementById('ig-alltable').innerHTML = posts.length
+    ? posts.map((p,i)=>`<tr>
+        <td style="font-family:var(--mono);color:var(--dim)">${i+1}</td>
+        <td style="max-width:180px;font-size:11px;word-break:break-word">${p.topic}</td>
+        <td><span class="tag tg-acc">${p.hook_type}</span></td>
+        <td style="font-family:var(--mono);font-size:10px;color:var(--dim)">${p.ts_posted}</td>
+        <td style="font-family:var(--mono)">${fmt(p.d3_reach)}</td>
+        <td style="font-family:var(--mono);color:var(--green)">${fmt(p.d3_saves)}</td>
+        <td style="font-family:var(--mono)">${fmt(p.d7_reach)}</td>
+        <td style="font-family:var(--mono);color:var(--green)">${fmt(p.d7_saves)}</td>
+        <td>${p.has_d7?'<span class="tag tg-grn">D7 ✓</span>':p.has_d3?'<span class="tag tg-gld">D3 ✓</span>':'<span class="tag tg-dim">pending</span>'}</td>
+      </tr>`).join('')
+    : '<tr><td colspan="9" style="color:var(--dim);text-align:center;padding:16px">No posts yet</td></tr>';
+
+  // ── Tasks tab ──
+  const mem = d.memory || {};
+  const hos = d.human_os || {};
+  const openTasks = mem.open_tasks || [];
+  document.getElementById('tk-total').textContent = openTasks.length;
+
+  // Badge on tab
+  const badge = document.getElementById('tab-task-badge');
+  if (openTasks.length > 0) {
+    badge.textContent = openTasks.length;
+    badge.style.cssText='background:var(--red);color:#fff;border-radius:10px;padding:1px 6px;font-size:10px;margin-left:4px';
+  }
+
+  // Group by project
+  const byProject = {};
+  openTasks.forEach(t => {
+    if (!byProject[t.project]) byProject[t.project] = [];
+    byProject[t.project].push(t);
+  });
+  document.getElementById('tk-list').innerHTML = Object.keys(byProject).length
+    ? Object.entries(byProject).map(([proj, tasks]) => `
+      <div style="margin-bottom:16px">
+        <div style="font-family:var(--mono);font-size:11px;color:var(--acc);letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px">${proj}</div>
+        ${tasks.map(t=>`
+          <div class="row">
+            <span style="color:var(--gold);font-size:14px;margin-right:4px">☐</span>
+            <span style="font-size:13px">${t.task}</span>
+          </div>`).join('')}
+      </div>`).join('')
+    : '<div style="color:var(--dim);font-size:13px">No open tasks found in project memory</div>';
+
+  // ── Memory tab ──
+  const projects = mem.projects || [];
+  const statusOrder = ['always_loaded','current_active','background_active','tool_active','paused','dormant'];
+  const statusLabel = {
+    'always_loaded':'Always Loaded','current_active':'Active Now',
+    'background_active':'Background','tool_active':'Tool / Skill',
+    'paused':'Paused','dormant':'Dormant','complete':'Complete'
+  };
+  // Group by status category
+  const byStatus = {};
+  projects.forEach(p => {
+    const cat = p.status;
+    if (!byStatus[cat]) byStatus[cat] = [];
+    byStatus[cat].push(p);
+  });
+  document.getElementById('mem-list').innerHTML = statusOrder
+    .filter(s => byStatus[s])
+    .map(s => `
+      <div style="margin-bottom:20px">
+        <div style="font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.14em;
+             text-transform:uppercase;border-bottom:1px solid var(--border);padding-bottom:4px;margin-bottom:8px">
+          ${statusLabel[s]||s} (${byStatus[s].length})
+        </div>
+        ${byStatus[s].map(p=>`
+          <div style="display:flex;gap:10px;padding:6px 0;border-bottom:1px solid #0d0d15;align-items:flex-start">
+            <span style="font-size:14px;min-width:20px">${p.icon}</span>
+            <div style="flex:1">
+              <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:600;color:var(--white)">${p.name}</span>
+                ${p.last_updated?`<span style="font-family:var(--mono);font-size:10px;color:var(--dim)">${p.last_updated}</span>`:''}
+              </div>
+              <div style="font-size:11px;color:var(--dim);margin-top:2px">${p.description}</div>
+              ${p.open_items&&p.open_items.length?`
+                <div style="margin-top:4px">${p.open_items.map(i=>
+                  `<div style="font-size:11px;color:var(--gold);margin-top:2px">☐ ${i}</div>`
+                ).join('')}</div>`:''}
+            </div>
+          </div>`).join('')}
+      </div>`).join('') || '<div style="color:var(--dim)">No projects in memory</div>';
+
+  // ── Human OS tab ──
+  const wb = hos.wellbeing || {};
+  document.getElementById('hos-wellbeing').innerHTML = `
+    <div class="row"><span style="font-size:11px;color:var(--dim);min-width:80px">Soft close</span>
+      <span style="font-family:var(--mono);font-size:13px;color:var(--gold)">${wb.soft_close||'—'}</span></div>
+    <div class="row"><span style="font-size:11px;color:var(--dim);min-width:80px">Hard close</span>
+      <span style="font-family:var(--mono);font-size:13px;color:var(--red)">${wb.hard_close||'—'}</span></div>
+    <div class="row"><span style="font-size:11px;color:var(--dim);min-width:80px">Flexible</span>
+      <span style="font-size:12px;color:var(--acc)">${wb.flexible||'—'}</span></div>
+    <div style="font-size:11px;color:var(--dim);margin-top:10px;line-height:1.6">${wb.note||''}</div>`;
+
+  const boundary = hos.boundary;
+  document.getElementById('hos-boundary').innerHTML = boundary
+    ? `<div style="padding:12px;background:#2e0a0a;border:1px solid var(--red);border-radius:8px;
+         font-family:var(--mono);font-size:12px;color:var(--red)">${boundary}</div>`
+    : `<div style="display:flex;align-items:center;gap:8px">
+        <span class="dot d-grn"></span>
+        <span style="font-size:13px;color:var(--dim)">Within session hours</span></div>`;
+
+  const hosLogs = hos.logs || [];
+  document.getElementById('hos-logs').innerHTML = hosLogs.length
+    ? hosLogs.map(l=>`<div class="log-line"><span style="color:var(--acc)">${l.file}:</span> ${l.last}</div>`).join('')
+    : `<div style="font-size:12px;color:var(--dim)">HumanOS not yet initialized.<br>
+       Logs appear after first session_start.py run.</div>`;
+
+  // ── Skills tab ──
+  const instSkl = skl.filter(s=>s.installed);
+  document.getElementById('sk-count').textContent = instSkl.length+'/'+skl.length;
+  document.getElementById('sk-list').innerHTML = skl.map(s=>`
+    <div class="skill-item">
+      ${dot(s.installed)}
+      <div style="flex:1">
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+          <span class="skill-name">${s.name}</span>
+          <span class="skill-id">${s.id}</span>
+          ${s.scripts?`<span class="tag tg-dim">${s.scripts} scripts</span>`:''}
+          ${!s.installed?'<span class="tag tg-gld">not installed</span>':''}
+        </div>
+        <div class="skill-desc" style="font-size:11px;color:var(--dim);margin-top:2px">${s.desc}</div>
+      </div>
+    </div>`).join('');
+
+  const files = rnd.files || [];
+  document.getElementById('sk-renders').innerHTML = files.length
+    ? files.map(f=>`<div class="row">
+        <span class="dot ${f.final?'d-grn':'d-gld'}"></span>
+        <span style="font-family:var(--mono);font-size:11px">${f.name}</span>
+        <span style="margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--dim)">${f.size_mb}MB&nbsp;${f.modified}</span>
+      </div>`).join('')
+    : '<div style="color:var(--dim);font-size:12px">No renders</div>';
+
+  // ── System tab ──
+  document.getElementById('sys-hostname').textContent = sys.hostname || '—';
+  document.getElementById('sys-ips').textContent      = (sys.lan_ips||[]).join('  ');
+  document.getElementById('sys-uptime').textContent   = 'Up '+sys.uptime;
+
+  function sysBar(label, pct, val, color='var(--acc)') {
+    return `<div class="sys-row">
+      <div class="sys-label">${label}</div>
+      <div class="sys-bar"><div class="sys-bar-fill" style="width:${pct}%;background:${color}"></div></div>
+      <div class="sys-val">${val}</div>
+    </div>`;
+  }
+  const loadColor = sys.load_1m > 4 ? 'var(--red)' : sys.load_1m > 2 ? 'var(--gold)' : 'var(--green)';
+  const diskColor = sys.disk_pct > 85 ? 'var(--red)' : sys.disk_pct > 70 ? 'var(--gold)' : 'var(--acc)';
+  const ramColor  = sys.mem_pct  > 85 ? 'var(--red)' : sys.mem_pct  > 70 ? 'var(--gold)' : 'var(--cyan)';
+  document.getElementById('sys-bars').innerHTML =
+    sysBar('Disk', sys.disk_pct, `${sys.disk_used_gb}/${sys.disk_total_gb}GB`, diskColor) +
+    sysBar('RAM',  sys.mem_pct,  `${sys.mem_used_mb}/${sys.mem_total_mb}MB`, ramColor) +
+    sysBar('Load', Math.min(100, sys.load_1m*20), sys.load_1m+' (1m)', loadColor);
+
+  document.getElementById('sys-services').innerHTML = svc.map(s=>`
+    <div class="row">${dot(s.up)}
+      <div>
+        <div style="font-size:13px">${s.name}</div>
+        <div style="font-family:var(--mono);font-size:10px;color:var(--dim)">${s.url}</div>
+      </div>
+    </div>`).join('');
+
+  document.getElementById('sys-backup').innerHTML = `
+    <div style="font-size:11px;font-family:var(--mono);color:var(--dim);margin-bottom:8px">
+      Repo: ${bkp.repo||'—'}</div>
+    ${bkp.last_ok?`<div class="log-line" style="color:var(--green)">${bkp.last_ok}</div>`:''}
+    ${bkp.last_error?`<div class="log-line" style="color:var(--red)">${bkp.last_error}</div>`:''}`;
+
+  document.getElementById('sys-commits').innerHTML = (bkp.recent_commits||[]).map(c=>`
+    <div class="log-line">${c}</div>`).join('') || '<div style="color:var(--dim);font-size:12px">No commits found</div>';
+
+  // ── Logs & Cron tab ──
+  document.getElementById('cr-total').textContent = crn.total || 0;
+  const cats = crn.categorised || {};
+  document.getElementById('cr-cats').innerHTML = Object.entries(cats).map(([cat, lines])=>`
+    <div class="cron-cat">
+      <h3>${cat} (${lines.length})</h3>
+      ${lines.map(l=>`<div class="cron-line">${l}</div>`).join('')}
+    </div>`).join('') || '<div style="color:var(--dim);font-size:12px">No cron jobs</div>';
+
+  function renderLog(el, lines) {
+    document.getElementById(el).innerHTML = (lines||[]).length
+      ? lines.map(l=>`<div class="log-line">${l}</div>`).join('')
+      : '<div style="color:var(--dim);font-size:11px">No entries</div>';
+  }
+  renderLog('log-post',    log.ig_post);
+  renderLog('log-metrics', log.ig_learning);
+  renderLog('log-backup',  log.backup);
+  renderLog('log-dash',    log.dashboard);
+}
+
+function startCountdown(s) {
+  let rem = s;
+  const el = document.getElementById('ts-next');
+  const iv = setInterval(()=>{
+    rem--;
+    if (rem<=0){ clearInterval(iv); loadStats(); return; }
+    const m=Math.floor(rem/60), sc=rem%60;
+    el.textContent=`Refresh in ${m}:${String(sc).padStart(2,'0')}`;
+  },1000);
+}
+
+if (sessionStorage.getItem(AUTH_KEY)==='1') loadStats();
+</script>
+</body>
+</html>
