@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-23T20:33:48.078887+05:30",
-  "generated_at_human": "2026-03-23 20:33 IST",
+  "generated_at": "2026-03-23T20:38:47.765030+05:30",
+  "generated_at_human": "2026-03-23 20:38 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "30h 29m",
+    "uptime": "30h 34m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1489.2,
     "disk_free_gb": 2446.5,
     "disk_pct": 37.8,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4874,
-    "mem_free_mb": 2939,
-    "mem_pct": 62.4,
-    "load_1m": 0.83,
-    "load_5m": 0.78,
-    "load_15m": 0.8
+    "mem_used_mb": 5208,
+    "mem_free_mb": 2605,
+    "mem_pct": 66.7,
+    "load_1m": 0.93,
+    "load_5m": 0.9,
+    "load_15m": 0.85
   },
   "services": [
     {
@@ -555,11 +555,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "ac18da7 chore: update skill-stats pointer",
       "6063aa1 feat: DRISHTI git_introspect + SIDDHANTH 360 weekly jobs, idle DM notifications, anti-regression rules seeded",
       "29f0f88 chore: git introspect update 2026-03-23",
       "fdfe7b4 2026-03-23: daemon threading fix, sendMessage retry, permission gate to SIDDHANTH DM, cron_monitor, insight rolling window 7d+50views",
-      "1581744 backup: 2026-03-23 \u2014 mem:telegram_sessions",
-      "a36cd8e backup: 2026-03-23 \u2014 mem:AIuRaceCar,EEG_Hypertension,FreeCAD_CAD"
+      "1581744 backup: 2026-03-23 \u2014 mem:telegram_sessions"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -730,9 +730,9 @@
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
-      "    python3 -c \"",
-      "               ^",
-      "SyntaxError: unterminated string literal (detected at line 19)"
+      "  Projects: 20 | Open tasks: 12",
+      "  Skills: 16/16 installed",
+      "[2026-03-23 20:33 IST] skill-stats pushed \u2713"
     ]
   },
   "memory": {
