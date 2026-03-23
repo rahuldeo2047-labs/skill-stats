@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-23T11:55:39.272811+05:30",
-  "generated_at_human": "2026-03-23 11:55 IST",
-  "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
+  "generated_at": "2026-03-23T18:09:03.756576+05:30",
+  "generated_at_human": "2026-03-23 18:09 IST",
+  "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "21h 51m",
+    "uptime": "28h 4m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1489.0,
     "disk_free_gb": 2446.7,
     "disk_pct": 37.8,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4162,
-    "mem_free_mb": 3651,
-    "mem_pct": 53.3,
-    "load_1m": 0.39,
-    "load_5m": 0.25,
-    "load_15m": 0.44
+    "mem_used_mb": 4494,
+    "mem_free_mb": 3319,
+    "mem_pct": 57.5,
+    "load_1m": 1.03,
+    "load_5m": 0.99,
+    "load_15m": 0.77
   },
   "services": [
     {
@@ -57,8 +57,8 @@
         "status": "paused"
       }
     ],
-    "total_posted": 23,
-    "d3_count": 19,
+    "total_posted": 26,
+    "d3_count": 23,
     "d7_count": 10,
     "d0_count": 8,
     "queue_depth": 0,
@@ -66,10 +66,10 @@
     "queue_topics": [],
     "recent_posts": [
       {
-        "post_id": "18035152931590350",
-        "topic": "meanflow-meets-control-scaling-sampled-data-contro",
+        "post_id": "17855723040630447",
+        "topic": "quantum-inference-on-a-classically-trained-quantum",
         "hook_type": "contrarian",
-        "ts_posted": "2026-03-23T09:06",
+        "ts_posted": "2026-03-23T12:16",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
@@ -81,6 +81,60 @@
         "d7_saves": "\u2014",
         "has_d0": false,
         "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18068351030288676",
+        "topic": "certified-quantum-schr-dinger-control-via-hierarch",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-23T12:15",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18098743618770766",
+        "topic": "indoorr2x-indoor-robot-to-everything-coordination",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-23T12:14",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18035152931590350",
+        "topic": "meanflow-meets-control-scaling-sampled-data-contro",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-23T09:06",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": 125,
+        "d3_saves": 0,
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -93,12 +147,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 73,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -111,12 +165,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 43,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -129,12 +183,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 103,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -147,63 +201,9 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 69,
+        "d3_reach": 113,
         "d3_saves": 0,
         "d7_reach": 64,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "17857453863582395",
-        "topic": "f2llm-v2-inclusive-performant-and-efficient-embedd",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-23T00:26",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 35,
-        "d3_saves": 0,
-        "d7_reach": 35,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18130289086554977",
-        "topic": "fintradebench-a-financial-reasoning-benchmark-for",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-23T00:25",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 35,
-        "d3_saves": 0,
-        "d7_reach": 33,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18151303525457541",
-        "topic": "navtrust-benchmarking-trustworthiness-for-embodied",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-23T00:25",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 116,
-        "d3_saves": 0,
-        "d7_reach": 116,
         "d7_saves": 0,
         "has_d0": false,
         "has_d3": true,
@@ -211,7 +211,7 @@
       }
     ],
     "phase": 1,
-    "phase_note": "Phase 1 \u2014 organic only. 23 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
+    "phase_note": "Phase 1 \u2014 organic only. 26 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
     "phase_pct": 100,
     "learnings": [
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
@@ -452,6 +452,24 @@
         "final": true
       },
       {
+        "name": "auto_202603231210_00_indoorr2x-indoor-robot-to-everything-coordination_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-23 12:12",
+        "final": true
+      },
+      {
+        "name": "auto_202603231212_02_certified-quantum-schr-dinger-control-via-hierarch_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-23 12:13",
+        "final": true
+      },
+      {
+        "name": "auto_202603231213_03_quantum-inference-on-a-classically-trained-quantum_final.mp4",
+        "size_mb": 1.9,
+        "modified": "03-23 12:14",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -506,18 +524,18 @@
         "final": true
       }
     ],
-    "count": 45,
-    "final_count": 41
+    "count": 48,
+    "final_count": 44
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "e257d17 2026-03-23: /post env fix, OAuth key, BASH_ENV cron, ~/.drishti_env macros",
+      "f2bca3f 2026-03-23: DRISHTI daemon seamless session + OAuth key + crontab fixes",
+      "7d02155 chore: update skill-stats pointer",
       "d0a36e6 chore: update memory \u2014 8-step pipeline, DRISHTI pending credits, phase fix",
-      "dabc1ca feat: DRISHTI in cron + alternate sources + 8-step pipeline",
-      "0913300 fix: insights always refresh last 4 posts; phase calc uses real ER threshold",
-      "d868330 chore: session end \u2014 gitignore renders, save all scripts + HumanOS init",
-      "9b4263d feat: initialise HumanOS profile + patterns from session observations"
+      "dabc1ca feat: DRISHTI in cron + alternate sources + 8-step pipeline"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -662,8 +680,8 @@
         "30 4 * * * TG_SIDDHANTH_TOKEN=\"8729630743:AAGC-UAMLK5Uce2mHsIG5nL0MHwK6EKIM6M\" TG_CHAT_ID=\"-5258949798\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/daily_360.py >> /tmp/daily_360.log 2>&1",
         "40 4 * * * TG_DRISHTI_TOKEN=\"8640924847:AAHdi4Q0KfkVRcHGMle3yQMWZ-bx7539bXI\" TG_CHAT_ID=\"-5258949798\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/cron_notify.py --skill METER --bot drishti --brief -- python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/cloud-meter-skill/scripts/usage_report.py --brief >> /tmp/meter_tg.log 2>&1",
         "0 * * * * /usr/bin/python3 /home/rick/Documents/playground/Claude_Code_Skills/Tasks/scripts/cron_worker.py >> /home/rick/Documents/playground/Claude_Code_Skills/Tasks/tasks.log 2>&1",
-        "10 0  * * * IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/auto_post.py >> /tmp/ig_auto_post.log 2>&1",
-        "10 12 * * * IG_LEARNING_ID=\"17841462814013579\" IG_LEARNING_TOKEN=\"EAANuXZB6FDSQBRCfjYFYlTcM44m2xuQftRvR0HA7wEZCmXBaa3BgjZAj7RnF35wZCyPG4xTkgjla3zveSMS7LhkxGUnOJ5fM4ARurCAKcHfdU3UZAS11ZAl7MBZCXpzO3zZAWt3JOT7HB9yTOk7oFIjOq0ZC6UcuJUkKwjExwRWEF3E70tzoZAK2lx0Wtd4Mv3jAZDZD\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/auto_post.py >> /tmp/ig_auto_post.log 2>&1"
+        "10 0  * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/auto_post.py\" >> /tmp/ig_auto_post.log 2>&1",
+        "10 12 * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/auto_post.py\" >> /tmp/ig_auto_post.log 2>&1"
       ]
     },
     "total": 18
@@ -681,7 +699,7 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -700,7 +718,7 @@
         "type": "project",
         "description": "Cross-project preferences, hardware inventory, content strategy",
         "open_items": [],
-        "last_updated": "2026-03-23 10:05 IST"
+        "last_updated": "2026-03-23 11:58 IST"
       },
       {
         "name": "NeckGuardian",
