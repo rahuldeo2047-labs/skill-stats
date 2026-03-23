@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-23T18:09:03.756576+05:30",
-  "generated_at_human": "2026-03-23 18:09 IST",
+  "generated_at": "2026-03-23T20:33:48.078887+05:30",
+  "generated_at_human": "2026-03-23 20:33 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "28h 4m",
+    "uptime": "30h 29m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1489.0,
-    "disk_free_gb": 2446.7,
+    "disk_used_gb": 1489.2,
+    "disk_free_gb": 2446.5,
     "disk_pct": 37.8,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4494,
-    "mem_free_mb": 3319,
-    "mem_pct": 57.5,
-    "load_1m": 1.03,
-    "load_5m": 0.99,
-    "load_15m": 0.77
+    "mem_used_mb": 4874,
+    "mem_free_mb": 2939,
+    "mem_pct": 62.4,
+    "load_1m": 0.83,
+    "load_5m": 0.78,
+    "load_15m": 0.8
   },
   "services": [
     {
@@ -57,8 +57,8 @@
         "status": "paused"
       }
     ],
-    "total_posted": 26,
-    "d3_count": 23,
+    "total_posted": 30,
+    "d3_count": 28,
     "d7_count": 10,
     "d0_count": 8,
     "queue_depth": 0,
@@ -66,10 +66,10 @@
     "queue_topics": [],
     "recent_posts": [
       {
-        "post_id": "17855723040630447",
-        "topic": "quantum-inference-on-a-classically-trained-quantum",
+        "post_id": "18079940663081161",
+        "topic": "robust-linear-quadratic-optimal-control-of-cementi",
         "hook_type": "contrarian",
-        "ts_posted": "2026-03-23T12:16",
+        "ts_posted": "2026-03-23T19:04",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
@@ -81,6 +81,78 @@
         "d7_saves": "\u2014",
         "has_d0": false,
         "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18035534249588976",
+        "topic": "widefield-nanodiamond-quantum-sensing-based-on-lig",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-23T19:03",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18015414737669743",
+        "topic": "cylindrical-metasurface-for-efficient-traveling-wa",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-23T18:18",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": 4,
+        "d3_saves": 0,
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": true,
+        "has_d7": false
+      },
+      {
+        "post_id": "18084575693206517",
+        "topic": "heisenberg-scaling-characterization-of-an-arbitrar",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-23T18:17",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": 0,
+        "d3_saves": 0,
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": true,
+        "has_d7": false
+      },
+      {
+        "post_id": "17855723040630447",
+        "topic": "quantum-inference-on-a-classically-trained-quantum",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-23T12:16",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": 125,
+        "d3_saves": 1,
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -93,12 +165,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 67,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -106,78 +178,6 @@
         "topic": "indoorr2x-indoor-robot-to-everything-coordination",
         "hook_type": "contrarian",
         "ts_posted": "2026-03-23T12:14",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": false,
-        "has_d7": false
-      },
-      {
-        "post_id": "18035152931590350",
-        "topic": "meanflow-meets-control-scaling-sampled-data-contro",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-23T09:06",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 125,
-        "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "18065890064669371",
-        "topic": "videoseek-long-horizon-video-agent-with-tool-guide",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-23T09:06",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 73,
-        "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "18091534418163699",
-        "topic": "lumosx-relate-any-identities-with-their-attributes",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-23T09:05",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 43,
-        "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "18021676973811064",
-        "topic": "from-masks-to-pixels-and-meaning-a-new-taxonomy-be",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-23T09:05",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
@@ -192,26 +192,26 @@
         "has_d7": false
       },
       {
-        "post_id": "18088252772224708",
-        "topic": "generation-models-know-space-unleashing-implicit-3",
+        "post_id": "18035152931590350",
+        "topic": "meanflow-meets-control-scaling-sampled-data-contro",
         "hook_type": "contrarian",
-        "ts_posted": "2026-03-23T00:26",
+        "ts_posted": "2026-03-23T09:06",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 113,
+        "d3_reach": 126,
         "d3_saves": 0,
-        "d7_reach": 64,
-        "d7_saves": 0,
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
         "has_d0": false,
         "has_d3": true,
-        "has_d7": true
+        "has_d7": false
       }
     ],
     "phase": 1,
-    "phase_note": "Phase 1 \u2014 organic only. 26 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
+    "phase_note": "Phase 1 \u2014 organic only. 30 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
     "phase_pct": 100,
     "learnings": [
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
@@ -470,6 +470,30 @@
         "final": true
       },
       {
+        "name": "auto_202603231814_01_heisenberg-scaling-characterization-of-an-arbitrar_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-23 18:15",
+        "final": true
+      },
+      {
+        "name": "auto_202603231815_02_cylindrical-metasurface-for-efficient-traveling-wa_final.mp4",
+        "size_mb": 2.1,
+        "modified": "03-23 18:17",
+        "final": true
+      },
+      {
+        "name": "auto_202603231900_02_widefield-nanodiamond-quantum-sensing-based-on-lig_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-23 19:01",
+        "final": true
+      },
+      {
+        "name": "auto_202603231901_03_robust-linear-quadratic-optimal-control-of-cementi_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-23 19:02",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -524,18 +548,18 @@
         "final": true
       }
     ],
-    "count": 48,
-    "final_count": 44
+    "count": 52,
+    "final_count": 48
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
-      "e257d17 2026-03-23: /post env fix, OAuth key, BASH_ENV cron, ~/.drishti_env macros",
-      "f2bca3f 2026-03-23: DRISHTI daemon seamless session + OAuth key + crontab fixes",
-      "7d02155 chore: update skill-stats pointer",
-      "d0a36e6 chore: update memory \u2014 8-step pipeline, DRISHTI pending credits, phase fix",
-      "dabc1ca feat: DRISHTI in cron + alternate sources + 8-step pipeline"
+      "6063aa1 feat: DRISHTI git_introspect + SIDDHANTH 360 weekly jobs, idle DM notifications, anti-regression rules seeded",
+      "29f0f88 chore: git introspect update 2026-03-23",
+      "fdfe7b4 2026-03-23: daemon threading fix, sendMessage retry, permission gate to SIDDHANTH DM, cron_monitor, insight rolling window 7d+50views",
+      "1581744 backup: 2026-03-23 \u2014 mem:telegram_sessions",
+      "a36cd8e backup: 2026-03-23 \u2014 mem:AIuRaceCar,EEG_Hypertension,FreeCAD_CAD"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -559,7 +583,7 @@
       "name": "REACH",
       "desc": "3-account IG management + learning loop",
       "installed": true,
-      "scripts": 10
+      "scripts": 11
     },
     {
       "id": "instagram_content_skill",
@@ -643,7 +667,7 @@
       "name": "SIDDHANTH",
       "desc": "Personal OS \u2014 health/wealth/family",
       "installed": true,
-      "scripts": 3
+      "scripts": 5
     },
     {
       "id": "ml-skills",
@@ -680,11 +704,13 @@
         "30 4 * * * TG_SIDDHANTH_TOKEN=\"8729630743:AAGC-UAMLK5Uce2mHsIG5nL0MHwK6EKIM6M\" TG_CHAT_ID=\"-5258949798\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/daily_360.py >> /tmp/daily_360.log 2>&1",
         "40 4 * * * TG_DRISHTI_TOKEN=\"8640924847:AAHdi4Q0KfkVRcHGMle3yQMWZ-bx7539bXI\" TG_CHAT_ID=\"-5258949798\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/cron_notify.py --skill METER --bot drishti --brief -- python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/cloud-meter-skill/scripts/usage_report.py --brief >> /tmp/meter_tg.log 2>&1",
         "0 * * * * /usr/bin/python3 /home/rick/Documents/playground/Claude_Code_Skills/Tasks/scripts/cron_worker.py >> /home/rick/Documents/playground/Claude_Code_Skills/Tasks/tasks.log 2>&1",
-        "10 0  * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/auto_post.py\" >> /tmp/ig_auto_post.log 2>&1",
-        "10 12 * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/auto_post.py\" >> /tmp/ig_auto_post.log 2>&1"
+        "10 0  * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/cron_monitor.py --script Skills/instagram-skill/scripts/auto_post.py --log /tmp/ig_auto_post.log\" >> /tmp/ig_auto_post.log 2>&1",
+        "10 12 * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/cron_monitor.py --script Skills/instagram-skill/scripts/auto_post.py --log /tmp/ig_auto_post.log\" >> /tmp/ig_auto_post.log 2>&1",
+        "30 2 * * 2 BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/human-skill/scripts/git_introspect.py\" >> /tmp/git_introspect.log 2>&1",
+        "30 5 * * 0 BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/human-skill/scripts/siddhanth_360_update.py\" >> /tmp/siddhanth_360.log 2>&1"
       ]
     },
-    "total": 18
+    "total": 20
   },
   "logs": {
     "ig_post": [
@@ -718,7 +744,7 @@
         "type": "project",
         "description": "Cross-project preferences, hardware inventory, content strategy",
         "open_items": [],
-        "last_updated": "2026-03-23 11:58 IST"
+        "last_updated": "2026-03-23 18:09 IST"
       },
       {
         "name": "NeckGuardian",
@@ -991,6 +1017,115 @@
       }
     ],
     "human_base": "/home/rick/Documents/playground/Claude_Code_Skills/HumanOS",
-    "initialized": true
+    "initialized": true,
+    "profile_updated": "2026-03-23",
+    "patterns_updated": "2026-03-23",
+    "domains": [
+      {
+        "id": "output",
+        "label": "Output / Build",
+        "icon": "\u26a1",
+        "signal": "green",
+        "observations": [
+          "30 reels posted via autonomous pipeline",
+          "Ship\u2192fix cycle <15 min consistently",
+          "5+ parallel projects active (NeckGuardian, IG, KKT, Quantum, Novel)"
+        ],
+        "blind_spots": []
+      },
+      {
+        "id": "sleep",
+        "label": "Sleep",
+        "icon": "\ud83c\udf19",
+        "signal": "amber",
+        "observations": [
+          "Active sessions 21:00\u201300:00+ IST consistently"
+        ],
+        "blind_spots": [
+          "Past soft close (23:00) regularly",
+          "Sleep duration / quality not tracked yet"
+        ]
+      },
+      {
+        "id": "physical",
+        "label": "Physical",
+        "icon": "\ud83c\udfc3",
+        "signal": "dim",
+        "observations": [],
+        "blind_spots": [
+          "No data yet \u2014 not tracked"
+        ]
+      },
+      {
+        "id": "mental",
+        "label": "Mental / Focus",
+        "icon": "\ud83e\udde0",
+        "signal": "green",
+        "observations": [
+          "Rapid context switching across 5+ domains without losing thread",
+          "High visual/UX quality bar even under time pressure"
+        ],
+        "blind_spots": [
+          "Late-night architectural decisions sometimes need next-session revisit"
+        ]
+      },
+      {
+        "id": "financial",
+        "label": "Financial",
+        "icon": "\ud83d\udcb0",
+        "signal": "amber",
+        "observations": [
+          "IG Phase 1 in progress \u2014 organic before ads"
+        ],
+        "blind_spots": [
+          "Anthropic API credits depleted mid-session (recurring)",
+          "@rahuldeo2047 missing instagram_basic \u2014 blocks ad deploy"
+        ]
+      },
+      {
+        "id": "social",
+        "label": "Social",
+        "icon": "\ud83d\udc65",
+        "signal": "dim",
+        "observations": [],
+        "blind_spots": [
+          "No data yet \u2014 not tracked"
+        ]
+      },
+      {
+        "id": "creative",
+        "label": "Creative",
+        "icon": "\ud83c\udfa8",
+        "signal": "green",
+        "observations": [
+          "Autonomous reel pipeline posting PhyAI content",
+          "NeckGuardian V3 robotics arm in progress"
+        ],
+        "blind_spots": [
+          "NeckGuardian reel narration + final render pending for 3+ sessions"
+        ]
+      },
+      {
+        "id": "professional",
+        "label": "Professional",
+        "icon": "\ud83d\ude80",
+        "signal": "green",
+        "observations": [
+          "Full-stack autonomous content + AI system builder",
+          "Designing systems that outlast individual sessions"
+        ],
+        "blind_spots": [
+          "Same env var / text truncation bugs reintroduced across sessions (3\u00d7)"
+        ]
+      }
+    ],
+    "blind_spots": [
+      "Env vars missing in cron (IG_LEARNING_TOKEN, BACKUP_GITHUB_REPO) \u2014 3\u00d7 recurring \u2014 no shared env loader",
+      "Unicode / text truncation in Remotion reels \u2014 2\u00d7 recurring \u2014 sanitizer not in generate_batch.py",
+      "Late-night architectural decisions sometimes reversed next session \u2014 high-risk hours: 22:30\u201300:00",
+      "Anthropic API key (sk-ant-api03) depleted mid-session \u2014 OAuth fallback is workaround, not fix",
+      "NeckGuardian reel narration pending for 3+ sessions \u2014 context-switching cost accumulating"
+    ],
+    "major_suggestion": "Create shared env_loader.sh sourced by all cron jobs \u2014 30 min, eliminates 70% of recurring cron failures. Then: narrate and final-render the NeckGuardian reel (pending 3+ sessions, highest creative ROI)."
   }
 }
