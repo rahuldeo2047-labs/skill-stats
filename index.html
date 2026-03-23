@@ -186,6 +186,20 @@ footer{text-align:center;padding:24px;font-family:var(--mono);font-size:10px;col
           <div class="bar"><div class="bar-fill" id="o-phasebar" style="width:0%"></div></div>
           <div style="font-size:11px;color:var(--dim)" id="o-phasenote"></div>
         </div>
+        <!-- Claude Budget -->
+        <div class="card">
+          <h2>Claude Budget</h2>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="font-size:24px" id="bdg-emoji">—</span>
+            <div>
+              <div class="val" id="bdg-pct" style="font-size:28px;font-weight:800;font-family:var(--mono)">—</div>
+              <div style="font-size:10px;color:var(--dim);letter-spacing:.08em;text-transform:uppercase" id="bdg-state">—</div>
+            </div>
+          </div>
+          <div class="bar"><div class="bar-fill" id="bdg-bar" style="width:0%"></div></div>
+          <div style="font-size:10px;color:var(--dim);margin-top:6px;font-family:var(--mono)" id="bdg-details"></div>
+          <div style="font-size:10px;color:var(--dim);margin-top:3px;font-family:var(--mono)" id="bdg-source"></div>
+        </div>
         <!-- Services -->
         <div class="card">
           <h2>Services</h2>
@@ -525,6 +539,27 @@ function render(d) {
   document.getElementById('o-nexttopic').textContent = ig.queue_next ? 'Next: '+ig.queue_next : 'Queue empty';
   document.getElementById('o-phasebar').style.width = (ig.phase_pct||0)+'%';
   document.getElementById('o-phasenote').textContent = ig.phase_note || '';
+
+  // ── Claude Budget card ──
+  const bdg = d.claude_budget || {};
+  const bdgEmoji = {green:'🟢',yellow:'🟡',red:'🔴',black:'⚫'}[bdg.state] || '⚪';
+  const bdgColor = {green:'var(--green)',yellow:'var(--gold)',red:'var(--red)',black:'var(--dim)'}[bdg.state] || 'var(--white)';
+  document.getElementById('bdg-emoji').textContent = bdgEmoji;
+  document.getElementById('bdg-pct').textContent  = (bdg.pct ?? '—') + (bdg.pct != null ? '%' : '');
+  document.getElementById('bdg-pct').style.color  = bdgColor;
+  document.getElementById('bdg-state').textContent = (bdg.state||'unknown').toUpperCase();
+  document.getElementById('bdg-bar').style.width   = Math.min(100, bdg.pct||0)+'%';
+  document.getElementById('bdg-bar').style.background = bdgColor;
+  if (bdg.source === 'api') {
+    const resetTs = bdg.api_5h_reset_ts || 0;
+    const resetDate = resetTs ? new Date(resetTs*1000).toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Kolkata'})+'IST' : '?';
+    document.getElementById('bdg-details').textContent =
+      `5h: ${bdg.api_5h_pct||0}% · 7d: ${bdg.api_7d_pct||0}% · overage: ${bdg.api_overage_pct||0}%`;
+    document.getElementById('bdg-source').textContent = `resets ~${resetDate} · fetched ${bdg.api_fetched_at||'?'}`;
+  } else {
+    document.getElementById('bdg-details').textContent = 'local token estimate';
+    document.getElementById('bdg-source').textContent  = bdg.date ? `date: ${bdg.date}` : '';
+  }
 
   document.getElementById('o-services').innerHTML = svc.map(s=>`
     <div class="row">${dot(s.up)}

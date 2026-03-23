@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-23T20:38:47.765030+05:30",
-  "generated_at_human": "2026-03-23 20:38 IST",
-  "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
+  "generated_at": "2026-03-24T02:37:59.442467+05:30",
+  "generated_at_human": "2026-03-24 02:37 IST",
+  "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "30h 34m",
+    "uptime": "36h 33m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1489.2,
+    "disk_used_gb": 1489.3,
     "disk_free_gb": 2446.5,
     "disk_pct": 37.8,
     "mem_total_mb": 7813,
-    "mem_used_mb": 5208,
-    "mem_free_mb": 2605,
-    "mem_pct": 66.7,
-    "load_1m": 0.93,
-    "load_5m": 0.9,
-    "load_15m": 0.85
+    "mem_used_mb": 5324,
+    "mem_free_mb": 2489,
+    "mem_pct": 68.1,
+    "load_1m": 1.27,
+    "load_5m": 1.06,
+    "load_15m": 0.91
   },
   "services": [
     {
@@ -57,8 +57,8 @@
         "status": "paused"
       }
     ],
-    "total_posted": 30,
-    "d3_count": 28,
+    "total_posted": 31,
+    "d3_count": 30,
     "d7_count": 10,
     "d0_count": 8,
     "queue_depth": 0,
@@ -66,10 +66,10 @@
     "queue_topics": [],
     "recent_posts": [
       {
-        "post_id": "18079940663081161",
-        "topic": "robust-linear-quadratic-optimal-control-of-cementi",
+        "post_id": "17931876012220841",
+        "topic": "design-os-a-specification-driven-framework-for-eng",
         "hook_type": "contrarian",
-        "ts_posted": "2026-03-23T19:04",
+        "ts_posted": "2026-03-24T00:12",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
@@ -81,6 +81,24 @@
         "d7_saves": "\u2014",
         "has_d0": false,
         "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18079940663081161",
+        "topic": "robust-linear-quadratic-optimal-control-of-cementi",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-23T19:04",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": 118,
+        "d3_saves": 0,
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -93,12 +111,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 102,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -111,7 +129,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 4,
+        "d3_reach": 93,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -129,7 +147,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 0,
+        "d3_reach": 72,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -165,7 +183,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 67,
+        "d3_reach": 115,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -183,25 +201,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 103,
-        "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "18035152931590350",
-        "topic": "meanflow-meets-control-scaling-sampled-data-contro",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-23T09:06",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 126,
+        "d3_reach": 104,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -211,7 +211,7 @@
       }
     ],
     "phase": 1,
-    "phase_note": "Phase 1 \u2014 organic only. 30 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
+    "phase_note": "Phase 1 \u2014 organic only. 31 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
     "phase_pct": 100,
     "learnings": [
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
@@ -494,6 +494,12 @@
         "final": true
       },
       {
+        "name": "auto_202603240010_02_design-os-a-specification-driven-framework-for-eng_final.mp4",
+        "size_mb": 2.1,
+        "modified": "03-24 00:12",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -548,18 +554,18 @@
         "final": true
       }
     ],
-    "count": 52,
-    "final_count": 48
+    "count": 53,
+    "final_count": 49
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "59eb7e7 feat: Claude budget circuit breaker, LinkedIn skill, Remotion fix, backup SSH fix",
+      "22e8a3c feat: video-reel-skill + dashboard HumanOS redesign + Instagram subtabs",
       "ac18da7 chore: update skill-stats pointer",
       "6063aa1 feat: DRISHTI git_introspect + SIDDHANTH 360 weekly jobs, idle DM notifications, anti-regression rules seeded",
-      "29f0f88 chore: git introspect update 2026-03-23",
-      "fdfe7b4 2026-03-23: daemon threading fix, sendMessage retry, permission gate to SIDDHANTH DM, cron_monitor, insight rolling window 7d+50views",
-      "1581744 backup: 2026-03-23 \u2014 mem:telegram_sessions"
+      "29f0f88 chore: git introspect update 2026-03-23"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -646,7 +652,7 @@
       "name": "METER",
       "desc": "Colab/Roboflow/Claude/Meta API quotas",
       "installed": true,
-      "scripts": 3
+      "scripts": 5
     },
     {
       "id": "freecad-skill",
@@ -675,6 +681,20 @@
       "desc": "Researcher + Roboflow + Colab training",
       "installed": true,
       "scripts": 0
+    },
+    {
+      "id": "linkedin-skill",
+      "name": "KARMA-LI",
+      "desc": "Autonomous LinkedIn video posting from IG reel queue",
+      "installed": true,
+      "scripts": 3
+    },
+    {
+      "id": "video-reel-skill",
+      "name": "REEL-CUTTER",
+      "desc": "Assemble folder of clips into 1080\u00d71920 IG reel",
+      "installed": true,
+      "scripts": 1
     }
   ],
   "cron": {
@@ -706,11 +726,12 @@
         "0 * * * * /usr/bin/python3 /home/rick/Documents/playground/Claude_Code_Skills/Tasks/scripts/cron_worker.py >> /home/rick/Documents/playground/Claude_Code_Skills/Tasks/tasks.log 2>&1",
         "10 0  * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/cron_monitor.py --script Skills/instagram-skill/scripts/auto_post.py --log /tmp/ig_auto_post.log\" >> /tmp/ig_auto_post.log 2>&1",
         "10 12 * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/cron_monitor.py --script Skills/instagram-skill/scripts/auto_post.py --log /tmp/ig_auto_post.log\" >> /tmp/ig_auto_post.log 2>&1",
-        "30 2 * * 2 BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/human-skill/scripts/git_introspect.py\" >> /tmp/git_introspect.log 2>&1",
-        "30 5 * * 0 BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/human-skill/scripts/siddhanth_360_update.py\" >> /tmp/siddhanth_360.log 2>&1"
+        "0 0 * * 0 BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/Documents/playground/Claude_Code_Skills/Skills/cloud-meter-skill/scripts/weekly_ai_batch.sh >> /tmp/weekly_ai_batch.log 2>&1",
+        "*/30 * * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/cloud-meter-skill/scripts/check_claude_plan_usage.py --update-budget\" >> /tmp/claude_plan_usage.log 2>&1",
+        "45 2 24 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/cron_monitor.py --script Skills/instagram-skill/scripts/auto_post.py --log /tmp/ig_auto_post.log\" >> /tmp/ig_auto_post.log 2>&1"
       ]
     },
-    "total": 20
+    "total": 21
   },
   "logs": {
     "ig_post": [
@@ -725,14 +746,14 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --recover",
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
-      "  Projects: 20 | Open tasks: 12",
-      "  Skills: 16/16 installed",
-      "[2026-03-23 20:33 IST] skill-stats pushed \u2713"
+      "    python3 -c \"",
+      "               ^",
+      "SyntaxError: unterminated string literal (detected at line 19)"
     ]
   },
   "memory": {
@@ -1127,5 +1148,18 @@
       "NeckGuardian reel narration pending for 3+ sessions \u2014 context-switching cost accumulating"
     ],
     "major_suggestion": "Create shared env_loader.sh sourced by all cron jobs \u2014 30 min, eliminates 70% of recurring cron failures. Then: narrate and final-render the NeckGuardian reel (pending 3+ sessions, highest creative ROI)."
+  },
+  "claude_budget": {
+    "date": "2026-03-24",
+    "state": "red",
+    "pct": 80.0,
+    "source": "api",
+    "api_5h_pct": 80.0,
+    "api_7d_pct": 65.0,
+    "api_overage_pct": 0.0,
+    "api_binding": "five_hour",
+    "api_fetched_at": "2026-03-24 02:30 IST",
+    "api_5h_reset_ts": 1774306800,
+    "api_7d_reset_ts": 1774699200
   }
 }
