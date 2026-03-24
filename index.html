@@ -410,6 +410,10 @@ footer{text-align:center;padding:24px;font-family:var(--mono);font-size:10px;col
           <h2>Backup (VAULT)</h2>
           <div id="sys-backup"></div>
         </div>
+        <div class="card">
+          <h2>360 Unit Tests</h2>
+          <div id="sys-tests"></div>
+        </div>
       </div>
       <div class="grid">
         <div class="card wide">
@@ -862,6 +866,21 @@ function render(d) {
       Repo: ${bkp.repo||'—'}</div>
     ${bkp.last_ok?`<div class="log-line" style="color:var(--green)">${bkp.last_ok}</div>`:''}
     ${bkp.last_error?`<div class="log-line" style="color:var(--red)">${bkp.last_error}</div>`:''}`;
+
+  // Unit tests card
+  const ut = d.unit_tests || {};
+  const utStatus = ut.status || 'unknown';
+  const utColor = utStatus === 'PASS' ? 'var(--green)' : utStatus === 'FAIL' ? 'var(--red)' : 'var(--dim)';
+  const utSuites = ut.suites || {};
+  document.getElementById('sys-tests').innerHTML = `
+    <div style="font-size:22px;font-weight:700;color:${utColor};margin-bottom:4px">${utStatus === 'PASS' ? '✅' : utStatus === 'FAIL' ? '❌' : '?'} ${ut.passed||0}/${ut.total||0}</div>
+    <div style="font-size:11px;color:var(--dim);margin-bottom:10px">${ut.ts||'never run'}</div>
+    ${Object.entries(utSuites).map(([suite, count])=>`
+      <div style="display:flex;justify-content:space-between;font-size:11px;font-family:var(--mono);margin-bottom:3px">
+        <span style="color:var(--fg)">${suite.replace(/_/g,' ')}</span>
+        <span style="color:var(--green)">${count} ok</span>
+      </div>`).join('')}
+    <div style="margin-top:8px;font-size:10px;color:var(--dim)">Owner: instagram-skill + backup-skill (VAULT)<br>Frozen — not modified without agreement</div>`;
 
   document.getElementById('sys-commits').innerHTML = (bkp.recent_commits||[]).map(c=>`
     <div class="log-line">${c}</div>`).join('') || '<div style="color:var(--dim);font-size:12px">No commits found</div>';

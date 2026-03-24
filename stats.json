@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-24T07:54:43.503197+05:30",
-  "generated_at_human": "2026-03-24 07:54 IST",
+  "generated_at": "2026-03-24T08:02:21.443729+05:30",
+  "generated_at_human": "2026-03-24 08:02 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "4h 45m",
+    "uptime": "4h 52m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1489.1,
     "disk_free_gb": 2446.6,
     "disk_pct": 37.8,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3641,
-    "mem_free_mb": 4172,
-    "mem_pct": 46.6,
-    "load_1m": 0.65,
-    "load_5m": 0.65,
-    "load_15m": 0.76
+    "mem_used_mb": 3868,
+    "mem_free_mb": 3945,
+    "mem_pct": 49.5,
+    "load_1m": 0.67,
+    "load_5m": 0.58,
+    "load_15m": 0.67
   },
   "services": [
     {
@@ -606,14 +606,14 @@
     "final_count": 57
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
-    "last_error": "backup.py: error: unrecognized arguments: --check-large",
+    "last_ok": "backup.py: error: unrecognized arguments: --recover",
+    "last_error": "backup.py: error: unrecognized arguments: --recover",
     "recent_commits": [
+      "6909695 chore: update skill-stats pointer",
       "235c7e0 chore: update skill-stats pointer",
       "9f12de0 chore: update skill-stats pointer",
       "59eb7e7 feat: Claude budget circuit breaker, LinkedIn skill, Remotion fix, backup SSH fix",
-      "22e8a3c feat: video-reel-skill + dashboard HumanOS redesign + Instagram subtabs",
-      "ac18da7 chore: update skill-stats pointer"
+      "22e8a3c feat: video-reel-skill + dashboard HumanOS redesign + Instagram subtabs"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -790,8 +790,8 @@
     ],
     "backup": [
       "backup.py: error: unrecognized arguments: --check-large",
-      "usage: backup.py [-h] [--status] [--msg MSG]",
-      "backup.py: error: unrecognized arguments: --check-large"
+      "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
+      "backup.py: error: unrecognized arguments: --recover"
     ],
     "dashboard": [
       "    python3 -c \"",
@@ -1195,14 +1195,28 @@
   "claude_budget": {
     "date": "2026-03-24",
     "state": "green",
-    "pct": 0.0,
+    "pct": 10.0,
     "source": "api",
-    "api_5h_pct": 0.0,
-    "api_7d_pct": 0.0,
+    "api_5h_pct": 10.0,
+    "api_7d_pct": 68.0,
     "api_overage_pct": 0.0,
-    "api_binding": "unknown",
-    "api_fetched_at": "2026-03-24 07:30 IST",
-    "api_5h_reset_ts": 0,
-    "api_7d_reset_ts": 0
+    "api_binding": "five_hour",
+    "api_fetched_at": "2026-03-24 08:00 IST",
+    "api_5h_reset_ts": 1774335600,
+    "api_7d_reset_ts": 1774699200
+  },
+  "unit_tests": {
+    "status": "PASS",
+    "total": 18,
+    "passed": 18,
+    "failed": 0,
+    "ts": "2026-03-24 08:02 IST",
+    "suites": {
+      "parse_last_run_log": 5,
+      "load_experiments": 4,
+      "load_queue": 2,
+      "backup_git_flow": 4,
+      "report_output": 3
+    }
   }
 }
