@@ -122,6 +122,67 @@ footer{text-align:center;padding:24px;font-family:var(--mono);font-size:10px;col
   .tbl td,.tbl th{padding:5px 4px;font-size:10px}.header h1{font-size:15px}
   .tab{padding:6px 10px;font-size:11px}
 }
+
+/* ── Sci-fi layer ─────────────────────────────────────────────────────────── */
+/* Background grid */
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:linear-gradient(rgba(192,132,252,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(192,132,252,.04) 1px,transparent 1px);
+  background-size:44px 44px}
+/* CRT scan lines */
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.25;
+  background:repeating-linear-gradient(0deg,transparent,transparent 3px,
+    rgba(0,0,0,.18) 3px,rgba(0,0,0,.18) 4px)}
+#app,#gate{position:relative;z-index:2}
+
+/* HUD corner brackets on cards */
+.card{position:relative;overflow:visible}
+.card::before,.card::after{content:'';position:absolute;width:12px;height:12px;
+  border-color:rgba(192,132,252,.35);border-style:solid;pointer-events:none;z-index:3}
+.card::before{top:5px;left:5px;border-width:1px 0 0 1px}
+.card::after{bottom:5px;right:5px;border-width:0 1px 1px 0}
+
+/* Animated entry */
+@keyframes card-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.card{animation:card-in .35s ease forwards}
+
+/* Pulse on green dots */
+@keyframes pulse-grn{0%,100%{box-shadow:0 0 4px var(--green)}50%{box-shadow:0 0 12px var(--green),0 0 20px var(--green)}}
+.d-grn{animation:pulse-grn 3s ease-in-out infinite}
+
+/* Header glow */
+.header h1{text-shadow:0 0 24px rgba(192,132,252,.45)}
+
+/* Smooth bar transitions */
+.bar-fill,.sys-bar-fill{transition:width 1.2s cubic-bezier(.4,0,.2,1)}
+
+/* KPI hover */
+.kpi{transition:border-color .2s,box-shadow .2s}
+.kpi:hover{border-color:var(--acc);box-shadow:0 0 14px rgba(192,132,252,.2)}
+
+/* Alert bar */
+#alert-bar{border-radius:8px;margin-bottom:14px;padding:10px 16px;
+  font-family:var(--mono);font-size:11px;cursor:pointer;
+  display:flex;flex-direction:column;gap:0;transition:box-shadow .4s}
+#alert-bar.ok{background:#071a0f;border:1px solid rgba(0,255,136,.35);color:var(--green)}
+#alert-bar.warn{background:#1a0f00;border:1px solid var(--gold);color:var(--gold)}
+#alert-bar.crit{background:#1e0609;border:1px solid var(--red);color:var(--red)}
+@keyframes alert-glow{0%,100%{box-shadow:none}50%{box-shadow:0 0 14px 2px currentColor}}
+#alert-bar.warn{animation:alert-glow 3s ease-in-out infinite}
+#alert-bar.crit{animation:alert-glow 1.6s ease-in-out infinite}
+#alert-summary{display:flex;align-items:center;gap:10px;letter-spacing:.04em}
+#alert-details{display:none;margin-top:8px;padding-top:8px;
+  border-top:1px solid rgba(255,255,255,.08);line-height:1.9}
+#alert-details.open{display:block}
+.a-item{padding:1px 0;opacity:.85}
+
+/* Tab alert badge */
+.tbadge{background:var(--red);color:#fff;border-radius:10px;
+  padding:1px 6px;font-size:9px;margin-left:5px;
+  font-family:var(--mono);vertical-align:middle;
+  animation:badge-in .25s ease}
+@keyframes badge-in{from{transform:scale(0)}80%{transform:scale(1.2)}to{transform:scale(1)}}
+.tbadge.warn{background:var(--gold);color:#000}
 </style>
 </head>
 <body>
@@ -145,6 +206,12 @@ footer{text-align:center;padding:24px;font-family:var(--mono);font-size:10px;col
       <div class="ts" id="ts-next">—</div>
       <button class="btn" onclick="loadStats()">↻ Refresh</button>
     </div>
+  </div>
+
+  <!-- Alert bar -->
+  <div id="alert-bar" class="ok" onclick="toggleAlerts()">
+    <div id="alert-summary">✓ All systems nominal</div>
+    <div id="alert-details"></div>
   </div>
 
   <div class="tabs">
@@ -518,6 +585,7 @@ function render(d) {
   document.getElementById('content').style.display='block';
   document.getElementById('ts-gen').textContent = 'Data: '+(d.generated_at_human||'');
   startCountdown(1800);
+  renderAlerts(computeAlerts(d));
 
   const ig  = d.instagram  || {};
   const sys = d.system     || {};
@@ -925,6 +993,103 @@ function render(d) {
   renderLog('log-metrics', log.ig_learning);
   renderLog('log-backup',  log.backup);
   renderLog('log-dash',    log.dashboard);
+}
+
+// ── Alert system ──────────────────────────────────────────────────────────────
+function toggleAlerts() {
+  document.getElementById('alert-details').classList.toggle('open');
+}
+
+function computeAlerts(d) {
+  const alerts = [];
+  const ig  = d.instagram     || {};
+  const ut  = d.unit_tests    || {};
+  const svc = d.services      || [];
+  const bdg = d.claude_budget || {};
+  const bkp = d.backup        || {};
+
+  // Token expiry
+  (ig.accounts||[]).forEach(a => {
+    if (a.token_days != null && a.token_days < 14)
+      alerts.push({level: a.token_days < 7 ? 'crit' : 'warn', tab:'instagram',
+        msg: `${a.handle} token expires in ${a.token_days}d`});
+    if (a.token_note)
+      alerts.push({level:'crit', tab:'instagram', msg:`${a.handle}: ${a.token_note}`});
+  });
+
+  // Queue empty
+  if (ig.queue_depth === 0)
+    alerts.push({level:'warn', tab:'instagram', msg:'Queue empty — next batch generates at cron run'});
+
+  // Test failures
+  if (ut.status === 'FAIL')
+    alerts.push({level:'crit', tab:'system',
+      msg:`Unit tests ${ut.passed}/${ut.total} — ${(ut.total||0)-(ut.passed||0)} failing`});
+
+  // Services down
+  (svc).filter(s=>!s.up).forEach(s =>
+    alerts.push({level:'crit', tab:'system', msg:`Service DOWN: ${s.name} :${s.port}`}));
+
+  // Budget
+  if ((bdg.pct||0) >= 80)
+    alerts.push({level:(bdg.pct||0)>=100?'crit':'warn', tab:'overview',
+      msg:`Claude budget ${bdg.emoji||''} ${bdg.pct}% — ${bdg.state||''}`});
+
+  // Backup error
+  if (bkp.last_error)
+    alerts.push({level:'warn', tab:'system', msg:`Backup error: ${bkp.last_error}`});
+
+  return alerts;
+}
+
+function renderAlerts(alerts) {
+  const bar     = document.getElementById('alert-bar');
+  const summary = document.getElementById('alert-summary');
+  const details = document.getElementById('alert-details');
+  if (!bar) return;
+
+  // Clear old tab badges
+  document.querySelectorAll('.tbadge').forEach(b => b.remove());
+
+  if (!alerts.length) {
+    bar.className = 'ok';
+    summary.textContent = '✓ All systems nominal';
+    details.innerHTML = '';
+    return;
+  }
+
+  const crits = alerts.filter(a => a.level === 'crit');
+  const warns  = alerts.filter(a => a.level === 'warn');
+  const level  = crits.length ? 'crit' : 'warn';
+  const icon   = crits.length ? '⚠' : '◈';
+
+  bar.className = level;
+  summary.innerHTML =
+    `<span style="font-size:14px">${icon}</span> ` +
+    `<strong>${alerts.length} alert${alerts.length>1?'s':''}</strong>` +
+    (crits.length ? ` &nbsp;·&nbsp; <span style="color:var(--red)">${crits.length} critical</span>` : '') +
+    (warns.length ? ` &nbsp;·&nbsp; <span style="color:var(--gold)">${warns.length} warning</span>` : '') +
+    `<span style="margin-left:auto;opacity:.5;font-size:10px">click to expand</span>`;
+
+  details.innerHTML = alerts.map(a =>
+    `<div class="a-item">${a.level==='crit'?'🔴':'🟡'} ${a.msg}</div>`
+  ).join('');
+
+  // Tab badges
+  const byTab = {};
+  alerts.forEach(a => { byTab[a.tab] = (byTab[a.tab]||[]); byTab[a.tab].push(a); });
+
+  document.querySelectorAll('.tab').forEach(tab => {
+    const m = (tab.getAttribute('onclick')||'').match(/showTab\('(\w+)'\)/);
+    if (!m) return;
+    const bucket = byTab[m[1]];
+    if (!bucket || !bucket.length) return;
+    const hasCrit = bucket.some(a=>a.level==='crit');
+    const badge = document.createElement('span');
+    badge.className = 'tbadge' + (hasCrit ? '' : ' warn');
+    badge.textContent = bucket.length;
+    tab.appendChild(badge);
+  });
 }
 
 function startCountdown(s) {

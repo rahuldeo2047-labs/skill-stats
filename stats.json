@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-24T08:06:50.710646+05:30",
-  "generated_at_human": "2026-03-24 08:06 IST",
-  "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
+  "generated_at": "2026-03-24T22:45:48.795890+05:30",
+  "generated_at_human": "2026-03-24 22:45 IST",
+  "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "4h 57m",
+    "uptime": "19h 36m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1489.1,
-    "disk_free_gb": 2446.6,
+    "disk_used_gb": 1489.2,
+    "disk_free_gb": 2446.5,
     "disk_pct": 37.8,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4015,
-    "mem_free_mb": 3798,
-    "mem_pct": 51.4,
-    "load_1m": 0.45,
-    "load_5m": 0.45,
-    "load_15m": 0.59
+    "mem_used_mb": 3739,
+    "mem_free_mb": 4074,
+    "mem_pct": 47.9,
+    "load_1m": 0.44,
+    "load_5m": 0.29,
+    "load_15m": 0.28
   },
   "services": [
     {
@@ -57,8 +57,8 @@
         "status": "paused"
       }
     ],
-    "total_posted": 39,
-    "d3_count": 38,
+    "total_posted": 51,
+    "d3_count": 47,
     "d7_count": 20,
     "d0_count": 8,
     "queue_depth": 0,
@@ -66,10 +66,10 @@
     "queue_topics": [],
     "recent_posts": [
       {
-        "post_id": "18153492751453498",
-        "topic": "meanflow-meets-control-scaling-sampled-data-contro",
+        "post_id": "17934283995215744",
+        "topic": "a-portfolio-level-optimization-framework-for-coord",
         "hook_type": "contrarian",
-        "ts_posted": "2026-03-24T04:05",
+        "ts_posted": "2026-03-24T15:22",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
@@ -84,16 +84,70 @@
         "has_d7": false
       },
       {
-        "post_id": "18100429084918352",
-        "topic": "videoseek-long-horizon-video-agent-with-tool-guide",
+        "post_id": "18214117069319687",
+        "topic": "landau-level-resolved-mode-mixing-and-shot-noise-i",
         "hook_type": "contrarian",
-        "ts_posted": "2026-03-24T04:04",
+        "ts_posted": "2026-03-24T15:22",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18004440167715433",
+        "topic": "universal-inverse-cube-thickness-scaling-of-projec",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-24T15:21",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18342266230300674",
+        "topic": "rotormap-and-quantum-fingerprints-of-dna-sequences",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-24T15:21",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18098993674973771",
+        "topic": "polymer-identification-via-undetected-photons-usin",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-24T12:17",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": 41,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -102,16 +156,16 @@
         "has_d7": false
       },
       {
-        "post_id": "17932342788211462",
-        "topic": "lumosx-relate-any-identities-with-their-attributes",
+        "post_id": "18170579257406465",
+        "topic": "precision-s-arrow-of-time",
         "hook_type": "contrarian",
-        "ts_posted": "2026-03-24T04:03",
+        "ts_posted": "2026-03-24T12:16",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 0,
+        "d3_reach": 46,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -120,16 +174,16 @@
         "has_d7": false
       },
       {
-        "post_id": "18120097066533574",
-        "topic": "from-masks-to-pixels-and-meaning-a-new-taxonomy-be",
+        "post_id": "18454345048109238",
+        "topic": "unidex-a-robot-foundation-suite-for-universal-dext",
         "hook_type": "contrarian",
-        "ts_posted": "2026-03-24T04:03",
+        "ts_posted": "2026-03-24T12:16",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 0,
+        "d3_reach": 37,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -138,80 +192,26 @@
         "has_d7": false
       },
       {
-        "post_id": "18120907729527198",
-        "topic": "meanflow-meets-control-scaling-sampled-data-contro",
+        "post_id": "18092369579278783",
+        "topic": "dualcot-vla-visual-linguistic-chain-of-thought-via",
         "hook_type": "contrarian",
-        "ts_posted": "2026-03-24T02:53",
+        "ts_posted": "2026-03-24T12:15",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 3,
+        "d3_reach": 61,
         "d3_saves": 0,
-        "d7_reach": 3,
-        "d7_saves": 0,
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
         "has_d0": false,
         "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18101694475934173",
-        "topic": "videoseek-long-horizon-video-agent-with-tool-guide",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-24T02:53",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 16,
-        "d3_saves": 0,
-        "d7_reach": 16,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18100400566766579",
-        "topic": "lumosx-relate-any-identities-with-their-attributes",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-24T02:52",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 10,
-        "d3_saves": 0,
-        "d7_reach": 10,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18009773297845859",
-        "topic": "from-masks-to-pixels-and-meaning-a-new-taxonomy-be",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-24T02:51",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 62,
-        "d3_saves": 0,
-        "d7_reach": 62,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
+        "has_d7": false
       }
     ],
     "phase": 1,
-    "phase_note": "Phase 1 \u2014 organic only. 39 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
+    "phase_note": "Phase 1 \u2014 organic only. 51 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
     "phase_pct": 100,
     "learnings": [
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
@@ -548,6 +548,84 @@
         "final": true
       },
       {
+        "name": "auto_202603241144_00_worldcache-content-aware-caching-for-accelerated-v_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-24 11:46",
+        "final": true
+      },
+      {
+        "name": "auto_202603241157_00_worldcache-content-aware-caching-for-accelerated-v_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-24 11:58",
+        "final": true
+      },
+      {
+        "name": "auto_202603241158_01_end-to-end-training-for-unified-tokenization-and-l_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-24 11:59",
+        "final": true
+      },
+      {
+        "name": "auto_202603241159_02_unimotion-a-unified-framework-for-motion-text-visi_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-24 12:00",
+        "final": true
+      },
+      {
+        "name": "auto_202603241200_03_thinkjepa-empowering-latent-world-models-with-larg_final.mp4",
+        "size_mb": 2.1,
+        "modified": "03-24 12:02",
+        "final": true
+      },
+      {
+        "name": "auto_202603241210_00_dualcot-vla-visual-linguistic-chain-of-thought-via_final.mp4",
+        "size_mb": 2.1,
+        "modified": "03-24 12:12",
+        "final": true
+      },
+      {
+        "name": "auto_202603241212_01_unidex-a-robot-foundation-suite-for-universal-dext_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-24 12:13",
+        "final": true
+      },
+      {
+        "name": "auto_202603241213_02_precision-s-arrow-of-time_final.mp4",
+        "size_mb": 1.9,
+        "modified": "03-24 12:14",
+        "final": true
+      },
+      {
+        "name": "auto_202603241214_03_polymer-identification-via-undetected-photons-usin_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-24 12:15",
+        "final": true
+      },
+      {
+        "name": "auto_202603241516_00_rotormap-and-quantum-fingerprints-of-dna-sequences_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-24 15:17",
+        "final": true
+      },
+      {
+        "name": "auto_202603241517_01_universal-inverse-cube-thickness-scaling-of-projec_final.mp4",
+        "size_mb": 2.1,
+        "modified": "03-24 15:18",
+        "final": true
+      },
+      {
+        "name": "auto_202603241518_02_landau-level-resolved-mode-mixing-and-shot-noise-i_final.mp4",
+        "size_mb": 1.9,
+        "modified": "03-24 15:19",
+        "final": true
+      },
+      {
+        "name": "auto_202603241519_03_a-portfolio-level-optimization-framework-for-coord_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-24 15:20",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -602,18 +680,18 @@
         "final": true
       }
     ],
-    "count": 61,
-    "final_count": 57
+    "count": 74,
+    "final_count": 70
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --recover",
-    "last_error": "backup.py: error: unrecognized arguments: --recover",
+    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
+    "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "15ba930 fix: @technology.spiritual pipeline bugs \u2014 FROZEN after this commit",
+      "b8b2cc1 chore: update skill-stats pointer",
       "2490670 chore: update skill-stats pointer",
       "6909695 chore: update skill-stats pointer",
-      "235c7e0 chore: update skill-stats pointer",
-      "9f12de0 chore: update skill-stats pointer",
-      "59eb7e7 feat: Claude budget circuit breaker, LinkedIn skill, Remotion fix, backup SSH fix"
+      "235c7e0 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -791,12 +869,12 @@
     "backup": [
       "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --recover"
+      "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
-      "  Projects: 20 | Open tasks: 12",
-      "  Skills: 18/18 installed",
-      "[2026-03-24 08:02 IST] skill-stats pushed \u2713"
+      "    python3 -c \"",
+      "               ^",
+      "SyntaxError: unterminated string literal (detected at line 19)"
     ]
   },
   "memory": {
@@ -1195,22 +1273,22 @@
   "claude_budget": {
     "date": "2026-03-24",
     "state": "green",
-    "pct": 10.0,
+    "pct": 15.0,
     "source": "api",
-    "api_5h_pct": 10.0,
-    "api_7d_pct": 68.0,
+    "api_5h_pct": 15.0,
+    "api_7d_pct": 74.0,
     "api_overage_pct": 0.0,
     "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-24 08:00 IST",
-    "api_5h_reset_ts": 1774335600,
+    "api_fetched_at": "2026-03-24 22:30 IST",
+    "api_5h_reset_ts": 1774386000,
     "api_7d_reset_ts": 1774699200
   },
   "unit_tests": {
     "status": "PASS",
-    "total": 18,
-    "passed": 18,
+    "total": 24,
+    "passed": 24,
     "failed": 0,
-    "ts": "2026-03-24 08:06 IST",
+    "ts": "2026-03-24 22:45 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
