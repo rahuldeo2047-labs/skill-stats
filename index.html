@@ -871,16 +871,38 @@ function render(d) {
   const ut = d.unit_tests || {};
   const utStatus = ut.status || 'unknown';
   const utColor = utStatus === 'PASS' ? 'var(--green)' : utStatus === 'FAIL' ? 'var(--red)' : 'var(--dim)';
-  const utSuites = ut.suites || {};
+  const utMeta = {
+    parse_last_run_log: {
+      label: 'parse_last_run_log', count: 5,
+      checks: ['no log → 5-tuple (not 2)', 'empty log → zeros', 'full run → posted_count + IDs correct', 'no Done marker → fallback graceful', 'multi-run → only last run used']
+    },
+    load_experiments: {
+      label: 'load_experiments', count: 4,
+      checks: ['missing file → []', 'valid JSONL rows parsed', 'malformed lines silently skipped', 'render_failed entries present for dedup']
+    },
+    load_queue: {
+      label: 'load_queue', count: 2,
+      checks: ['missing file → []', 'valid queue items returned']
+    },
+    backup_git_flow: {
+      label: 'backup_git_flow (VAULT)', count: 4,
+      checks: ['pull --rebase before push (order check)', 'unsupported cron flags not in argparse', 'pipeline_360_report imports clean', 'parse_last_run_log regression (5-tuple)']
+    },
+    report_output: {
+      label: 'report_output', count: 3,
+      checks: ['pipeline_360_report.py runs without crash', 'all 8 step labels present in output', 'account status / Phase section present']
+    }
+  };
   document.getElementById('sys-tests').innerHTML = `
-    <div style="font-size:22px;font-weight:700;color:${utColor};margin-bottom:4px">${utStatus === 'PASS' ? '✅' : utStatus === 'FAIL' ? '❌' : '?'} ${ut.passed||0}/${ut.total||0}</div>
-    <div style="font-size:11px;color:var(--dim);margin-bottom:10px">${ut.ts||'never run'}</div>
-    ${Object.entries(utSuites).map(([suite, count])=>`
-      <div style="display:flex;justify-content:space-between;font-size:11px;font-family:var(--mono);margin-bottom:3px">
-        <span style="color:var(--fg)">${suite.replace(/_/g,' ')}</span>
-        <span style="color:var(--green)">${count} ok</span>
+    <div style="font-size:20px;font-weight:700;color:${utColor};margin-bottom:2px">${utStatus === 'PASS' ? '✅' : utStatus === 'FAIL' ? '❌' : '?'} ${ut.passed||0}/${ut.total||0} passed</div>
+    <div style="font-size:10px;color:var(--dim);margin-bottom:10px">Last run: ${ut.ts||'never'}</div>
+    ${Object.entries(utMeta).map(([key, m])=>`
+      <div style="margin-bottom:8px;border-left:2px solid ${utColor};padding-left:8px">
+        <div style="font-size:11px;font-family:var(--mono);font-weight:700;color:var(--fg);margin-bottom:3px">${m.label} (${m.count})</div>
+        ${m.checks.map(c=>`<div style="font-size:10px;color:var(--dim);margin-left:4px">· ${c}</div>`).join('')}
       </div>`).join('')}
-    <div style="margin-top:8px;font-size:10px;color:var(--dim)">Owner: instagram-skill + backup-skill (VAULT)<br>Frozen — not modified without agreement</div>`;
+    <div style="margin-top:6px;font-size:10px;color:var(--dim);border-top:1px solid #333;padding-top:6px">
+      Owner: instagram-skill + VAULT (backup-skill) · Gate: runs before every git push · Frozen ✓</div>`;
 
   document.getElementById('sys-commits').innerHTML = (bkp.recent_commits||[]).map(c=>`
     <div class="log-line">${c}</div>`).join('') || '<div style="color:var(--dim);font-size:12px">No commits found</div>';

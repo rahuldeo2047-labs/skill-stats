@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-24T08:02:21.443729+05:30",
-  "generated_at_human": "2026-03-24 08:02 IST",
+  "generated_at": "2026-03-24T08:06:50.710646+05:30",
+  "generated_at_human": "2026-03-24 08:06 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "4h 52m",
+    "uptime": "4h 57m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1489.1,
     "disk_free_gb": 2446.6,
     "disk_pct": 37.8,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3868,
-    "mem_free_mb": 3945,
-    "mem_pct": 49.5,
-    "load_1m": 0.67,
-    "load_5m": 0.58,
-    "load_15m": 0.67
+    "mem_used_mb": 4015,
+    "mem_free_mb": 3798,
+    "mem_pct": 51.4,
+    "load_1m": 0.45,
+    "load_5m": 0.45,
+    "load_15m": 0.59
   },
   "services": [
     {
@@ -609,11 +609,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --recover",
     "last_error": "backup.py: error: unrecognized arguments: --recover",
     "recent_commits": [
+      "2490670 chore: update skill-stats pointer",
       "6909695 chore: update skill-stats pointer",
       "235c7e0 chore: update skill-stats pointer",
       "9f12de0 chore: update skill-stats pointer",
-      "59eb7e7 feat: Claude budget circuit breaker, LinkedIn skill, Remotion fix, backup SSH fix",
-      "22e8a3c feat: video-reel-skill + dashboard HumanOS redesign + Instagram subtabs"
+      "59eb7e7 feat: Claude budget circuit breaker, LinkedIn skill, Remotion fix, backup SSH fix"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -794,9 +794,9 @@
       "backup.py: error: unrecognized arguments: --recover"
     ],
     "dashboard": [
-      "    python3 -c \"",
-      "               ^",
-      "SyntaxError: unterminated string literal (detected at line 19)"
+      "  Projects: 20 | Open tasks: 12",
+      "  Skills: 18/18 installed",
+      "[2026-03-24 08:02 IST] skill-stats pushed \u2713"
     ]
   },
   "memory": {
@@ -1210,7 +1210,7 @@
     "total": 18,
     "passed": 18,
     "failed": 0,
-    "ts": "2026-03-24 08:02 IST",
+    "ts": "2026-03-24 08:06 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
