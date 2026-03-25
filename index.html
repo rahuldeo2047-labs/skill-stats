@@ -183,6 +183,32 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opac
   animation:badge-in .25s ease}
 @keyframes badge-in{from{transform:scale(0)}80%{transform:scale(1.2)}to{transform:scale(1)}}
 .tbadge.warn{background:var(--gold);color:#000}
+
+/* ── Survival tab ─────────────────────────────────────────────────────────── */
+.sv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-bottom:14px}
+.sv-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.sv-header h2{font-size:10px;letter-spacing:.14em;color:var(--dim);text-transform:uppercase;font-family:var(--mono)}
+.sv-item{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #0d0d1580}
+.sv-item:last-child{border-bottom:none}
+.sv-name{flex:1;font-size:12px;color:var(--white)}
+.sv-note{font-size:10px;color:var(--dim);margin-top:2px}
+.sv-btn{width:22px;height:22px;border-radius:4px;border:none;cursor:pointer;
+  font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.sv-0{background:#2a0a0a;color:#ff7b7b}
+.sv-1{background:#1a1200;color:var(--gold)}
+.sv-2{background:#0a1a10;color:var(--green)}
+.sv-3{background:#0a1520;color:var(--cyan)}
+.sv-pill{padding:2px 9px;border-radius:10px;font-size:10px;font-family:var(--mono);cursor:pointer;
+  border:1px solid transparent;transition:all .15s}
+.sv-pill:hover{opacity:.8}
+.sv-summary{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.sv-kpi{background:var(--bg3);border:1px solid var(--border);border-radius:8px;
+  padding:8px 14px;flex:1;min-width:80px;text-align:center}
+.sv-kpi .sv-val{font-size:22px;font-weight:800;font-family:var(--mono);line-height:1}
+.sv-kpi .sv-lbl{font-size:9px;color:var(--dim);letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+.sv-updated{font-size:10px;color:var(--dim);font-family:var(--mono)}
+@keyframes sv-pulse{0%,100%{opacity:1}50%{opacity:.55}}
+.sv-critical-glow{animation:sv-pulse 2.5s ease-in-out infinite}
 </style>
 </head>
 <body>
@@ -223,6 +249,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opac
     <div class="tab" onclick="showTab('skills')">Skills</div>
     <div class="tab" onclick="showTab('system')">System</div>
     <div class="tab" onclick="showTab('logs')">Logs & Cron</div>
+    <div class="tab" onclick="showTab('survival')" id="tab-survival">⚡ Survival <span id="tab-sv-badge"></span></div>
   </div>
 
   <div id="loading">Loading…</div>
@@ -506,6 +533,48 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opac
       </div>
     </div>
 
+    <!-- ── SURVIVAL ── -->
+    <div id="pane-survival" class="pane">
+      <div class="card wide" style="margin-bottom:14px;border-color:#f59e0b40;background:linear-gradient(135deg,#0d0a00,#0d0d15)">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
+          <div>
+            <div style="font-size:13px;color:var(--gold);font-family:var(--mono);letter-spacing:.08em">⚡ ENERGY RESILIENCE TRACKER</div>
+            <div style="font-size:11px;color:var(--dim);margin-top:4px">Click any item to cycle status · Changes saved locally · <span id="sv-last-updated" class="sv-updated">—</span></div>
+          </div>
+          <div style="display:flex;gap:8px">
+            <button class="btn" onclick="svReset()" style="font-size:10px;color:var(--dim)">Reset All</button>
+            <button class="btn" onclick="svExport()" style="font-size:10px">Export</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summary KPIs -->
+      <div class="sv-summary" id="sv-kpis"></div>
+
+      <!-- Context strip -->
+      <div class="card wide" style="margin-bottom:14px;background:#0a0e0a;border-color:#00ff8825">
+        <div style="font-size:11px;color:var(--dim);font-family:var(--mono);line-height:2">
+          <span style="color:var(--green)">▸ Situation:</span> LNG/Oil disruption (Hormuz) · Grid stable · LPG tight · No blackout announced
+          <span style="margin-left:16px;color:var(--gold)">▸ Prep window:</span> 6 months · Focus: energy + food + connectivity continuity
+          <span style="margin-left:16px;color:var(--cyan)">▸ Sources:</span> Bloomberg · Reuters · HSBC · Ministry of Power India
+        </div>
+      </div>
+
+      <div class="sv-grid" id="sv-cards"></div>
+
+      <!-- News / Notes -->
+      <div class="grid">
+        <div class="card wide" style="background:var(--bg2)">
+          <h2>Field Notes — Energy Situation</h2>
+          <textarea id="sv-notes" style="width:100%;background:#0a0a12;border:1px solid var(--border);
+            color:var(--white);padding:12px;border-radius:6px;font-family:var(--mono);
+            font-size:11px;line-height:1.7;resize:vertical;min-height:100px;outline:none"
+            placeholder="Paste news links, observations, local updates here..."
+            oninput="svSaveNotes(this.value)"></textarea>
+        </div>
+      </div>
+    </div>
+
   </div><!-- #content -->
 </div><!-- #app -->
 <footer>technology.spiritual · autonomous system · private · updates every 30 min</footer>
@@ -586,6 +655,7 @@ function render(d) {
   document.getElementById('ts-gen').textContent = 'Data: '+(d.generated_at_human||'');
   startCountdown(1800);
   renderAlerts(computeAlerts(d));
+  renderSurvival();
 
   const ig  = d.instagram  || {};
   const sys = d.system     || {};
@@ -1104,6 +1174,179 @@ function startCountdown(s) {
 }
 
 if (sessionStorage.getItem(AUTH_KEY)==='1') loadStats();
+
+// ── Survival Tab ──────────────────────────────────────────────────────────────
+const SV_KEY = 'ts_survival_v1';
+const SV_NOTES_KEY = 'ts_survival_notes';
+
+const SV_CATEGORIES = [
+  { id:'food', icon:'🌾', label:'Food', color:'#f59e0b', items:[
+    {id:'rice_dal',  name:'Rice / Dal',         note:'30-day stock target'},
+    {id:'oil_salt',  name:'Oil · Salt · Spices', note:'Essentials'},
+    {id:'dry_snacks',name:'Dry Snacks / Nuts',   note:'High-cal, no cooking'},
+    {id:'canned',    name:'Canned / Ready meals', note:'No-cook backup'},
+    {id:'flour',     name:'Flour / Atta',         note:'2-3 weeks supply'},
+  ]},
+  { id:'water', icon:'💧', label:'Water', color:'#00e5ff', items:[
+    {id:'bottles',  name:'Bottled Water',    note:'10L minimum on hand'},
+    {id:'filter',   name:'Water Filter/RO',  note:'Backup if supply disrupted'},
+    {id:'containers',name:'Storage Containers', note:'Fill & store if notice given'},
+  ]},
+  { id:'energy', icon:'⚡', label:'Energy', color:'#fbbf24', items:[
+    {id:'lpg',      name:'LPG Cylinders',   note:'Target: 2 full cylinders'},
+    {id:'ups',      name:'UPS / Inverter',   note:'Battery health check'},
+    {id:'powerbank',name:'Power Banks',      note:'All charged'},
+    {id:'torch',    name:'Torch + Batteries',note:'LED torch, spare cells'},
+    {id:'solar',    name:'Solar Charger',    note:'Phone/light backup'},
+  ]},
+  { id:'connectivity', icon:'📡', label:'Connectivity', color:'#c084fc', items:[
+    {id:'mobile_data',name:'Mobile Data',    note:'Jio + Airtel both active'},
+    {id:'sim2',       name:'Backup SIM',     note:'Second carrier ready'},
+    {id:'rpi_offline',name:'RPI5 + H10 Offline', note:'Local LLM setup status'},
+    {id:'nas_backup', name:'NAS / Local Backup', note:'Critical files synced'},
+  ]},
+  { id:'medical', icon:'🩺', label:'Medical', color:'#00ff88', items:[
+    {id:'first_aid',  name:'First Aid Kit',   note:'Stocked + checked'},
+    {id:'meds_30d',   name:'Medications 30d', note:'Migraine + pain relief + any Rx'},
+    {id:'hygiene',    name:'Hygiene Supplies',note:'Soap · sanitizer · masks'},
+  ]},
+  { id:'finance', icon:'💰', label:'Finance', color:'#f0f0f0', items:[
+    {id:'cash',       name:'Cash on Hand',    note:'₹5k+ for no-internet scenarios'},
+    {id:'fuel',       name:'Vehicle Fuel',    note:'Full tank policy'},
+    {id:'emergency_fund',name:'Emergency Access', note:'Liquid funds reachable'},
+  ]},
+];
+
+const SV_STATUS = [
+  {level:0, label:'CRITICAL', cls:'sv-0', dot:'🔴', bg:'#2a0a0a', col:'#ff7b7b'},
+  {level:1, label:'LOW',      cls:'sv-1', dot:'🟡', bg:'#1a1200', col:'#f59e0b'},
+  {level:2, label:'OK',       cls:'sv-2', dot:'🟢', bg:'#0a1a10', col:'#00ff88'},
+  {level:3, label:'STOCKED',  cls:'sv-3', dot:'🔵', bg:'#0a1520', col:'#00e5ff'},
+];
+
+function svLoad() {
+  try { return JSON.parse(localStorage.getItem(SV_KEY)) || {}; } catch(_){ return {}; }
+}
+function svSave(state) {
+  localStorage.setItem(SV_KEY, JSON.stringify(state));
+  svUpdateBadge(state);
+}
+function svSaveNotes(val) { localStorage.setItem(SV_NOTES_KEY, val); }
+
+function svCycle(catId, itemId) {
+  const state = svLoad();
+  const key = catId + '__' + itemId;
+  const cur = state[key] ?? 2;
+  state[key] = (cur + 1) % 4;
+  state['__updated'] = new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata'});
+  svSave(state);
+  renderSurvival();
+}
+
+function svUpdateBadge(state) {
+  const allItems = SV_CATEGORIES.flatMap(c => c.items.map(i => state[c.id+'__'+i.id] ?? 2));
+  const critical = allItems.filter(v => v === 0).length;
+  const low = allItems.filter(v => v === 1).length;
+  const badge = document.getElementById('tab-sv-badge');
+  if (!badge) return;
+  if (critical > 0) {
+    badge.innerHTML = `<span class="tbadge">${critical}</span>`;
+  } else if (low > 0) {
+    badge.innerHTML = `<span class="tbadge warn">${low}</span>`;
+  } else {
+    badge.innerHTML = '';
+  }
+}
+
+function svReset() {
+  if (!confirm('Reset all survival stock levels to OK?')) return;
+  localStorage.removeItem(SV_KEY);
+  renderSurvival();
+}
+
+function svExport() {
+  const state = svLoad();
+  const lines = ['# Survival Prep Export — ' + new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata'})];
+  SV_CATEGORIES.forEach(cat => {
+    lines.push('\n## ' + cat.icon + ' ' + cat.label);
+    cat.items.forEach(item => {
+      const v = state[cat.id+'__'+item.id] ?? 2;
+      lines.push(`  ${SV_STATUS[v].dot} ${item.name}: ${SV_STATUS[v].label}`);
+    });
+  });
+  const notes = localStorage.getItem(SV_NOTES_KEY) || '';
+  if (notes) { lines.push('\n## Notes\n' + notes); }
+  const blob = new Blob([lines.join('\n')], {type:'text/plain'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'survival_prep_' + Date.now() + '.txt';
+  a.click();
+}
+
+function renderSurvival() {
+  const state = svLoad();
+
+  // Summary KPIs
+  const allItems = SV_CATEGORIES.flatMap(c => c.items.map(i => ({v: state[c.id+'__'+i.id] ?? 2})));
+  const counts = [0,1,2,3].map(lvl => allItems.filter(x => x.v === lvl).length);
+  const kpiEl = document.getElementById('sv-kpis');
+  if (kpiEl) kpiEl.innerHTML = [
+    {val: counts[3], lbl:'Stocked',  col:'var(--cyan)'},
+    {val: counts[2], lbl:'OK',       col:'var(--green)'},
+    {val: counts[1], lbl:'Low',      col:'var(--gold)'},
+    {val: counts[0], lbl:'Critical', col:'#ff7b7b'},
+  ].map(k => `<div class="sv-kpi"><div class="sv-val" style="color:${k.col}">${k.val}</div>
+    <div class="sv-lbl">${k.lbl}</div></div>`).join('');
+
+  // Last updated
+  const upEl = document.getElementById('sv-last-updated');
+  if (upEl) upEl.textContent = state['__updated'] ? 'Updated: ' + state['__updated'] : 'Not yet edited';
+
+  // Category cards
+  const grid = document.getElementById('sv-cards');
+  if (!grid) return;
+  grid.innerHTML = SV_CATEGORIES.map(cat => {
+    const catItems = cat.items.map(item => {
+      const v = state[cat.id+'__'+item.id] ?? 2;
+      const st = SV_STATUS[v];
+      const pulse = v === 0 ? ' sv-critical-glow' : '';
+      return `<div class="sv-item${pulse}" onclick="svCycle('${cat.id}','${item.id}')" style="cursor:pointer" title="Click to update">
+        <div style="flex:1">
+          <div class="sv-name">${item.name}</div>
+          <div class="sv-note">${item.note}</div>
+        </div>
+        <div class="sv-pill" style="background:${st.bg};color:${st.col};border-color:${st.col}40">
+          ${st.dot} ${st.label}
+        </div>
+      </div>`;
+    }).join('');
+    const catVals = cat.items.map(i => state[cat.id+'__'+i.id] ?? 2);
+    const catMin = Math.min(...catVals);
+    const catBadge = catMin === 0 ? ' 🔴' : catMin === 1 ? ' 🟡' : '';
+    return `<div class="card" style="border-color:${cat.color}30">
+      <div class="sv-header">
+        <h2>${cat.icon} ${cat.label}${catBadge}</h2>
+      </div>
+      ${catItems}
+    </div>`;
+  }).join('');
+
+  // Notes
+  const notesEl = document.getElementById('sv-notes');
+  if (notesEl && !notesEl.value) {
+    notesEl.value = localStorage.getItem(SV_NOTES_KEY) || '';
+  }
+
+  svUpdateBadge(state);
+}
+
+// Hook into loadStats so survival tab renders on page load too
+const _origRender = typeof render === 'function' ? render : null;
+document.addEventListener('DOMContentLoaded', () => {
+  renderSurvival();
+});
+// Also render when tab is clicked
+document.getElementById('tab-survival')?.addEventListener('click', renderSurvival);
 </script>
 </body>
 </html>
