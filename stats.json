@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-26T14:00:01.735227+05:30",
-  "generated_at_human": "2026-03-26 14:00 IST",
+  "generated_at": "2026-03-26T21:16:43.075974+05:30",
+  "generated_at_human": "2026-03-26 21:16 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "58h 50m",
+    "uptime": "0h 12m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1489.9,
-    "disk_free_gb": 2445.8,
-    "disk_pct": 37.9,
+    "disk_used_gb": 1489.6,
+    "disk_free_gb": 2446.1,
+    "disk_pct": 37.8,
     "mem_total_mb": 7813,
-    "mem_used_mb": 2511,
-    "mem_free_mb": 5302,
-    "mem_pct": 32.1,
-    "load_1m": 0.92,
-    "load_5m": 0.84,
-    "load_15m": 0.77
+    "mem_used_mb": 2868,
+    "mem_free_mb": 4945,
+    "mem_pct": 36.7,
+    "load_1m": 0.43,
+    "load_5m": 1.06,
+    "load_15m": 1.09
   },
   "services": [
     {
@@ -235,7 +235,7 @@
   },
   "biohacking": {
     "total_posted": 5,
-    "queue_depth": 4,
+    "queue_depth": 0,
     "d3_count": 0,
     "posts": [
       {
@@ -834,14 +834,14 @@
     "final_count": 80
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
-    "last_error": "backup.py: error: unrecognized arguments: --check-large",
+    "last_ok": null,
+    "last_error": null,
     "recent_commits": [
+      "da9341f chore: update skill-stats pointer",
       "76a3a9a chore: update skill-stats pointer",
       "05cb7d2 chore: update skill-stats pointer",
       "08ef7bf chore: update skill-stats pointer",
-      "15c421e chore: update skill-stats pointer",
-      "4ec8e70 chore: update skill-stats pointer"
+      "15c421e chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1005,31 +1005,19 @@
         "0 0 * * 0 BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/Documents/playground/Claude_Code_Skills/Skills/cloud-meter-skill/scripts/weekly_ai_batch.sh >> /tmp/weekly_ai_batch.log 2>&1",
         "*/30 * * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/cloud-meter-skill/scripts/check_claude_plan_usage.py --update-budget\" >> /tmp/claude_plan_usage.log 2>&1",
         "45 2 24 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/cron_monitor.py --script Skills/instagram-skill/scripts/auto_post.py --log /tmp/ig_auto_post.log\" >> /tmp/ig_auto_post.log 2>&1",
-        "@reboot sleep 20 && nohup bash -c 'source /home/rick/.drishti_env && exec python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/telegram_brain.py >> /tmp/drishti_brain.log 2>&1' &",
         "0 */3 * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/energy_news_watcher.py >> /tmp/energy_news.log 2>&1",
         "10 9 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py >> /tmp/bh_auto_post.log 2>&1",
         "10 17 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py --with-elevenlabs >> /tmp/bh_auto_post.log 2>&1",
         "37 3 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/linkedin-skill/scripts/linkedin_auto_post.py >> /tmp/linkedin_auto_post.log 2>&1"
       ]
     },
-    "total": 26
+    "total": 25
   },
   "logs": {
     "ig_post": [],
-    "ig_learning": [
-      "  Engagement rate: 0.89%",
-      "  Saved to experiments.jsonl"
-    ],
-    "backup": [
-      "backup.py: error: unrecognized arguments: --recover",
-      "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --check-large"
-    ],
-    "dashboard": [
-      "  Skills: 18/18 installed",
-      "[2026-03-26 13:30 IST] skill-stats pushed \u2713",
-      "[2026-03-26 13:30 IST] skill-stats pushed \u2713"
-    ]
+    "ig_learning": [],
+    "backup": [],
+    "dashboard": []
   },
   "memory": {
     "projects": [
@@ -1433,7 +1421,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-26 13:30 IST",
+    "api_fetched_at": "2026-03-26 14:00 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1442,7 +1430,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-26 14:00 IST",
+    "ts": "2026-03-26 21:16 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
