@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-26T21:16:43.075974+05:30",
-  "generated_at_human": "2026-03-26 21:16 IST",
+  "generated_at": "2026-03-26T21:30:01.163340+05:30",
+  "generated_at_human": "2026-03-26 21:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "0h 12m",
+    "uptime": "0h 25m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1489.6,
     "disk_free_gb": 2446.1,
     "disk_pct": 37.8,
     "mem_total_mb": 7813,
-    "mem_used_mb": 2868,
-    "mem_free_mb": 4945,
-    "mem_pct": 36.7,
-    "load_1m": 0.43,
-    "load_5m": 1.06,
-    "load_15m": 1.09
+    "mem_used_mb": 2812,
+    "mem_free_mb": 5001,
+    "mem_pct": 36.0,
+    "load_1m": 0.03,
+    "load_5m": 0.14,
+    "load_15m": 0.5
   },
   "services": [
     {
@@ -834,14 +834,14 @@
     "final_count": 80
   },
   "backup": {
-    "last_ok": null,
-    "last_error": null,
+    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
+    "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "cf3b166 fix: @bh duplicate topic dedup + DRISHTI 409 on reboot",
+      "8a6ab56 chore: update skill-stats pointer",
       "da9341f chore: update skill-stats pointer",
       "76a3a9a chore: update skill-stats pointer",
-      "05cb7d2 chore: update skill-stats pointer",
-      "08ef7bf chore: update skill-stats pointer",
-      "15c421e chore: update skill-stats pointer"
+      "05cb7d2 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1016,8 +1016,15 @@
   "logs": {
     "ig_post": [],
     "ig_learning": [],
-    "backup": [],
-    "dashboard": []
+    "backup": [
+      "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
+      "backup.py: error: unrecognized arguments: --check-large"
+    ],
+    "dashboard": [
+      "  Projects: 20 | Open tasks: 12",
+      "  Skills: 18/18 installed",
+      "[2026-03-26 21:16 IST] skill-stats pushed \u2713"
+    ]
   },
   "memory": {
     "projects": [
@@ -1430,7 +1437,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-26 21:16 IST",
+    "ts": "2026-03-26 21:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
