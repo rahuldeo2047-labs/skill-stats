@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-25T23:14:35.520801+05:30",
-  "generated_at_human": "2026-03-25 23:14 IST",
-  "next_post": "tomorrow 00:10 IST",
+  "generated_at": "2026-03-26T08:56:41.486741+05:30",
+  "generated_at_human": "2026-03-26 08:56 IST",
+  "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "44h 5m",
+    "uptime": "53h 47m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1490.3,
-    "disk_free_gb": 2445.4,
+    "disk_used_gb": 1489.9,
+    "disk_free_gb": 2445.8,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4641,
-    "mem_free_mb": 3172,
-    "mem_pct": 59.4,
-    "load_1m": 1.35,
-    "load_5m": 2.79,
-    "load_15m": 2.56
+    "mem_used_mb": 4231,
+    "mem_free_mb": 3582,
+    "mem_pct": 54.2,
+    "load_1m": 1.75,
+    "load_5m": 3.63,
+    "load_15m": 2.8
   },
   "services": [
     {
@@ -57,24 +57,19 @@
         "status": "paused"
       }
     ],
-    "total_posted": 60,
-    "d3_count": 57,
-    "d7_count": 30,
+    "total_posted": 64,
+    "d3_count": 60,
+    "d7_count": 37,
     "d0_count": 8,
-    "queue_depth": 4,
-    "queue_next": "vedic-mathematics-base-16-sutras-faster-than-moder",
-    "queue_topics": [
-      "vedic-mathematics-base-16-sutras-faster-than-moder",
-      "vtam-video-tactile-action-models-for-complex-physi",
-      "planning-over-mapf-agent-dependencies-via-multi-de",
-      "rectify-don-t-regret-avoiding-pitfalls-of-differen"
-    ],
+    "queue_depth": 0,
+    "queue_next": null,
+    "queue_topics": [],
     "recent_posts": [
       {
-        "post_id": "18074260451190875",
-        "topic": "planning-over-mapf-agent-dependencies-via-multi-de",
+        "post_id": "17934324366196541",
+        "topic": "rectify-don-t-regret-avoiding-pitfalls-of-differen",
         "hook_type": "contrarian",
-        "ts_posted": "2026-03-25T19:30",
+        "ts_posted": "2026-03-26T07:13",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
@@ -87,6 +82,78 @@
         "has_d0": false,
         "has_d3": false,
         "has_d7": false
+      },
+      {
+        "post_id": "18069140942285729",
+        "topic": "planning-over-mapf-agent-dependencies-via-multi-de",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-26T07:12",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18576416206005387",
+        "topic": "vtam-video-tactile-action-models-for-complex-physi",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-26T07:12",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18365381749206538",
+        "topic": "vedic-mathematics-base-16-sutras-faster-than-moder",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-26T07:11",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18074260451190875",
+        "topic": "planning-over-mapf-agent-dependencies-via-multi-de",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-25T19:30",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": 87,
+        "d3_saves": 0,
+        "d7_reach": 78,
+        "d7_saves": 0,
+        "has_d0": false,
+        "has_d3": true,
+        "has_d7": true
       },
       {
         "post_id": "17931261918230248",
@@ -98,13 +165,13 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d3_reach": 100,
+        "d3_saves": 0,
+        "d7_reach": 76,
+        "d7_saves": 0,
         "has_d0": false,
-        "has_d3": false,
-        "has_d7": false
+        "has_d3": true,
+        "has_d7": true
       },
       {
         "post_id": "18013598105832342",
@@ -116,13 +183,13 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d3_reach": 112,
+        "d3_saves": 0,
+        "d7_reach": 112,
+        "d7_saves": 0,
         "has_d0": false,
-        "has_d3": false,
-        "has_d7": false
+        "has_d3": true,
+        "has_d7": true
       },
       {
         "post_id": "18099675532962648",
@@ -136,79 +203,7 @@
         "d0_er": 0,
         "d3_reach": 128,
         "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "17892354018306034",
-        "topic": "vision-on-request-enhanced-vllm-efficiency-with-sp",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-25T12:19",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 111,
-        "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "18082561463054477",
-        "topic": "medobvious-exposing-the-medical-moravec-s-paradox",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-25T12:19",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 101,
-        "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "18073865642544947",
-        "topic": "panini-s-grammar-the-world-s-first-formal-language",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-25T12:18",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 100,
-        "d3_saves": 1,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "18464632579099378",
-        "topic": "from-singleton-obstacles-to-clutter-translation-in",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-25T00:15",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 114,
-        "d3_saves": 0,
-        "d7_reach": 87,
+        "d7_reach": 128,
         "d7_saves": 0,
         "has_d0": false,
         "has_d3": true,
@@ -216,7 +211,7 @@
       }
     ],
     "phase": 1,
-    "phase_note": "Phase 1 \u2014 organic only. 60 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
+    "phase_note": "Phase 1 \u2014 organic only. 64 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
     "phase_pct": 100,
     "learnings": [
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
@@ -224,7 +219,7 @@
       "Total reach across 8 tracked posts: 140 | Total views: 158",
       "Zero interactions on all posts \u2014 engagement rate 0%. Captions lacked hashtags (now fixed).",
       "Caption bug fixed: caption now included in container creation step (was silently dropped).",
-      "Duplicate uploads detected: 13 topics posted >1x. Next batch: 1 post per reel.",
+      "Duplicate uploads detected: 16 topics posted >1x. Next batch: 1 post per reel.",
       "Queue refilled: 4 reels with improved captions + 15 hashtags each, ordered by d0 performance."
     ],
     "topic_rotation": [
@@ -237,6 +232,79 @@
       "Consciousness + Neuroscience",
       "Quantum Mechanics"
     ]
+  },
+  "biohacking": {
+    "total_posted": 5,
+    "queue_depth": 4,
+    "d3_count": 0,
+    "posts": [
+      {
+        "topic": "wearable-aptasensors",
+        "title": "Wearable Aptasensors.",
+        "category": "wearables",
+        "voice_name": "Edge/Guy",
+        "voice_slot": 1,
+        "tts_chars": 308,
+        "media_id": "18102677087297556",
+        "ts_posted": "2026-03-26T00:12",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "continuous-glucose-monitoring-sensors-fo",
+        "title": "Continuous Glucose Monitoring Sensors for Diabetes Managemen",
+        "category": "wearables",
+        "voice_name": "Edge/Jenny",
+        "voice_slot": 0,
+        "tts_chars": 308,
+        "media_id": "17906979453205186",
+        "ts_posted": "2026-03-26T00:11",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "non-invasive-blood-glucose-monitoring-te",
+        "title": "Non-Invasive Blood Glucose Monitoring Technology: A Review.",
+        "category": "wearables",
+        "voice_name": "Edge/Guy",
+        "voice_slot": 1,
+        "tts_chars": 308,
+        "media_id": "18003872324720910",
+        "ts_posted": "2026-03-26T00:02",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "guidelines-and-recommendations-for-labor",
+        "title": "Guidelines and Recommendations for Laboratory Analysis in th",
+        "category": "wearables",
+        "voice_name": "Edge/Jenny",
+        "voice_slot": 0,
+        "tts_chars": 272,
+        "media_id": "17882829687497893",
+        "ts_posted": "2026-03-26T00:01",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "health-benefits-of-intermittent-fasting",
+        "title": "Health Benefits of Intermittent Fasting.",
+        "category": "longevity",
+        "voice_name": "EdgeTTS/en-US-JennyNeural",
+        "voice_slot": 0,
+        "tts_chars": 290,
+        "media_id": "17895087849287942",
+        "ts_posted": "2026-03-25T23:22",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      }
+    ],
+    "categories": {
+      "longevity": 1,
+      "wearables": 4
+    },
+    "ig_id": "17841464494421993",
+    "token_expires": "2026-05-24"
   },
   "renders": {
     "files": [
@@ -752,11 +820,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
-      "a144201 chore: bump docs submodule (sci-fi dashboard + alert system)",
-      "15ba930 fix: @technology.spiritual pipeline bugs \u2014 FROZEN after this commit",
-      "b8b2cc1 chore: update skill-stats pointer",
-      "2490670 chore: update skill-stats pointer",
-      "6909695 chore: update skill-stats pointer"
+      "f06f6a9 fix: resolve Anthropic key from live VS Code token in BH pipeline",
+      "39ba9a2 fix: BH DRISHTI \u2014 use live VS Code OAuth token from .credentials.json (same as @ts)",
+      "9e986d1 backup: 2026-03-26 \u2014 routine",
+      "448aba0 backup: 2026-03-26 \u2014 mem:_Global,telegram_sessions",
+      "b1cadf5 backup: 2026-03-25 \u2014 mem:_Global,telegram_sessions"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -780,7 +848,7 @@
       "name": "REACH",
       "desc": "3-account IG management + learning loop",
       "installed": true,
-      "scripts": 12
+      "scripts": 13
     },
     {
       "id": "instagram_content_skill",
@@ -921,19 +989,22 @@
         "*/30 * * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/cloud-meter-skill/scripts/check_claude_plan_usage.py --update-budget\" >> /tmp/claude_plan_usage.log 2>&1",
         "45 2 24 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/cron_monitor.py --script Skills/instagram-skill/scripts/auto_post.py --log /tmp/ig_auto_post.log\" >> /tmp/ig_auto_post.log 2>&1",
         "@reboot sleep 20 && nohup bash -c 'source /home/rick/.drishti_env && exec python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/telegram_brain.py >> /tmp/drishti_brain.log 2>&1' &",
-        "0 */3 * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/energy_news_watcher.py >> /tmp/energy_news.log 2>&1"
+        "0 */3 * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/energy_news_watcher.py >> /tmp/energy_news.log 2>&1",
+        "10 9 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py >> /tmp/bh_auto_post.log 2>&1",
+        "10 17 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py --with-elevenlabs >> /tmp/bh_auto_post.log 2>&1",
+        "45 8 26 3 * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py --dry-run >> /tmp/bh_auto_post.log 2>&1 # bh_oneshot"
       ]
     },
-    "total": 23
+    "total": 26
   },
   "logs": {
     "ig_post": [],
     "ig_learning": [
-      "  Engagement rate: 0.00%",
+      "  Engagement rate: 0.89%",
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -1217,11 +1288,11 @@
       "flexible": "Friday, Saturday",
       "note": "Autonomous tasks continue after hard close; no Rahul input requested."
     },
-    "boundary": "SOFT CLOSE \u2014 flag upcoming session end",
+    "boundary": null,
     "logs": [
       {
         "file": "signals.jsonl",
-        "last": "{\"ts\": 1774393236.291635, \"date\": \"2026-03-25\", \"domain\": \"output\", \"type\": \"positive\", \"note\": \"active: rahul-claude-sk"
+        "last": "{\"ts\": 1774479646.180761, \"date\": \"2026-03-26\", \"domain\": \"output\", \"type\": \"positive\", \"note\": \"active: Claude_Code_Ski"
       }
     ],
     "human_base": "/home/rick/Documents/playground/Claude_Code_Skills/HumanOS",
@@ -1337,16 +1408,16 @@
     "major_suggestion": "Create shared env_loader.sh sourced by all cron jobs \u2014 30 min, eliminates 70% of recurring cron failures. Then: narrate and final-render the NeckGuardian reel (pending 3+ sessions, highest creative ROI)."
   },
   "claude_budget": {
-    "date": "2026-03-25",
+    "date": "2026-03-26",
     "state": "red",
-    "pct": 88.0,
+    "pct": 92.0,
     "source": "api",
-    "api_5h_pct": 48.0,
-    "api_7d_pct": 88.0,
+    "api_5h_pct": 4.0,
+    "api_7d_pct": 92.0,
     "api_overage_pct": 0.0,
     "api_binding": "seven_day",
-    "api_fetched_at": "2026-03-25 23:00 IST",
-    "api_5h_reset_ts": 1774472400,
+    "api_fetched_at": "2026-03-26 08:30 IST",
+    "api_5h_reset_ts": 1774508400,
     "api_7d_reset_ts": 1774699200
   },
   "unit_tests": {
@@ -1354,7 +1425,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-25 23:14 IST",
+    "ts": "2026-03-26 08:56 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
