@@ -246,6 +246,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opac
   <div class="tabs">
     <div class="tab active" onclick="showTab('overview')">Overview</div>
     <div class="tab" onclick="showTab('instagram')">Instagram</div>
+    <div class="tab" onclick="showTab('linkedin')">LinkedIn</div>
     <div class="tab" onclick="showTab('tasks')">Tasks <span id="tab-task-badge"></span></div>
     <div class="tab" onclick="showTab('memory')">Memory</div>
     <div class="tab" onclick="showTab('human')">Human OS</div>
@@ -437,6 +438,33 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opac
               4. New account appears here after next <span style="font-family:var(--mono)">generate_stats.py</span> run
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── LINKEDIN ── -->
+    <div id="pane-linkedin" class="pane">
+      <div class="grid">
+        <div class="card wide">
+          <h2>LinkedIn — Autonomous Builder</h2>
+          <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px">
+            <div class="kpi acc"><div class="val" id="li-posted">—</div><div class="lbl">Posts</div></div>
+            <div class="kpi gld"><div class="val" id="li-pillar">—</div><div class="lbl">Today's Pillar</div></div>
+            <div class="kpi grn"><div class="val" id="li-cron">—</div><div class="lbl">Daily Cron</div></div>
+            <div class="kpi" style="background:var(--bg3)"><div class="val" id="li-expires" style="font-size:14px;color:var(--dim)">—</div><div class="lbl">Token Expires</div></div>
+          </div>
+          <div style="font-size:11px;color:var(--dim);margin-bottom:12px">
+            Pillars: Mon/Thu=Physical AI | Tue/Fri=Biohacking | Wed/Sat=DIY Quantum | Sun=Author
+          </div>
+        </div>
+        <div class="card wide">
+          <h2>Recent Posts</h2>
+          <table class="tbl" style="width:100%">
+            <thead><tr>
+              <th>#</th><th>Date</th><th>Type</th><th>Pillar</th><th>Preview</th><th>URN</th>
+            </tr></thead>
+            <tbody id="li-table"></tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -837,7 +865,7 @@ function render(d) {
     : '<tr><td colspan="9" style="color:var(--dim);text-align:center;padding:16px">No posts yet</td></tr>';
 
   // @tech.biohacking tab
-  const bh = (stats.biohacking)||{};
+  const bh = (d.biohacking)||{};
   const bhPosts = (bh.posts)||[];
   document.getElementById('bh-posted').textContent = bh.total_posted ?? '—';
   document.getElementById('bh-queue').textContent  = bh.queue_depth  ?? '—';
@@ -855,6 +883,25 @@ function render(d) {
         <td>${p.media_id?'<span class="tag tg-grn">posted</span>':'<span class="tag tg-dim">pending</span>'}</td>
       </tr>`).join('')
     : '<tr><td colspan="6" style="color:var(--dim);text-align:center;padding:16px">No posts yet — first run at 23:50 IST</td></tr>';
+
+  // LinkedIn tab
+  const li = (d.linkedin)||{};
+  const liPosts = (li.posts)||[];
+  document.getElementById('li-posted').textContent = li.total_posted ?? '—';
+  document.getElementById('li-pillar').textContent  = li.today_pillar_label || '—';
+  document.getElementById('li-cron').textContent    = li.cron_time || '—';
+  document.getElementById('li-expires').textContent = li.token_expires || '—';
+  const pillarColor = {'phyai':'var(--acc)','bio':'var(--green)','quantum':'var(--cyan)','author':'var(--gold)'};
+  document.getElementById('li-table').innerHTML = liPosts.length
+    ? liPosts.map((p,i)=>`<tr>
+        <td style="font-family:var(--mono);color:var(--dim)">${i+1}</td>
+        <td style="font-family:var(--mono);font-size:10px;color:var(--dim)">${(p.ts||'').slice(0,10)}</td>
+        <td><span class="tag tg-acc">${p.type||'text'}</span></td>
+        <td style="color:${pillarColor[p.pillar]||'var(--white)'};font-size:11px">${p.pillar||'—'}</td>
+        <td style="max-width:240px;font-size:11px;word-break:break-word">${(p.caption||'').slice(0,100)}…</td>
+        <td style="font-family:var(--mono);font-size:9px;color:var(--dim)">${(p.post_urn||'').slice(-20)}</td>
+      </tr>`).join('')
+    : '<tr><td colspan="6" style="color:var(--dim);text-align:center;padding:16px">No posts yet — first run 08:30 IST</td></tr>';
 
   // @rahuldeo2047 tab
   const rdAcc = (ig.accounts||[]).find(a=>a.handle==='@rahuldeo2047') || {};
@@ -1102,7 +1149,7 @@ function render(d) {
     <div style="font-size:10px;color:var(--dim);margin-bottom:10px">Last run: ${ut.ts||'never'}</div>
     ${Object.entries(utMeta).map(([key, m])=>`
       <div style="margin-bottom:8px;border-left:2px solid ${utColor};padding-left:8px">
-        <div style="font-size:11px;font-family:var(--mono);font-weight:700;color:var(--fg);margin-bottom:3px">${m.label} (${m.count})</div>
+        <div style="font-size:11px;font-family:var(--mono);font-weight:700;color:var(--white);margin-bottom:3px">${m.label} (${m.count})</div>
         ${m.checks.map(c=>`<div style="font-size:10px;color:var(--dim);margin-left:4px">· ${c}</div>`).join('')}
       </div>`).join('')}
     <div style="margin-top:6px;font-size:10px;color:var(--dim);border-top:1px solid #333;padding-top:6px">

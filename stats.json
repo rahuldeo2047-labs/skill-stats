@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-26T08:56:41.486741+05:30",
-  "generated_at_human": "2026-03-26 08:56 IST",
+  "generated_at": "2026-03-26T10:19:21.202710+05:30",
+  "generated_at_human": "2026-03-26 10:19 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "53h 47m",
+    "uptime": "55h 9m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1489.9,
     "disk_free_gb": 2445.8,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4231,
-    "mem_free_mb": 3582,
-    "mem_pct": 54.2,
-    "load_1m": 1.75,
-    "load_5m": 3.63,
-    "load_15m": 2.8
+    "mem_used_mb": 3610,
+    "mem_free_mb": 4203,
+    "mem_pct": 46.2,
+    "load_1m": 2.03,
+    "load_5m": 1.49,
+    "load_15m": 1.0
   },
   "services": [
     {
@@ -305,6 +305,23 @@
     },
     "ig_id": "17841464494421993",
     "token_expires": "2026-05-24"
+  },
+  "linkedin": {
+    "total_posted": 1,
+    "today_pillar": "phyai",
+    "today_pillar_label": "Physical AI",
+    "posts": [
+      {
+        "ts": "2026-03-26T09:55",
+        "type": "text",
+        "pillar": "phyai",
+        "post_urn": "urn:li:share:7442788879130345472",
+        "char_count": 1760,
+        "caption": "# The Simulation Trap Is Killing Real Robotics\n\nWe've spent the last decade training robots in perfect digital worlds. M"
+      }
+    ],
+    "token_expires": "2026-05-23",
+    "cron_time": "08:30 IST"
   },
   "renders": {
     "files": [
@@ -820,11 +837,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "82cfceb feat: LinkedIn pipeline \u2014 text+carousel auto_post, /rest/videos upload, pillar schedule",
+      "a7e62bf feat: add get_biohacking() to generate_stats \u2014 @bh KPIs + posts in stats.json",
       "f06f6a9 fix: resolve Anthropic key from live VS Code token in BH pipeline",
       "39ba9a2 fix: BH DRISHTI \u2014 use live VS Code OAuth token from .credentials.json (same as @ts)",
-      "9e986d1 backup: 2026-03-26 \u2014 routine",
-      "448aba0 backup: 2026-03-26 \u2014 mem:_Global,telegram_sessions",
-      "b1cadf5 backup: 2026-03-25 \u2014 mem:_Global,telegram_sessions"
+      "9e986d1 backup: 2026-03-26 \u2014 routine"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -972,7 +989,7 @@
         "30 3 * * 1 CLAUDE_CODE_SKILL_MEMORY_BACKUP_GITHUB_REPO=git@github.com:rahuldeo2047-labs/claude-skills.git python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/backup-skill/scripts/backup.py --heartbeat >> /tmp/claude_backup.log 2>&1"
       ],
       "Dashboard": [
-        "*/30 * * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/push_dashboard.sh >> /tmp/ig_dashboard.log 2>&1",
+        "*/30 * * * * bash /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/push_dashboard.sh >> /tmp/ig_dashboard.log 2>&1",
         "@reboot sleep 30 && python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/dashboard_server.py >> /tmp/ig_dashboard_server.log 2>&1"
       ],
       "System": [
@@ -992,7 +1009,7 @@
         "0 */3 * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/energy_news_watcher.py >> /tmp/energy_news.log 2>&1",
         "10 9 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py >> /tmp/bh_auto_post.log 2>&1",
         "10 17 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py --with-elevenlabs >> /tmp/bh_auto_post.log 2>&1",
-        "45 8 26 3 * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py --dry-run >> /tmp/bh_auto_post.log 2>&1 # bh_oneshot"
+        "37 3 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/linkedin-skill/scripts/linkedin_auto_post.py >> /tmp/linkedin_auto_post.log 2>&1"
       ]
     },
     "total": 26
@@ -1410,13 +1427,13 @@
   "claude_budget": {
     "date": "2026-03-26",
     "state": "red",
-    "pct": 92.0,
+    "pct": 95.0,
     "source": "api",
-    "api_5h_pct": 4.0,
-    "api_7d_pct": 92.0,
+    "api_5h_pct": 31.0,
+    "api_7d_pct": 95.0,
     "api_overage_pct": 0.0,
     "api_binding": "seven_day",
-    "api_fetched_at": "2026-03-26 08:30 IST",
+    "api_fetched_at": "2026-03-26 10:00 IST",
     "api_5h_reset_ts": 1774508400,
     "api_7d_reset_ts": 1774699200
   },
@@ -1425,7 +1442,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-26 08:56 IST",
+    "ts": "2026-03-26 10:19 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
