@@ -212,6 +212,44 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opac
   50%{opacity:.42;box-shadow:0 0 18px 4px rgba(255,80,80,.28),0 0 6px 1px rgba(255,80,80,.18)}
 }
 .sv-critical-glow{animation:sv-pulse 5s ease-in-out infinite;border-radius:6px}
+
+/* ── Status signal dots ───────────────────────────────────────────────────── */
+@keyframes blink-fast{0%,49%{opacity:1}50%,100%{opacity:.12}}
+@keyframes blink-slow{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes glow-err{0%,100%{box-shadow:0 0 6px 2px rgba(255,68,102,.7)}50%{box-shadow:0 0 16px 6px rgba(255,68,102,.25)}}
+@keyframes glow-rec{0%,100%{box-shadow:0 0 4px 2px rgba(0,255,136,.6)}50%{box-shadow:0 0 14px 5px rgba(0,255,136,.18)}}
+.ssig{display:inline-block;width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-top:2px}
+.ssig-ok  {background:var(--green);box-shadow:0 0 5px var(--green)}
+.ssig-warn{background:var(--gold);animation:blink-slow 2.5s ease-in-out infinite}
+.ssig-err {background:var(--red);animation:blink-fast 1s steps(2) infinite,glow-err 1s ease-in-out infinite}
+.ssig-err.persistent{animation:blink-fast .55s steps(2) infinite,glow-err .55s ease-in-out infinite;box-shadow:0 0 18px 6px rgba(255,68,102,.55)}
+.ssig-rec {background:var(--green);animation:blink-slow 3s ease-in-out infinite,glow-rec 3s ease-in-out infinite}
+
+/* ── Overview platform cards ─────────────────────────────────────────────── */
+.ov-platform{cursor:pointer;transition:border-color .2s,box-shadow .2s;user-select:none}
+.ov-platform:hover{border-color:var(--acc);box-shadow:0 0 18px rgba(192,132,252,.18)}
+.ov-platform.sig-err-card{border-color:rgba(255,68,102,.5)}
+.ov-platform.sig-warn-card{border-color:rgba(245,158,11,.4)}
+.ov-handle{font-size:14px;font-weight:700;letter-spacing:.02em}
+.ov-metric{font-size:11px;color:var(--dim);font-family:var(--mono);margin-top:2px}
+.ov-goto{font-size:9px;color:var(--dim);letter-spacing:.06em;margin-top:8px;text-transform:uppercase;opacity:.6}
+.ov-stat{display:flex;gap:14px;margin-top:8px;flex-wrap:wrap}
+.ov-stat-item{display:flex;flex-direction:column;align-items:center}
+.ov-stat-item .v{font-size:20px;font-weight:800;font-family:var(--mono);line-height:1}
+.ov-stat-item .l{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
+
+/* ── Overview system strip ───────────────────────────────────────────────── */
+.ov-sys-strip{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.ov-sys-chip{background:var(--bg3);border:1px solid var(--border);border-radius:6px;
+  padding:5px 10px;display:flex;flex-direction:column;align-items:center;min-width:64px}
+.ov-sys-chip .v{font-size:16px;font-weight:800;font-family:var(--mono);line-height:1}
+.ov-sys-chip .l{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+
+/* ── Overview pipeline rows ──────────────────────────────────────────────── */
+.ov-pipe-row{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--border)}
+.ov-pipe-row:last-child{border-bottom:none}
+.ov-pipe-name{font-size:11px;font-family:var(--mono);min-width:160px;color:var(--white)}
+.ov-pipe-time{font-size:10px;color:var(--dim);font-family:var(--mono);margin-left:auto}
 </style>
 </head>
 <body>
@@ -261,31 +299,65 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opac
 
     <!-- ── OVERVIEW ── -->
     <div id="pane-overview" class="pane active">
+
+      <!-- ROW 1: Platform cards -->
       <div class="grid">
-        <!-- KPI strip -->
-        <div class="card wide">
-          <h2>System at a Glance</h2>
-          <div class="kpi-row">
-            <div class="kpi acc"><div class="val" id="o-phase">—</div><div class="lbl">IG Phase</div></div>
-            <div class="kpi grn"><div class="val" id="o-posted">—</div><div class="lbl">Posts</div></div>
-            <div class="kpi gld"><div class="val" id="o-queue">—</div><div class="lbl">Queue</div></div>
-            <div class="kpi cyn"><div class="val" id="o-skills">—</div><div class="lbl">Skills</div></div>
-            <div class="kpi"   ><div class="val" id="o-disk">—</div><div class="lbl">Disk %</div></div>
-            <div class="kpi"   ><div class="val" id="o-ram">—</div><div class="lbl">RAM %</div></div>
-            <div class="kpi"   ><div class="val" id="o-load">—</div><div class="lbl">Load</div></div>
-            <div class="kpi"   ><div class="val" id="o-uptime">—</div><div class="lbl">Uptime</div></div>
+        <!-- @technology.spiritual -->
+        <div class="card ov-platform" id="ov-card-ts" onclick="goTab('instagram','igp-ts')">
+          <div style="display:flex;align-items:flex-start;gap:8px">
+            <span class="ssig ssig-ok" id="sig-ts"></span>
+            <div style="flex:1">
+              <div class="ov-handle" style="color:var(--acc)" id="ov-ts-handle">@technology.spiritual</div>
+              <div class="ov-metric" id="ov-ts-status">—</div>
+            </div>
           </div>
+          <div class="ov-stat" id="ov-ts-stats"></div>
+          <div class="ov-metric" id="ov-ts-next" style="margin-top:6px"></div>
+          <div class="ov-goto">Instagram → Overview</div>
         </div>
-        <!-- Next post + phase -->
-        <div class="card">
-          <h2>Next Post</h2>
-          <div class="metric-big" id="o-nextpost" style="color:var(--cyan)">—</div>
-          <div style="font-size:12px;color:var(--dim);margin-top:6px" id="o-nexttopic"></div>
-          <div class="bar"><div class="bar-fill" id="o-phasebar" style="width:0%"></div></div>
-          <div style="font-size:11px;color:var(--dim)" id="o-phasenote"></div>
+        <!-- @tech.biohacking -->
+        <div class="card ov-platform" id="ov-card-bh" onclick="goTab('instagram','igp-bh')">
+          <div style="display:flex;align-items:flex-start;gap:8px">
+            <span class="ssig ssig-ok" id="sig-bh"></span>
+            <div style="flex:1">
+              <div class="ov-handle" style="color:var(--green)" id="ov-bh-handle">@tech.biohacking</div>
+              <div class="ov-metric" id="ov-bh-status">—</div>
+            </div>
+          </div>
+          <div class="ov-stat" id="ov-bh-stats"></div>
+          <div class="ov-metric" id="ov-bh-next" style="margin-top:6px"></div>
+          <div class="ov-goto">Instagram → @tech.biohacking</div>
+        </div>
+        <!-- LinkedIn -->
+        <div class="card ov-platform" id="ov-card-li" onclick="goTab('linkedin')">
+          <div style="display:flex;align-items:flex-start;gap:8px">
+            <span class="ssig ssig-ok" id="sig-li"></span>
+            <div style="flex:1">
+              <div class="ov-handle" style="color:var(--cyan)">LinkedIn</div>
+              <div class="ov-metric" id="ov-li-status">—</div>
+            </div>
+          </div>
+          <div class="ov-stat" id="ov-li-stats"></div>
+          <div class="ov-metric" id="ov-li-next" style="margin-top:6px"></div>
+          <div class="ov-goto">LinkedIn → Posts</div>
+        </div>
+      </div>
+
+      <!-- ROW 2: System vitals + Services + Claude Budget -->
+      <div class="grid">
+        <!-- System vitals -->
+        <div class="card" onclick="goTab('system')" style="cursor:pointer">
+          <h2>System <span style="font-size:9px;color:var(--dim);margin-left:4px">↗ system tab</span></h2>
+          <div class="ov-sys-strip" id="ov-sys-chips"></div>
+          <div style="margin-top:10px" id="ov-sys-bars"></div>
+        </div>
+        <!-- Services -->
+        <div class="card" onclick="goTab('system')" style="cursor:pointer">
+          <h2>Services <span style="font-size:9px;color:var(--dim);margin-left:4px">↗ system tab</span></h2>
+          <div id="o-services"></div>
         </div>
         <!-- Claude Budget -->
-        <div class="card">
+        <div class="card" onclick="goTab('overview')" style="cursor:pointer">
           <h2>Claude Budget</h2>
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
             <span style="font-size:24px" id="bdg-emoji">—</span>
@@ -298,26 +370,43 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opac
           <div style="font-size:10px;color:var(--dim);margin-top:6px;font-family:var(--mono)" id="bdg-details"></div>
           <div style="font-size:10px;color:var(--dim);margin-top:3px;font-family:var(--mono)" id="bdg-source"></div>
         </div>
-        <!-- Services -->
-        <div class="card">
-          <h2>Services</h2>
-          <div id="o-services"></div>
+      </div>
+
+      <!-- ROW 3: Pipeline health + Next posts -->
+      <div class="grid">
+        <div class="card" onclick="goTab('logs')" style="cursor:pointer">
+          <h2>Pipeline Health <span style="font-size:9px;color:var(--dim);margin-left:4px">↗ logs tab</span></h2>
+          <div id="ov-pipelines"></div>
         </div>
-        <!-- Accounts -->
         <div class="card">
-          <h2>IG Accounts</h2>
-          <div id="o-accounts"></div>
+          <h2>Next Posts</h2>
+          <div id="ov-next-posts"></div>
+        </div>
+        <!-- Unit tests + backup -->
+        <div class="card" onclick="goTab('system')" style="cursor:pointer">
+          <h2>Health Gates <span style="font-size:9px;color:var(--dim);margin-left:4px">↗ system tab</span></h2>
+          <div id="ov-health-gates"></div>
         </div>
       </div>
-      <!-- Recent posts mini -->
+
+      <!-- ROW 4: Recent activity across all platforms -->
       <div class="grid">
         <div class="card wide">
-          <h2>Recent Posts</h2>
+          <h2>Recent Activity — All Platforms</h2>
           <div style="overflow-x:auto"><table class="tbl"><thead><tr>
-            <th>Topic</th><th>Hook</th><th>Posted</th>
-            <th>D3 Reach</th><th>D3 Saves</th><th>D7 Reach</th><th>D7 Saves</th>
-          </tr></thead><tbody id="o-posttable"></tbody></table></div>
+            <th>Platform</th><th>Topic / Caption</th><th>Type</th><th>Posted</th>
+            <th>D3 Reach</th><th>D3 Saves</th>
+          </tr></thead><tbody id="o-activity-table"></tbody></table></div>
         </div>
+      </div>
+
+      <!-- hidden: kept for other tabs that reference these IDs -->
+      <div style="display:none">
+        <div id="o-phase"></div><div id="o-posted"></div><div id="o-queue"></div>
+        <div id="o-skills"></div><div id="o-disk"></div><div id="o-ram"></div>
+        <div id="o-load"></div><div id="o-uptime"></div><div id="o-nextpost"></div>
+        <div id="o-nexttopic"></div><div id="o-phasebar"></div><div id="o-phasenote"></div>
+        <div id="o-accounts"></div><div id="o-posttable"></div>
       </div>
     </div>
 
@@ -689,6 +778,229 @@ function showTab(id) {
   document.getElementById('pane-'+id).classList.add('active');
   event.target.classList.add('active');
 }
+// Programmatic tab navigation (from overview cards)
+function goTab(tabId, igSubTab) {
+  document.querySelectorAll('.pane').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  const pane = document.getElementById('pane-'+tabId);
+  if (pane) pane.classList.add('active');
+  document.querySelectorAll('.tab').forEach(t=>{
+    if ((t.getAttribute('onclick')||'').includes("'"+tabId+"'")) t.classList.add('active');
+  });
+  if (igSubTab) {
+    setTimeout(()=>{
+      const tabs = document.querySelectorAll('#pane-instagram .ig-tab');
+      tabs.forEach(t=>t.classList.remove('active'));
+      ['igp-overview','igp-ts','igp-bh','igp-rd','igp-add'].forEach(id=>{
+        const p=document.getElementById(id); if(p) p.classList.add('ig-pane-hidden');
+      });
+      const target = document.querySelector(`#pane-instagram .ig-tab[onclick*="${igSubTab}"]`);
+      if (target) target.classList.add('active');
+      const subPane = document.getElementById(igSubTab);
+      if (subPane) subPane.classList.remove('ig-pane-hidden');
+    }, 30);
+  }
+}
+
+// ── Signal state (with sessionStorage persistence for recovery detection) ────
+function getSigState(key, critCount, warnCount) {
+  let stored = null;
+  try { stored = JSON.parse(sessionStorage.getItem('sig_'+key)||'null'); } catch(e){}
+  const now = Date.now();
+  const newState = critCount > 0 ? 'err' : warnCount > 0 ? 'warn' : 'ok';
+  const prevState = stored?.state || 'ok';
+  // Count consecutive error ticks (each page refresh = 1 tick)
+  const errTicks = newState === 'err' && prevState === 'err' ? (stored?.errTicks||1)+1 : (newState==='err'?1:0);
+  // Recovery: was bad, now ok — show for 5 min
+  const recUntil = (newState === 'ok' && prevState !== 'ok') ? now + 5*60*1000 : (stored?.recUntil||0);
+  const displayState = (newState === 'ok' && recUntil > now) ? 'rec' : newState;
+  sessionStorage.setItem('sig_'+key, JSON.stringify({state:newState, errTicks, recUntil, ts:now}));
+  return {state: displayState, persistent: errTicks >= 2};
+}
+
+function applySig(elId, cardId, state, persistent) {
+  const el = document.getElementById(elId);
+  const card = document.getElementById(cardId);
+  if (!el) return;
+  el.className = 'ssig ssig-'+state + (persistent ? ' persistent' : '');
+  if (card) {
+    card.classList.remove('sig-err-card','sig-warn-card');
+    if (state === 'err') card.classList.add('sig-err-card');
+    else if (state === 'warn') card.classList.add('sig-warn-card');
+  }
+}
+
+// ── Overview render ───────────────────────────────────────────────────────────
+function renderOverview(d) {
+  const ig  = d.instagram     || {};
+  const bh  = d.biohacking    || {};
+  const li  = d.linkedin      || {};
+  const sys = d.system        || {};
+  const svc = d.services      || [];
+  const bkp = d.backup        || {};
+  const ut  = d.unit_tests    || {};
+  const crn = d.cron          || {};
+  const skl = d.skills        || [];
+  const alerts = computeAlerts(d);
+
+  // ── @technology.spiritual signal ──
+  const tsAcc = (ig.accounts||[]).find(a=>a.handle==='@technology.spiritual') || {};
+  const tsCrits = alerts.filter(a=>a.tab==='instagram'&&a.level==='crit').length;
+  const tsWarns = alerts.filter(a=>a.tab==='instagram'&&a.level==='warn').length;
+  const tsSig = getSigState('ts', tsCrits, tsWarns);
+  applySig('sig-ts','ov-card-ts', tsSig.state, tsSig.persistent);
+  document.getElementById('ov-ts-status').textContent =
+    tsSig.state==='err' ? '⚠ Error — see alerts' :
+    tsSig.state==='warn' ? '◈ Warning' :
+    tsSig.state==='rec' ? '↑ Recovered' : 'Active · Phase '+(ig.phase||'?');
+  document.getElementById('ov-ts-stats').innerHTML = `
+    <div class="ov-stat-item"><div class="v" style="color:var(--acc)">${ig.total_posted??'—'}</div><div class="l">Posts</div></div>
+    <div class="ov-stat-item"><div class="v" style="color:var(--gold)">${ig.queue_depth??'—'}</div><div class="l">Queue</div></div>
+    <div class="ov-stat-item"><div class="v" style="color:var(--dim);font-size:14px">${tsAcc.token_days!=null?tsAcc.token_days+'d':'—'}</div><div class="l">Token</div></div>`;
+  document.getElementById('ov-ts-next').textContent =
+    ig.queue_next ? 'Next: '+ig.queue_next.slice(0,40) : (ig.queue_depth===0?'Queue empty':'—');
+
+  // ── @tech.biohacking signal ──
+  const bhCrits = (bh.queue_depth===0?1:0);
+  const bhWarns = 0;
+  const bhSig = getSigState('bh', bhCrits, bhWarns);
+  applySig('sig-bh','ov-card-bh', bhSig.state, bhSig.persistent);
+  document.getElementById('ov-bh-status').textContent =
+    bhSig.state==='err' ? '⚠ Queue empty' :
+    bhSig.state==='rec' ? '↑ Recovered' : 'Active · slot 1 09:10 + slot 2 17:10';
+  document.getElementById('ov-bh-stats').innerHTML = `
+    <div class="ov-stat-item"><div class="v" style="color:var(--green)">${bh.total_posted??'—'}</div><div class="l">Posts</div></div>
+    <div class="ov-stat-item"><div class="v" style="color:var(--gold)">${bh.queue_depth??'—'}</div><div class="l">Queue</div></div>
+    <div class="ov-stat-item"><div class="v" style="color:var(--cyan);font-size:14px">${bh.d3_count??'—'}</div><div class="l">D3</div></div>`;
+  const bhLast = (bh.posts||[])[0];
+  document.getElementById('ov-bh-next').textContent =
+    bh.queue_depth > 0 ? `Queue: ${bh.queue_depth} ready` : bhLast ? 'Last: '+bhLast.ts_posted?.slice(0,10) : 'No posts yet';
+
+  // ── LinkedIn signal ──
+  const liDaysLeft = (() => {
+    if (!li.token_expires) return 999;
+    const d = Math.ceil((new Date(li.token_expires) - Date.now()) / 86400000);
+    return isNaN(d) ? 999 : d;
+  })();
+  const liCrits = liDaysLeft < 7 ? 1 : 0;
+  const liWarns = liDaysLeft < 14 ? 1 : 0;
+  const liSig = getSigState('li', liCrits, liWarns);
+  applySig('sig-li','ov-card-li', liSig.state, liSig.persistent);
+  document.getElementById('ov-li-status').textContent =
+    liSig.state==='err' ? '⚠ Token expiring soon' :
+    liSig.state==='rec' ? '↑ Recovered' : 'Active · 09:07 IST daily';
+  document.getElementById('ov-li-stats').innerHTML = `
+    <div class="ov-stat-item"><div class="v" style="color:var(--cyan)">${li.total_posted??'—'}</div><div class="l">Posts</div></div>
+    <div class="ov-stat-item"><div class="v" style="color:var(--acc);font-size:13px">${li.today_pillar_label||'—'}</div><div class="l">Today</div></div>
+    <div class="ov-stat-item"><div class="v" style="color:var(--dim);font-size:13px">${liDaysLeft<999?liDaysLeft+'d':'ok'}</div><div class="l">Token</div></div>`;
+  document.getElementById('ov-li-next').textContent = 'Next post: 09:07 IST · '+li.today_pillar_label;
+
+  // ── System chips ──
+  const diskColor = (sys.disk_pct||0)>85?'var(--red)':(sys.disk_pct||0)>70?'var(--gold)':'var(--white)';
+  const ramColor  = (sys.mem_pct ||0)>85?'var(--red)':(sys.mem_pct ||0)>70?'var(--gold)':'var(--white)';
+  const loadColor = (sys.load_1m ||0)>4 ?'var(--red)':(sys.load_1m ||0)>2 ?'var(--gold)':'var(--white)';
+  document.getElementById('ov-sys-chips').innerHTML = `
+    <div class="ov-sys-chip"><div class="v" style="color:${diskColor}">${sys.disk_pct??'—'}<span style="font-size:10px">%</span></div><div class="l">Disk</div></div>
+    <div class="ov-sys-chip"><div class="v" style="color:${ramColor}">${sys.mem_pct??'—'}<span style="font-size:10px">%</span></div><div class="l">RAM</div></div>
+    <div class="ov-sys-chip"><div class="v" style="color:${loadColor};font-size:14px">${sys.load_1m??'—'}</div><div class="l">Load</div></div>
+    <div class="ov-sys-chip"><div class="v" style="font-size:13px">${sys.uptime??'—'}</div><div class="l">Uptime</div></div>
+    <div class="ov-sys-chip"><div class="v" style="font-size:13px;color:var(--acc)">${skl.filter(s=>s.installed).length}/${skl.length}</div><div class="l">Skills</div></div>`;
+  document.getElementById('ov-sys-bars').innerHTML = [
+    {l:'Disk',v:sys.disk_pct||0,c:diskColor},{l:'RAM',v:sys.mem_pct||0,c:ramColor}
+  ].map(b=>`<div class="sys-row" style="margin-bottom:4px">
+    <span class="sys-label">${b.l}</span>
+    <div class="sys-bar"><div class="sys-bar-fill" style="width:${b.v}%;background:${b.c}"></div></div>
+    <span class="sys-val">${b.v}%</span>
+  </div>`).join('');
+
+  // ── Services ──
+  document.getElementById('o-services').innerHTML = svc.map(s=>`
+    <div class="row">${dot(s.up)}
+      <span style="font-size:13px">${s.name}</span>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--dim)">:${s.port}</span>
+    </div>`).join('') || '<div style="color:var(--dim);font-size:11px">No services tracked</div>';
+
+  // ── Pipeline health ──
+  const pipelines = [
+    {name:'@ts slot1 auto_post',    cron:'10 7 * * *',   time:'07:10 IST', tab:'instagram'},
+    {name:'@ts slot2 auto_post',    cron:'10 15 * * *',  time:'15:10 IST', tab:'instagram'},
+    {name:'@bh slot1 auto_post',    cron:'10 9 * * *',   time:'09:10 IST', tab:'instagram'},
+    {name:'@bh slot2 +elevenlabs',  cron:'10 17 * * *',  time:'17:10 IST', tab:'instagram'},
+    {name:'LinkedIn text post',     cron:'37 3 * * *',   time:'09:07 IST', tab:'linkedin'},
+    {name:'Dashboard push',         cron:'*/30 * * * *', time:'every 30m', tab:'logs'},
+    {name:'Backup',                 cron:'30 3/15 * * *',time:'09:00+21:00',tab:'system'},
+    {name:'Claude budget sync',     cron:'*/30 * * * *', time:'every 30m', tab:'system'},
+  ];
+  const cronLines = Object.values(crn.categorised||{}).flat();
+  document.getElementById('ov-pipelines').innerHTML = pipelines.map(p=>{
+    const active = cronLines.some(l=>l.includes(p.name.split(' ')[0].replace('@','auto_post').replace('@ts','auto_post').replace('@bh','auto_post_bio')));
+    return `<div class="ov-pipe-row" onclick="goTab('${p.tab}')" style="cursor:pointer">
+      <span class="ssig ssig-ok" style="width:7px;height:7px;margin-right:4px"></span>
+      <span class="ov-pipe-name">${p.name}</span>
+      <span class="ov-pipe-time">${p.time}</span>
+    </div>`;
+  }).join('');
+
+  // ── Next posts ──
+  document.getElementById('ov-next-posts').innerHTML = `
+    <div class="ov-pipe-row"><span style="font-size:11px;color:var(--acc);min-width:120px">@tech.spiritual</span>
+      <span style="font-size:11px;color:var(--dim)">${d.next_post||'—'} · q:${ig.queue_depth??'—'}</span></div>
+    <div class="ov-pipe-row"><span style="font-size:11px;color:var(--green);min-width:120px">@tech.biohacking</span>
+      <span style="font-size:11px;color:var(--dim)">09:10 IST · q:${bh.queue_depth??'—'}</span></div>
+    <div class="ov-pipe-row"><span style="font-size:11px;color:var(--cyan);min-width:120px">LinkedIn</span>
+      <span style="font-size:11px;color:var(--dim)">09:07 IST · ${li.today_pillar_label||'—'}</span></div>`;
+
+  // ── Health gates ──
+  const utOk = ut.status === 'PASS';
+  const bkpOk = !bkp.last_error;
+  document.getElementById('ov-health-gates').innerHTML = `
+    <div class="ov-pipe-row">
+      <span class="ssig ${utOk?'ssig-ok':'ssig-err'}" style="width:7px;height:7px;margin-right:6px"></span>
+      <span style="font-size:12px">Unit tests</span>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:11px;color:${utOk?'var(--green)':'var(--red)'}">${ut.passed||0}/${ut.total||0}</span>
+    </div>
+    <div class="ov-pipe-row">
+      <span class="ssig ${bkpOk?'ssig-ok':'ssig-warn'}" style="width:7px;height:7px;margin-right:6px"></span>
+      <span style="font-size:12px">Git backup</span>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:11px;color:${bkpOk?'var(--green)':'var(--gold)'}">${bkpOk?'clean':bkp.last_error?.slice(0,20)}</span>
+    </div>
+    <div class="ov-pipe-row">
+      <span class="ssig ${svc.every(s=>s.up)?'ssig-ok':'ssig-err'}" style="width:7px;height:7px;margin-right:6px"></span>
+      <span style="font-size:12px">Services</span>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:11px">${svc.filter(s=>s.up).length}/${svc.length} up</span>
+    </div>
+    <div class="ov-pipe-row">
+      <span style="font-size:11px;color:var(--dim)">Backup last:</span>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--dim)">${bkp.last_commit||'—'}</span>
+    </div>`;
+
+  // ── Activity table (all platforms combined) ──
+  const igPosts  = (ig.recent_posts||[]).slice(0,4).map(p=>({
+    platform:'@ts', color:'var(--acc)', topic:p.topic, type:'reel',
+    posted:p.ts_posted, d3_reach:p.d3_reach, d3_saves:p.d3_saves
+  }));
+  const bhPosts_ = (bh.posts||[]).slice(0,3).map(p=>({
+    platform:'@bh', color:'var(--green)', topic:p.topic, type:'reel·'+({'Edge/Jenny':'α','Edge/Guy':'β','Edge/Aria':'γ','ElevenLabs/George':'δ'}[p.voice_name]||'?'),
+    posted:p.ts_posted, d3_reach:p.d3_reach, d3_saves:'—'
+  }));
+  const liPosts_ = (li.posts||[]).slice(0,3).map(p=>({
+    platform:'LinkedIn', color:'var(--cyan)', topic:(p.caption||'').slice(0,60), type:p.type||'text',
+    posted:(p.ts||'').slice(0,16), d3_reach:'—', d3_saves:'—'
+  }));
+  const allActivity = [...igPosts, ...bhPosts_, ...liPosts_]
+    .sort((a,b)=>(b.posted||'').localeCompare(a.posted||''))
+    .slice(0,10);
+  document.getElementById('o-activity-table').innerHTML = allActivity.length
+    ? allActivity.map(p=>`<tr>
+        <td style="font-family:var(--mono);font-size:11px;color:${p.color};white-space:nowrap">${p.platform}</td>
+        <td style="max-width:260px;font-size:11px;word-break:break-word">${p.topic||'—'}</td>
+        <td><span class="tag tg-acc">${p.type}</span></td>
+        <td style="font-family:var(--mono);font-size:10px;color:var(--dim);white-space:nowrap">${p.posted||'—'}</td>
+        <td style="font-family:var(--mono)">${fmt(p.d3_reach)}</td>
+        <td style="font-family:var(--mono);color:var(--green)">${fmt(p.d3_saves)}</td>
+      </tr>`).join('')
+    : '<tr><td colspan="6" style="color:var(--dim);text-align:center;padding:16px">No activity yet</td></tr>';
+}
 function showIgTab(el, paneId) {
   document.querySelectorAll('#pane-instagram .ig-tab').forEach(t=>t.classList.remove('active'));
   ['igp-overview','igp-ts','igp-bh','igp-rd','igp-add'].forEach(id=>{
@@ -740,21 +1052,8 @@ function render(d) {
   const svc = d.services   || [];
   const log = d.logs       || {};
 
-  // ── Overview ──
-  const installed = skl.filter(s=>s.installed).length;
-  document.getElementById('o-phase').textContent   = ig.phase ?? '—';
-  document.getElementById('o-posted').textContent  = ig.total_posted ?? '—';
-  document.getElementById('o-queue').textContent   = ig.queue_depth ?? '—';
-  document.getElementById('o-skills').textContent  = installed+'/'+skl.length;
-  document.getElementById('o-disk').textContent    = sys.disk_pct ?? '—';
-  document.getElementById('o-ram').textContent     = sys.mem_pct ?? '—';
-  document.getElementById('o-load').textContent    = sys.load_1m ?? '—';
-  document.getElementById('o-uptime').textContent  = sys.uptime ?? '—';
-
-  document.getElementById('o-nextpost').textContent = d.next_post ?? '—';
-  document.getElementById('o-nexttopic').textContent = ig.queue_next ? 'Next: '+ig.queue_next : 'Queue empty';
-  document.getElementById('o-phasebar').style.width = (ig.phase_pct||0)+'%';
-  document.getElementById('o-phasenote').textContent = ig.phase_note || '';
+  // ── Overview — full mission control ──
+  renderOverview(d);
 
   // ── Claude Budget card ──
   const bdg = d.claude_budget || {};
@@ -777,33 +1076,7 @@ function render(d) {
     document.getElementById('bdg-source').textContent  = bdg.date ? `date: ${bdg.date}` : '';
   }
 
-  document.getElementById('o-services').innerHTML = svc.map(s=>`
-    <div class="row">${dot(s.up)}
-      <span style="font-size:13px">${s.name}</span>
-      <span style="margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--dim)">:${s.port}</span>
-    </div>`).join('');
-
-  document.getElementById('o-accounts').innerHTML = (ig.accounts||[]).map(a=>`
-    <div class="row">
-      ${dot(a.status==='active')}
-      <div>
-        <div style="font-size:13px;color:var(--acc)">${a.handle}</div>
-        <div style="font-size:10px;color:var(--dim);font-family:var(--mono)">${a.role}${a.token_note?'&nbsp;<span class="tag tg-red">'+a.token_note+'</span>':''}</div>
-      </div>
-    </div>`).join('');
-
-  const posts = ig.recent_posts || [];
-  document.getElementById('o-posttable').innerHTML = posts.length
-    ? posts.map(p=>`<tr>
-        <td style="max-width:180px;word-break:break-word;font-size:11px">${p.topic}</td>
-        <td><span class="tag tg-acc">${p.hook_type}</span></td>
-        <td style="font-family:var(--mono);font-size:10px;color:var(--dim)">${p.ts_posted}</td>
-        <td style="font-family:var(--mono)">${fmt(p.d3_reach)}</td>
-        <td style="font-family:var(--mono);color:var(--green)">${fmt(p.d3_saves)}</td>
-        <td style="font-family:var(--mono)">${fmt(p.d7_reach)}</td>
-        <td style="font-family:var(--mono);color:var(--green)">${fmt(p.d7_saves)}</td>
-      </tr>`).join('')
-    : '<tr><td colspan="7" style="color:var(--dim);text-align:center;padding:16px">No posts yet</td></tr>';
+  // services rendered inside renderOverview
 
   // ── Instagram tab ──
   // Overview: all accounts
