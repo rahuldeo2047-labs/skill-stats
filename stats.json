@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-27T03:30:02.044004+05:30",
-  "generated_at_human": "2026-03-27 03:30 IST",
+  "generated_at": "2026-03-27T04:00:01.393858+05:30",
+  "generated_at_human": "2026-03-27 04:00 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "6h 25m",
+    "uptime": "6h 55m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1489.7,
     "disk_free_gb": 2446.0,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1852,
-    "mem_free_mb": 5961,
-    "mem_pct": 23.7,
-    "load_1m": 0.08,
-    "load_5m": 0.05,
-    "load_15m": 0.01
+    "mem_used_mb": 1870,
+    "mem_free_mb": 5943,
+    "mem_pct": 23.9,
+    "load_1m": 0.01,
+    "load_5m": 0.02,
+    "load_15m": 0.0
   },
   "services": [
     {
@@ -356,10 +356,18 @@
     "token_expires": "2026-05-24"
   },
   "linkedin": {
-    "total_posted": 2,
+    "total_posted": 3,
     "today_pillar": "bio",
     "today_pillar_label": "Biohacking",
     "posts": [
+      {
+        "ts": "2026-03-27T03:37",
+        "type": "text",
+        "pillar": "bio",
+        "post_urn": "urn:li:share:7443055951974330368",
+        "char_count": 155,
+        "caption": "Building at the frontier of Biohacking \u2014 more updates coming. Follow for daily insights.\n\n#Biohacking #Longevity #HumanO"
+      },
       {
         "ts": "2026-03-26T21:41",
         "type": "text",
@@ -915,14 +923,14 @@
     "final_count": 84
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
-    "last_error": "backup.py: error: unrecognized arguments: --check-large",
+    "last_ok": "backup.py: error: unrecognized arguments: --recover",
+    "last_error": "backup.py: error: unrecognized arguments: --recover",
     "recent_commits": [
+      "22fee3b chore: update skill-stats pointer",
       "91e6c41 chore: update skill-stats pointer",
       "38eede9 chore: update skill-stats pointer",
       "c496315 chore: update skill-stats pointer",
-      "58ecf6b chore: update skill-stats pointer",
-      "8779c46 chore: update skill-stats pointer"
+      "58ecf6b chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1100,7 +1108,7 @@
     "backup": [
       "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --check-large"
+      "backup.py: error: unrecognized arguments: --recover"
     ],
     "dashboard": [
       "hint: the same ref. If you want to integrate the remote changes, use",
@@ -1510,7 +1518,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-27 03:00 IST",
+    "api_fetched_at": "2026-03-27 03:30 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1519,7 +1527,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-27 03:30 IST",
+    "ts": "2026-03-27 04:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
