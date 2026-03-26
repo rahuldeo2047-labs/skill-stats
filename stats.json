@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-27T04:00:01.393858+05:30",
-  "generated_at_human": "2026-03-27 04:00 IST",
+  "generated_at": "2026-03-27T04:30:01.672531+05:30",
+  "generated_at_human": "2026-03-27 04:30 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,17 +9,17 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "6h 55m",
+    "uptime": "7h 25m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1489.7,
     "disk_free_gb": 2446.0,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1870,
-    "mem_free_mb": 5943,
-    "mem_pct": 23.9,
-    "load_1m": 0.01,
-    "load_5m": 0.02,
+    "mem_used_mb": 1853,
+    "mem_free_mb": 5960,
+    "mem_pct": 23.7,
+    "load_1m": 0.0,
+    "load_5m": 0.0,
     "load_15m": 0.0
   },
   "services": [
@@ -58,8 +58,8 @@
       }
     ],
     "total_posted": 70,
-    "d3_count": 66,
-    "d7_count": 37,
+    "d3_count": 69,
+    "d7_count": 47,
     "d0_count": 8,
     "queue_depth": 0,
     "queue_next": null,
@@ -75,13 +75,13 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d3_reach": 82,
+        "d3_saves": 0,
+        "d7_reach": 82,
+        "d7_saves": 0,
         "has_d0": false,
-        "has_d3": false,
-        "has_d7": false
+        "has_d3": true,
+        "has_d7": true
       },
       {
         "post_id": "18117459715643181",
@@ -93,13 +93,13 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d3_reach": 43,
+        "d3_saves": 0,
+        "d7_reach": 43,
+        "d7_saves": 0,
         "has_d0": false,
-        "has_d3": false,
-        "has_d7": false
+        "has_d3": true,
+        "has_d7": true
       },
       {
         "post_id": "18097723427002102",
@@ -111,13 +111,13 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d3_reach": 94,
+        "d3_saves": 1,
+        "d7_reach": 94,
+        "d7_saves": 1,
         "has_d0": false,
-        "has_d3": false,
-        "has_d7": false
+        "has_d3": true,
+        "has_d7": true
       },
       {
         "post_id": "18356803768230826",
@@ -131,11 +131,11 @@
         "d0_er": 0,
         "d3_reach": "\u2014",
         "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d7_reach": 96,
+        "d7_saves": 0,
         "has_d0": false,
         "has_d3": false,
-        "has_d7": false
+        "has_d7": true
       },
       {
         "post_id": "17957807519935038",
@@ -149,11 +149,11 @@
         "d0_er": 0,
         "d3_reach": 0,
         "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d7_reach": 95,
+        "d7_saves": 0,
         "has_d0": false,
         "has_d3": true,
-        "has_d7": false
+        "has_d7": true
       },
       {
         "post_id": "18090739357919877",
@@ -167,11 +167,11 @@
         "d0_er": 0,
         "d3_reach": 0,
         "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d7_reach": 36,
+        "d7_saves": 1,
         "has_d0": false,
         "has_d3": true,
-        "has_d7": false
+        "has_d7": true
       },
       {
         "post_id": "17934324366196541",
@@ -185,11 +185,11 @@
         "d0_er": 0,
         "d3_reach": 100,
         "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d7_reach": 101,
+        "d7_saves": 0,
         "has_d0": false,
         "has_d3": true,
-        "has_d7": false
+        "has_d7": true
       },
       {
         "post_id": "18069140942285729",
@@ -203,11 +203,11 @@
         "d0_er": 0,
         "d3_reach": 107,
         "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d7_reach": 108,
+        "d7_saves": 0,
         "has_d0": false,
         "has_d3": true,
-        "has_d7": false
+        "has_d7": true
       }
     ],
     "phase": 1,
@@ -923,14 +923,14 @@
     "final_count": 84
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --recover",
-    "last_error": "backup.py: error: unrecognized arguments: --recover",
+    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
+    "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "7a5df5b chore: update skill-stats pointer",
       "22fee3b chore: update skill-stats pointer",
       "91e6c41 chore: update skill-stats pointer",
       "38eede9 chore: update skill-stats pointer",
-      "c496315 chore: update skill-stats pointer",
-      "58ecf6b chore: update skill-stats pointer"
+      "c496315 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1104,11 +1104,14 @@
   },
   "logs": {
     "ig_post": [],
-    "ig_learning": [],
+    "ig_learning": [
+      "  Engagement rate: 1.06%",
+      "  Saved to experiments.jsonl"
+    ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --recover"
+      "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
       "hint: the same ref. If you want to integrate the remote changes, use",
@@ -1518,7 +1521,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-27 03:30 IST",
+    "api_fetched_at": "2026-03-27 04:00 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1527,7 +1530,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-27 04:00 IST",
+    "ts": "2026-03-27 04:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
