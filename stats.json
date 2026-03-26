@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-27T04:30:01.672531+05:30",
-  "generated_at_human": "2026-03-27 04:30 IST",
+  "generated_at": "2026-03-27T05:00:02.003861+05:30",
+  "generated_at_human": "2026-03-27 05:00 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,15 +9,15 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "7h 25m",
+    "uptime": "7h 55m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1489.7,
     "disk_free_gb": 2446.0,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1853,
-    "mem_free_mb": 5960,
-    "mem_pct": 23.7,
+    "mem_used_mb": 1898,
+    "mem_free_mb": 5915,
+    "mem_pct": 24.3,
     "load_1m": 0.0,
     "load_5m": 0.0,
     "load_15m": 0.0
@@ -926,11 +926,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "801a9bb chore: update skill-stats pointer",
       "7a5df5b chore: update skill-stats pointer",
       "22fee3b chore: update skill-stats pointer",
       "91e6c41 chore: update skill-stats pointer",
-      "38eede9 chore: update skill-stats pointer",
-      "c496315 chore: update skill-stats pointer"
+      "38eede9 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1109,7 +1109,7 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --recover",
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -1397,7 +1397,7 @@
     "logs": [
       {
         "file": "signals.jsonl",
-        "last": "{\"ts\": 1774479646.180761, \"date\": \"2026-03-26\", \"domain\": \"output\", \"type\": \"positive\", \"note\": \"active: Claude_Code_Ski"
+        "last": "{\"ts\": 1774566041.942828, \"date\": \"2026-03-27\", \"domain\": \"output\", \"type\": \"positive\", \"note\": \"active: Claude_Code_Ski"
       }
     ],
     "human_base": "/home/rick/Documents/playground/Claude_Code_Skills/HumanOS",
@@ -1521,7 +1521,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-27 04:00 IST",
+    "api_fetched_at": "2026-03-27 04:30 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1530,7 +1530,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-27 04:30 IST",
+    "ts": "2026-03-27 05:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
