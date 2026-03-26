@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-26T10:19:21.202710+05:30",
-  "generated_at_human": "2026-03-26 10:19 IST",
+  "generated_at": "2026-03-26T10:30:02.055956+05:30",
+  "generated_at_human": "2026-03-26 10:30 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "55h 9m",
+    "uptime": "55h 20m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1489.9,
     "disk_free_gb": 2445.8,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3610,
-    "mem_free_mb": 4203,
-    "mem_pct": 46.2,
-    "load_1m": 2.03,
-    "load_5m": 1.49,
-    "load_15m": 1.0
+    "mem_used_mb": 3750,
+    "mem_free_mb": 4063,
+    "mem_pct": 48.0,
+    "load_1m": 1.44,
+    "load_5m": 1.33,
+    "load_15m": 1.18
   },
   "services": [
     {
@@ -837,11 +837,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "27d10d8 fix: dashboard bugs + LinkedIn tab + generate_stats LinkedIn fn",
+      "279bb4b chore: update skill-stats pointer",
       "82cfceb feat: LinkedIn pipeline \u2014 text+carousel auto_post, /rest/videos upload, pillar schedule",
       "a7e62bf feat: add get_biohacking() to generate_stats \u2014 @bh KPIs + posts in stats.json",
-      "f06f6a9 fix: resolve Anthropic key from live VS Code token in BH pipeline",
-      "39ba9a2 fix: BH DRISHTI \u2014 use live VS Code OAuth token from .credentials.json (same as @ts)",
-      "9e986d1 backup: 2026-03-26 \u2014 routine"
+      "f06f6a9 fix: resolve Anthropic key from live VS Code token in BH pipeline"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1021,14 +1021,14 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --recover",
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
-      "    python3 -c \"",
-      "               ^",
-      "SyntaxError: unterminated string literal (detected at line 19)"
+      "  Projects: 20 | Open tasks: 12",
+      "  Skills: 18/18 installed",
+      "[2026-03-26 10:19 IST] skill-stats pushed \u2713"
     ]
   },
   "memory": {
@@ -1442,7 +1442,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-26 10:19 IST",
+    "ts": "2026-03-26 10:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
