@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-27T23:30:01.948098+05:30",
-  "generated_at_human": "2026-03-27 23:30 IST",
-  "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
+  "generated_at": "2026-03-28T00:00:02.036617+05:30",
+  "generated_at_human": "2026-03-28 00:00 IST",
+  "next_post": "00:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "26h 25m",
+    "uptime": "26h 55m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1491.4,
     "disk_free_gb": 2444.3,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4774,
-    "mem_free_mb": 3039,
-    "mem_pct": 61.1,
-    "load_1m": 1.51,
-    "load_5m": 1.01,
-    "load_15m": 0.62
+    "mem_used_mb": 4531,
+    "mem_free_mb": 3282,
+    "mem_pct": 58.0,
+    "load_1m": 0.21,
+    "load_5m": 0.8,
+    "load_15m": 0.88
   },
   "services": [
     {
@@ -393,8 +393,8 @@
   },
   "linkedin": {
     "total_posted": 3,
-    "today_pillar": "bio",
-    "today_pillar_label": "Biohacking",
+    "today_pillar": "quantum",
+    "today_pillar_label": "DIY Quantum",
     "posts": [
       {
         "ts": "2026-03-27T03:37",
@@ -1028,11 +1028,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "9583fa4 chore: update skill-stats pointer",
       "aecd0f9 chore: update skill-stats pointer",
       "afe57d8 chore: update skill-stats pointer",
       "4b560c5 chore: update skill-stats pointer",
-      "acd358f chore: update skill-stats pointer",
-      "9482693 chore: update skill-stats pointer"
+      "acd358f chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1211,8 +1211,8 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
+      "backup.py: error: unrecognized arguments: --recover",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
@@ -1495,7 +1495,7 @@
       "flexible": "Friday, Saturday",
       "note": "Autonomous tasks continue after hard close; no Rahul input requested."
     },
-    "boundary": "HARD CLOSE \u2014 stop requesting input",
+    "boundary": null,
     "logs": [
       {
         "file": "signals.jsonl",
@@ -1623,7 +1623,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-27 23:00 IST",
+    "api_fetched_at": "2026-03-27 23:30 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1632,7 +1632,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-27 23:30 IST",
+    "ts": "2026-03-28 00:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
