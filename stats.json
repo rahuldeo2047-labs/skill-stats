@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-27T22:00:01.572977+05:30",
-  "generated_at_human": "2026-03-27 22:00 IST",
+  "generated_at": "2026-03-27T22:30:02.068316+05:30",
+  "generated_at_human": "2026-03-27 22:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "24h 55m",
+    "uptime": "25h 25m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1491.0,
-    "disk_free_gb": 2444.7,
+    "disk_used_gb": 1491.2,
+    "disk_free_gb": 2444.5,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4741,
-    "mem_free_mb": 3072,
-    "mem_pct": 60.7,
-    "load_1m": 1.23,
-    "load_5m": 1.25,
-    "load_15m": 1.36
+    "mem_used_mb": 5071,
+    "mem_free_mb": 2742,
+    "mem_pct": 64.9,
+    "load_1m": 5.54,
+    "load_5m": 4.74,
+    "load_15m": 2.93
   },
   "services": [
     {
@@ -1003,6 +1003,12 @@
         "final": true
       },
       {
+        "name": "ZeroWhip-v3.mp4",
+        "size_mb": 22.7,
+        "modified": "03-27 22:28",
+        "final": false
+      },
+      {
         "name": "zerowwhip_reel.mp4",
         "size_mb": 17.8,
         "modified": "03-27 10:54",
@@ -1015,7 +1021,7 @@
         "final": false
       }
     ],
-    "count": 98,
+    "count": 99,
     "final_count": 92
   },
   "backup": {
@@ -1205,14 +1211,14 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --recover",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
-      "hint: the same ref. If you want to integrate the remote changes, use",
-      "hint: 'git pull' before pushing again.",
-      "hint: See the 'Note about fast-forwards' in 'git push --help' for details."
+      "  Sys: 37.9% disk | 60.7% RAM | load 1.23",
+      "  Projects: 20 | Open tasks: 12",
+      "  Skills: 18/18 installed"
     ]
   },
   "memory": {
@@ -1610,24 +1616,29 @@
   },
   "claude_budget": {
     "date": "2026-03-27",
-    "state": "black",
-    "pct": 100.0,
+    "state": "green",
+    "pct": 0.0,
     "source": "api",
     "api_5h_pct": 0.0,
-    "api_7d_pct": 100.0,
+    "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
-    "api_binding": "seven_day",
-    "api_fetched_at": "2026-03-27 21:30 IST",
-    "api_5h_reset_ts": 1774627200,
-    "api_7d_reset_ts": 1774699200
+    "api_binding": "unknown",
+    "api_fetched_at": "2026-03-27 22:00 IST",
+    "api_5h_reset_ts": 0,
+    "api_7d_reset_ts": 0
   },
   "unit_tests": {
-    "status": "error",
-    "total": 0,
-    "passed": 0,
+    "status": "PASS",
+    "total": 34,
+    "passed": 34,
     "failed": 0,
-    "ts": "2026-03-27 22:00 IST",
-    "error": "Command '['/usr/bin/python3', '/home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/tests/test_360_pipeline.py']' timed out after 30 seconds",
-    "suites": {}
+    "ts": "2026-03-27 22:30 IST",
+    "suites": {
+      "parse_last_run_log": 5,
+      "load_experiments": 4,
+      "load_queue": 2,
+      "backup_git_flow": 4,
+      "report_output": 3
+    }
   }
 }
