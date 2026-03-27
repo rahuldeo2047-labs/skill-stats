@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-27T21:00:01.764270+05:30",
-  "generated_at_human": "2026-03-27 21:00 IST",
+  "generated_at": "2026-03-27T21:30:02.813675+05:30",
+  "generated_at_human": "2026-03-27 21:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "23h 55m",
+    "uptime": "24h 25m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1492.2,
-    "disk_free_gb": 2443.5,
+    "disk_used_gb": 1491.1,
+    "disk_free_gb": 2444.6,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4744,
-    "mem_free_mb": 3069,
-    "mem_pct": 60.7,
-    "load_1m": 1.42,
-    "load_5m": 0.75,
-    "load_15m": 0.6
+    "mem_used_mb": 4260,
+    "mem_free_mb": 3553,
+    "mem_pct": 54.5,
+    "load_1m": 1.15,
+    "load_5m": 1.67,
+    "load_15m": 2.18
   },
   "services": [
     {
@@ -1007,20 +1007,26 @@
         "size_mb": 17.8,
         "modified": "03-27 10:54",
         "final": false
+      },
+      {
+        "name": "zerowwhip_v2.mp4",
+        "size_mb": 17.0,
+        "modified": "03-27 21:14",
+        "final": false
       }
     ],
-    "count": 97,
+    "count": 98,
     "final_count": 92
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "acd358f chore: update skill-stats pointer",
       "9482693 chore: update skill-stats pointer",
       "f9c261a chore: update skill-stats pointer",
       "4573a23 chore: update skill-stats pointer",
-      "2022d95 chore: update skill-stats pointer",
-      "97d46c1 chore: update skill-stats pointer"
+      "2022d95 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1604,23 +1610,23 @@
   },
   "claude_budget": {
     "date": "2026-03-27",
-    "state": "green",
-    "pct": 0.0,
+    "state": "black",
+    "pct": 100.0,
     "source": "api",
     "api_5h_pct": 0.0,
-    "api_7d_pct": 0.0,
+    "api_7d_pct": 100.0,
     "api_overage_pct": 0.0,
-    "api_binding": "unknown",
-    "api_fetched_at": "2026-03-27 20:30 IST",
-    "api_5h_reset_ts": 0,
-    "api_7d_reset_ts": 0
+    "api_binding": "seven_day",
+    "api_fetched_at": "2026-03-27 21:00 IST",
+    "api_5h_reset_ts": 1774627200,
+    "api_7d_reset_ts": 1774699200
   },
   "unit_tests": {
     "status": "PASS",
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-27 21:00 IST",
+    "ts": "2026-03-27 21:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
