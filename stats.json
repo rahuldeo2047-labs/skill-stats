@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-27T15:00:01.417019+05:30",
-  "generated_at_human": "2026-03-27 15:00 IST",
+  "generated_at": "2026-03-27T15:30:01.259653+05:30",
+  "generated_at_human": "2026-03-27 15:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "17h 55m",
+    "uptime": "18h 25m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1491.9,
     "disk_free_gb": 2443.8,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3457,
-    "mem_free_mb": 4356,
-    "mem_pct": 44.2,
-    "load_1m": 0.01,
-    "load_5m": 0.05,
-    "load_15m": 0.04
+    "mem_used_mb": 3423,
+    "mem_free_mb": 4390,
+    "mem_pct": 43.8,
+    "load_1m": 0.09,
+    "load_5m": 0.21,
+    "load_15m": 0.46
   },
   "services": [
     {
@@ -57,8 +57,8 @@
         "status": "paused"
       }
     ],
-    "total_posted": 74,
-    "d3_count": 70,
+    "total_posted": 78,
+    "d3_count": 74,
     "d7_count": 47,
     "d0_count": 8,
     "queue_depth": 0,
@@ -66,10 +66,10 @@
     "queue_topics": [],
     "recent_posts": [
       {
-        "post_id": "18068820377287461",
-        "topic": "lightweight-genai-for-network-traffic-synthesis-fi",
+        "post_id": "18103924972906130",
+        "topic": "training-the-knowledge-base-through-evidence-disti",
         "hook_type": "contrarian",
-        "ts_posted": "2026-03-27T07:18",
+        "ts_posted": "2026-03-27T15:19",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
@@ -81,6 +81,78 @@
         "d7_saves": "\u2014",
         "has_d0": false,
         "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18085664009584380",
+        "topic": "drive-my-way-preference-alignment-of-vision-langua",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-27T15:18",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "17909989548184318",
+        "topic": "vega-learning-to-drive-with-natural-language-instr",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-27T15:17",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "17881818540530195",
+        "topic": "aryabhata-computed-pi-to-4-decimal-places-in-499-c",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-27T15:17",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18068820377287461",
+        "topic": "lightweight-genai-for-network-traffic-synthesis-fi",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-27T07:18",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": 14,
+        "d3_saves": 0,
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -93,12 +165,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 98,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -111,12 +183,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 51,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -129,89 +201,17 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 102,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
-      },
-      {
-        "post_id": "18154207105452233",
-        "topic": "endovggt-gnn-enhanced-depth-estimation-for-surgica",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-26T21:58",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 104,
-        "d3_saves": 0,
-        "d7_reach": 82,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18117459715643181",
-        "topic": "retrieval-improvements-do-not-guarantee-better-ans",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-26T21:57",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 61,
-        "d3_saves": 0,
-        "d7_reach": 43,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18097723427002102",
-        "topic": "the-stochastic-gap-a-markovian-framework-for-pre-d",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-26T21:57",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 102,
-        "d3_saves": 1,
-        "d7_reach": 94,
-        "d7_saves": 1,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18356803768230826",
-        "topic": "maya-is-not-illusion-vedanta-s-observer-problem-ma",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-26T21:56",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 103,
-        "d3_saves": 0,
-        "d7_reach": 96,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
       }
     ],
     "phase": 1,
-    "phase_note": "Phase 1 \u2014 organic only. 74 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
+    "phase_note": "Phase 1 \u2014 organic only. 78 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
     "phase_pct": 100,
     "learnings": [
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
@@ -925,6 +925,30 @@
         "final": true
       },
       {
+        "name": "auto_202603271511_00_aryabhata-computed-pi-to-4-decimal-places-in-499-c_final.mp4",
+        "size_mb": 2.1,
+        "modified": "03-27 15:13",
+        "final": true
+      },
+      {
+        "name": "auto_202603271513_01_vega-learning-to-drive-with-natural-language-instr_final.mp4",
+        "size_mb": 2.1,
+        "modified": "03-27 15:14",
+        "final": true
+      },
+      {
+        "name": "auto_202603271514_02_drive-my-way-preference-alignment-of-vision-langua_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-27 15:15",
+        "final": true
+      },
+      {
+        "name": "auto_202603271515_03_training-the-knowledge-base-through-evidence-disti_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-27 15:16",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -985,18 +1009,18 @@
         "final": false
       }
     ],
-    "count": 93,
-    "final_count": 88
+    "count": 97,
+    "final_count": 92
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "655eb66 chore: update skill-stats pointer",
       "be081a2 chore: update skill-stats pointer",
       "bb890db chore: update skill-stats pointer",
       "e72a1e0 chore: update skill-stats pointer",
-      "d481a76 chore: update skill-stats pointer",
-      "8789c0e chore: update skill-stats pointer"
+      "d481a76 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1587,7 +1611,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-27 14:30 IST",
+    "api_fetched_at": "2026-03-27 15:00 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1596,7 +1620,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-27 15:00 IST",
+    "ts": "2026-03-27 15:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
