@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-27T09:00:02.493868+05:30",
-  "generated_at_human": "2026-03-27 09:00 IST",
+  "generated_at": "2026-03-27T09:30:01.995687+05:30",
+  "generated_at_human": "2026-03-27 09:30 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "11h 55m",
+    "uptime": "12h 25m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1491.0,
     "disk_free_gb": 2444.7,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4240,
-    "mem_free_mb": 3573,
-    "mem_pct": 54.3,
-    "load_1m": 0.23,
-    "load_5m": 1.65,
-    "load_15m": 1.56
+    "mem_used_mb": 4448,
+    "mem_free_mb": 3365,
+    "mem_pct": 56.9,
+    "load_1m": 1.63,
+    "load_5m": 1.54,
+    "load_15m": 1.37
   },
   "services": [
     {
@@ -234,10 +234,58 @@
     ]
   },
   "biohacking": {
-    "total_posted": 9,
+    "total_posted": 13,
     "queue_depth": 0,
     "d3_count": 0,
     "posts": [
+      {
+        "topic": "crispr-cas9-for-cancer-therapy-opportuni",
+        "title": "CRISPR-Cas9 for cancer therapy: Opportunities and challenges",
+        "category": "neuroscience",
+        "voice_name": "Edge/Jenny",
+        "voice_slot": 3,
+        "tts_chars": 304,
+        "media_id": "17947208354984426",
+        "ts_posted": "2026-03-27T09:21",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "application-of-the-crispr-cas9-based-gen",
+        "title": "Application of the CRISPR/Cas9-based gene editing technique ",
+        "category": "neuroscience",
+        "voice_name": "Edge/Aria",
+        "voice_slot": 2,
+        "tts_chars": 304,
+        "media_id": "18572594050037611",
+        "ts_posted": "2026-03-27T09:19",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "crispr-cas9-gene-editing-research-techno",
+        "title": "CRISPR/Cas9 gene-editing: Research technologies, clinical ap",
+        "category": "neuroscience",
+        "voice_name": "Edge/Guy",
+        "voice_slot": 1,
+        "tts_chars": 304,
+        "media_id": "18115056235646783",
+        "ts_posted": "2026-03-27T09:18",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "crispr-based-gene-therapies-from-preclin",
+        "title": "CRISPR-Based Gene Therapies: From Preclinical to Clinical Tr",
+        "category": "neuroscience",
+        "voice_name": "Edge/Jenny",
+        "voice_slot": 0,
+        "tts_chars": 304,
+        "media_id": "17864616753657698",
+        "ts_posted": "2026-03-27T09:17",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
       {
         "topic": "neural-probes-microsystems-to-interface",
         "title": "Neural probes--microsystems to interface with the brain.",
@@ -333,24 +381,12 @@
         "ts_posted": "2026-03-26T00:01",
         "d3_reach": "\u2014",
         "d3_saves": "\u2014"
-      },
-      {
-        "topic": "health-benefits-of-intermittent-fasting",
-        "title": "Health Benefits of Intermittent Fasting.",
-        "category": "longevity",
-        "voice_name": "EdgeTTS/en-US-JennyNeural",
-        "voice_slot": 0,
-        "tts_chars": 290,
-        "media_id": "17895087849287942",
-        "ts_posted": "2026-03-25T23:22",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
       }
     ],
     "categories": {
       "longevity": 1,
       "wearables": 4,
-      "neuroscience": 4
+      "neuroscience": 8
     },
     "ig_id": "17841464494421993",
     "token_expires": "2026-05-24"
@@ -950,11 +986,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "3d112eb chore: update skill-stats pointer",
       "bbeffa2 chore: update skill-stats pointer",
       "3be6fe0 chore: update skill-stats pointer",
       "dee1f41 chore: update skill-stats pointer",
-      "6b690eb chore: update skill-stats pointer",
-      "e32e590 chore: update skill-stats pointer"
+      "6b690eb chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1545,7 +1581,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-27 09:00 IST",
+    "api_fetched_at": "2026-03-27 09:30 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1554,7 +1590,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-27 09:00 IST",
+    "ts": "2026-03-27 09:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
