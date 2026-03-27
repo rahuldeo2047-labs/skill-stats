@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-28T00:00:02.036617+05:30",
-  "generated_at_human": "2026-03-28 00:00 IST",
-  "next_post": "00:10 IST (queue empty \u2014 will generate fresh reels)",
+  "generated_at": "2026-03-28T00:30:01.539591+05:30",
+  "generated_at_human": "2026-03-28 00:30 IST",
+  "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "26h 55m",
+    "uptime": "0h 15m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1491.4,
-    "disk_free_gb": 2444.3,
+    "disk_used_gb": 1490.9,
+    "disk_free_gb": 2444.8,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4531,
-    "mem_free_mb": 3282,
-    "mem_pct": 58.0,
-    "load_1m": 0.21,
-    "load_5m": 0.8,
-    "load_15m": 0.88
+    "mem_used_mb": 1568,
+    "mem_free_mb": 6245,
+    "mem_pct": 20.1,
+    "load_1m": 0.02,
+    "load_5m": 0.54,
+    "load_15m": 0.73
   },
   "services": [
     {
@@ -1028,11 +1028,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "6972903 chore: update skill-stats pointer",
       "9583fa4 chore: update skill-stats pointer",
       "aecd0f9 chore: update skill-stats pointer",
       "afe57d8 chore: update skill-stats pointer",
-      "4b560c5 chore: update skill-stats pointer",
-      "acd358f chore: update skill-stats pointer"
+      "4b560c5 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1206,20 +1206,12 @@
   },
   "logs": {
     "ig_post": [],
-    "ig_learning": [
-      "  Engagement rate: 1.06%",
-      "  Saved to experiments.jsonl"
-    ],
+    "ig_learning": [],
     "backup": [
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --recover",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
-    "dashboard": [
-      "hint: the same ref. If you want to integrate the remote changes, use",
-      "hint: 'git pull' before pushing again.",
-      "hint: See the 'Note about fast-forwards' in 'git push --help' for details."
-    ]
+    "dashboard": []
   },
   "memory": {
     "projects": [
@@ -1615,7 +1607,7 @@
     "major_suggestion": "Create shared env_loader.sh sourced by all cron jobs \u2014 30 min, eliminates 70% of recurring cron failures. Then: narrate and final-render the NeckGuardian reel (pending 3+ sessions, highest creative ROI)."
   },
   "claude_budget": {
-    "date": "2026-03-27",
+    "date": "2026-03-28",
     "state": "green",
     "pct": 0.0,
     "source": "api",
@@ -1623,7 +1615,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-27 23:30 IST",
+    "api_fetched_at": "2026-03-28 00:00 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1632,7 +1624,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-28 00:00 IST",
+    "ts": "2026-03-28 00:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
