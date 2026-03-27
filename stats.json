@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-27T17:00:01.932252+05:30",
-  "generated_at_human": "2026-03-27 17:00 IST",
+  "generated_at": "2026-03-27T17:30:01.285424+05:30",
+  "generated_at_human": "2026-03-27 17:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "19h 55m",
+    "uptime": "20h 25m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1491.9,
     "disk_free_gb": 2443.8,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3450,
-    "mem_free_mb": 4363,
-    "mem_pct": 44.2,
-    "load_1m": 0.05,
-    "load_5m": 0.06,
-    "load_15m": 0.03
+    "mem_used_mb": 3376,
+    "mem_free_mb": 4437,
+    "mem_pct": 43.2,
+    "load_1m": 0.08,
+    "load_5m": 0.27,
+    "load_15m": 0.53
   },
   "services": [
     {
@@ -234,10 +234,58 @@
     ]
   },
   "biohacking": {
-    "total_posted": 13,
+    "total_posted": 17,
     "queue_depth": 0,
     "d3_count": 0,
     "posts": [
+      {
+        "topic": "artificial-intelligence-and-multiple-scl",
+        "title": "Artificial Intelligence and Multiple Sclerosis.",
+        "category": "neuroscience",
+        "voice_name": "ElevenLabs/George",
+        "voice_slot": 3,
+        "tts_chars": 304,
+        "media_id": "18077406650424587",
+        "ts_posted": "2026-03-27T17:21",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "ai-driven-innovations-in-alzheimer-s-dis",
+        "title": "AI-driven innovations in Alzheimer's disease: Integrating ea",
+        "category": "neuroscience",
+        "voice_name": "Edge/Aria",
+        "voice_slot": 2,
+        "tts_chars": 304,
+        "media_id": "17871867915580132",
+        "ts_posted": "2026-03-27T17:20",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "applications-of-artificial-intelligence",
+        "title": "Applications of Artificial Intelligence, Machine Learning, a",
+        "category": "neuroscience",
+        "voice_name": "Edge/Guy",
+        "voice_slot": 1,
+        "tts_chars": 304,
+        "media_id": "18384823756080507",
+        "ts_posted": "2026-03-27T17:18",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "evaluation-of-a-continuous-blood-glucose",
+        "title": "Evaluation of a Continuous Blood Glucose Monitor: A Novel an",
+        "category": "wearables",
+        "voice_name": "Edge/Jenny",
+        "voice_slot": 0,
+        "tts_chars": 308,
+        "media_id": "18125476459519757",
+        "ts_posted": "2026-03-27T17:17",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
       {
         "topic": "crispr-cas9-for-cancer-therapy-opportuni",
         "title": "CRISPR-Cas9 for cancer therapy: Opportunities and challenges",
@@ -333,60 +381,12 @@
         "ts_posted": "2026-03-26T21:49",
         "d3_reach": "\u2014",
         "d3_saves": "\u2014"
-      },
-      {
-        "topic": "wearable-aptasensors",
-        "title": "Wearable Aptasensors.",
-        "category": "wearables",
-        "voice_name": "Edge/Guy",
-        "voice_slot": 1,
-        "tts_chars": 308,
-        "media_id": "18102677087297556",
-        "ts_posted": "2026-03-26T00:12",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
-      },
-      {
-        "topic": "continuous-glucose-monitoring-sensors-fo",
-        "title": "Continuous Glucose Monitoring Sensors for Diabetes Managemen",
-        "category": "wearables",
-        "voice_name": "Edge/Jenny",
-        "voice_slot": 0,
-        "tts_chars": 308,
-        "media_id": "17906979453205186",
-        "ts_posted": "2026-03-26T00:11",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
-      },
-      {
-        "topic": "non-invasive-blood-glucose-monitoring-te",
-        "title": "Non-Invasive Blood Glucose Monitoring Technology: A Review.",
-        "category": "wearables",
-        "voice_name": "Edge/Guy",
-        "voice_slot": 1,
-        "tts_chars": 308,
-        "media_id": "18003872324720910",
-        "ts_posted": "2026-03-26T00:02",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
-      },
-      {
-        "topic": "guidelines-and-recommendations-for-labor",
-        "title": "Guidelines and Recommendations for Laboratory Analysis in th",
-        "category": "wearables",
-        "voice_name": "Edge/Jenny",
-        "voice_slot": 0,
-        "tts_chars": 272,
-        "media_id": "17882829687497893",
-        "ts_posted": "2026-03-26T00:01",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
       }
     ],
     "categories": {
       "longevity": 1,
-      "wearables": 4,
-      "neuroscience": 8
+      "wearables": 5,
+      "neuroscience": 11
     },
     "ig_id": "17841464494421993",
     "token_expires": "2026-05-24"
@@ -1016,11 +1016,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "a6fa5a9 chore: update skill-stats pointer",
       "99cf36c chore: update skill-stats pointer",
       "bb05bd3 chore: update skill-stats pointer",
       "94dfc94 chore: update skill-stats pointer",
-      "655eb66 chore: update skill-stats pointer",
-      "be081a2 chore: update skill-stats pointer"
+      "655eb66 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1611,7 +1611,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-27 16:30 IST",
+    "api_fetched_at": "2026-03-27 17:00 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1620,7 +1620,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-27 17:00 IST",
+    "ts": "2026-03-27 17:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
