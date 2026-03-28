@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-28T07:30:01.670606+05:30",
-  "generated_at_human": "2026-03-28 07:30 IST",
+  "generated_at": "2026-03-28T08:00:01.830814+05:30",
+  "generated_at_human": "2026-03-28 08:00 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "7h 15m",
+    "uptime": "7h 45m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1492.3,
+    "disk_used_gb": 1492.4,
     "disk_free_gb": 2443.4,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4245,
-    "mem_free_mb": 3568,
-    "mem_pct": 54.3,
-    "load_1m": 1.2,
-    "load_5m": 2.9,
-    "load_15m": 3.58
+    "mem_used_mb": 4092,
+    "mem_free_mb": 3721,
+    "mem_pct": 52.4,
+    "load_1m": 0.3,
+    "load_5m": 0.59,
+    "load_15m": 1.12
   },
   "services": [
     {
@@ -1060,11 +1060,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "b373fb1 chore: update skill-stats pointer",
       "d76f23a chore: update skill-stats pointer",
       "89f2f77 chore: update skill-stats pointer",
       "c34acbb chore: update skill-stats pointer",
-      "2abe439 chore: update skill-stats pointer",
-      "47ed212 chore: update skill-stats pointer"
+      "2abe439 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1243,7 +1243,7 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -1648,23 +1648,23 @@
   },
   "claude_budget": {
     "date": "2026-03-28",
-    "state": "green",
-    "pct": 0.0,
+    "state": "black",
+    "pct": 100.0,
     "source": "api",
     "api_5h_pct": 0.0,
-    "api_7d_pct": 0.0,
+    "api_7d_pct": 100.0,
     "api_overage_pct": 0.0,
-    "api_binding": "unknown",
-    "api_fetched_at": "2026-03-28 07:00 IST",
-    "api_5h_reset_ts": 0,
-    "api_7d_reset_ts": 0
+    "api_binding": "seven_day",
+    "api_fetched_at": "2026-03-28 08:00 IST",
+    "api_5h_reset_ts": 1774666800,
+    "api_7d_reset_ts": 1774699200
   },
   "unit_tests": {
     "status": "PASS",
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-28 07:30 IST",
+    "ts": "2026-03-28 08:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
