@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-29T01:30:02.061648+05:30",
-  "generated_at_human": "2026-03-29 01:30 IST",
+  "generated_at": "2026-03-29T02:00:01.374385+05:30",
+  "generated_at_human": "2026-03-29 02:00 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "6h 9m",
+    "uptime": "6h 39m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1492.5,
     "disk_free_gb": 2443.2,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3206,
-    "mem_free_mb": 4607,
-    "mem_pct": 41.0,
-    "load_1m": 0.56,
-    "load_5m": 0.61,
-    "load_15m": 0.66
+    "mem_used_mb": 3615,
+    "mem_free_mb": 4198,
+    "mem_pct": 46.3,
+    "load_1m": 0.72,
+    "load_5m": 1.29,
+    "load_15m": 1.29
   },
   "services": [
     {
@@ -240,7 +240,7 @@
   },
   "biohacking": {
     "total_posted": 27,
-    "queue_depth": 0,
+    "queue_depth": 5,
     "d3_count": 0,
     "posts": [
       {
@@ -397,10 +397,18 @@
     "token_expires": "2026-05-24"
   },
   "linkedin": {
-    "total_posted": 5,
+    "total_posted": 6,
     "today_pillar": "author",
     "today_pillar_label": "Author/Ideas",
     "posts": [
+      {
+        "ts": "2026-03-29T01:55",
+        "type": "text",
+        "pillar": "phyai",
+        "post_urn": "urn:li:share:7443755062884982784",
+        "char_count": 1502,
+        "caption": "We keep asking when robots will \"replace\" workers. That's the wrong question.\n\nLast month, ABB Robotics and NVIDIA annou"
+      },
       {
         "ts": "2026-03-28T19:33",
         "type": "text",
@@ -1151,11 +1159,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "77dfef9 chore: update skill-stats pointer",
       "ad6d756 chore: update skill-stats pointer",
       "40406b4 chore: update skill-stats pointer",
       "bebb2a0 chore: update skill-stats pointer",
-      "d53f7be chore: update skill-stats pointer",
-      "9fdfc69 feat: learning\u2192generation feedback loop \u2014 category weights, hook rotation, outcome-first beats"
+      "d53f7be chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1323,17 +1331,16 @@
         "37 3 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/linkedin-skill/scripts/linkedin_auto_post.py >> /tmp/linkedin_auto_post.log 2>&1",
         "*/30 * * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/sysmon-skill/scripts/heartbeat.py >> /tmp/heartbeat.log 2>&1",
         "15 1 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_bh_pipeline.sh >> /tmp/bh_pipeline.log 2>&1",
-        "0 8 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_morning_check.sh >> /tmp/morning_check.log 2>&1",
-        "35 1 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_ts_pipeline.sh >> /tmp/ts_pipeline.log 2>&1"
+        "0 8 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_morning_check.sh >> /tmp/morning_check.log 2>&1"
       ]
     },
-    "total": 27
+    "total": 26
   },
   "logs": {
     "ig_post": [],
     "ig_learning": [],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -1739,13 +1746,13 @@
   "claude_budget": {
     "date": "2026-03-29",
     "state": "green",
-    "pct": 37.0,
+    "pct": 46.0,
     "source": "api",
-    "api_5h_pct": 37.0,
-    "api_7d_pct": 12.0,
+    "api_5h_pct": 46.0,
+    "api_7d_pct": 13.0,
     "api_overage_pct": 0.0,
     "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-29 01:00 IST",
+    "api_fetched_at": "2026-03-29 01:30 IST",
     "api_5h_reset_ts": 1774735200,
     "api_7d_reset_ts": 1775304000
   },
@@ -1754,7 +1761,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 01:30 IST",
+    "ts": "2026-03-29 02:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
