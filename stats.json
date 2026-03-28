@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-28T07:00:01.415421+05:30",
-  "generated_at_human": "2026-03-28 07:00 IST",
+  "generated_at": "2026-03-28T07:30:01.670606+05:30",
+  "generated_at_human": "2026-03-28 07:30 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "6h 45m",
+    "uptime": "7h 15m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1490.9,
-    "disk_free_gb": 2444.8,
+    "disk_used_gb": 1492.3,
+    "disk_free_gb": 2443.4,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1599,
-    "mem_free_mb": 6214,
-    "mem_pct": 20.5,
-    "load_1m": 0.38,
-    "load_5m": 0.16,
-    "load_15m": 0.06
+    "mem_used_mb": 4245,
+    "mem_free_mb": 3568,
+    "mem_pct": 54.3,
+    "load_1m": 1.2,
+    "load_5m": 2.9,
+    "load_15m": 3.58
   },
   "services": [
     {
@@ -57,14 +57,86 @@
         "status": "paused"
       }
     ],
-    "total_posted": 78,
-    "d3_count": 77,
+    "total_posted": 82,
+    "d3_count": 78,
     "d7_count": 55,
     "d0_count": 8,
     "queue_depth": 0,
     "queue_next": null,
     "queue_topics": [],
     "recent_posts": [
+      {
+        "post_id": "18086691110336363",
+        "topic": "critical-curve-of-two-matrix-models-abba-a-b-a-b-a",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-28T07:23",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "17916033534339786",
+        "topic": "krylov-space-anatomy-and-spread-complexity-of-a-di",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-28T07:23",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18123741022595007",
+        "topic": "softmimicgen-a-data-generation-system-for-scalable",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-28T07:22",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18092113061160083",
+        "topic": "yoga-nidra-induces-theta-brainwaves-identical-to-d",
+        "hook_type": "contrarian",
+        "ts_posted": "2026-03-28T07:21",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
       {
         "post_id": "18103924972906130",
         "topic": "training-the-knowledge-base-through-evidence-disti",
@@ -111,7 +183,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 101,
+        "d3_reach": 102,
         "d3_saves": 0,
         "d7_reach": 101,
         "d7_saves": 0,
@@ -129,89 +201,17 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 108,
+        "d3_saves": 1,
         "d7_reach": 108,
         "d7_saves": 1,
-        "has_d0": false,
-        "has_d3": false,
-        "has_d7": true
-      },
-      {
-        "post_id": "18068820377287461",
-        "topic": "lightweight-genai-for-network-traffic-synthesis-fi",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-27T07:18",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 14,
-        "d3_saves": 0,
-        "d7_reach": 27,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18071896763268928",
-        "topic": "challenges-in-hyperspectral-imaging-for-autonomous",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-27T07:17",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 98,
-        "d3_saves": 0,
-        "d7_reach": 104,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18075630242166052",
-        "topic": "nero-net-a-neuroevolutionary-approach-for-the-desi",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-27T07:17",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 51,
-        "d3_saves": 0,
-        "d7_reach": 100,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18077524154152022",
-        "topic": "sushruta-performed-plastic-surgery-2-600-years-bef",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-27T07:16",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 102,
-        "d3_saves": 0,
-        "d7_reach": 109,
-        "d7_saves": 0,
         "has_d0": false,
         "has_d3": true,
         "has_d7": true
       }
     ],
     "phase": 1,
-    "phase_note": "Phase 1 \u2014 organic only. 78 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
+    "phase_note": "Phase 1 \u2014 organic only. 82 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
     "phase_pct": 100,
     "learnings": [
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
@@ -957,6 +957,30 @@
         "final": true
       },
       {
+        "name": "auto_202603280713_00_yoga-nidra-induces-theta-brainwaves-identical-to-d_final.mp4",
+        "size_mb": 2.1,
+        "modified": "03-28 07:15",
+        "final": true
+      },
+      {
+        "name": "auto_202603280715_01_softmimicgen-a-data-generation-system-for-scalable_final.mp4",
+        "size_mb": 1.9,
+        "modified": "03-28 07:17",
+        "final": true
+      },
+      {
+        "name": "auto_202603280717_02_krylov-space-anatomy-and-spread-complexity-of-a-di_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-28 07:19",
+        "final": true
+      },
+      {
+        "name": "auto_202603280719_03_critical-curve-of-two-matrix-models-abba-a-b-a-b-a_final.mp4",
+        "size_mb": 1.8,
+        "modified": "03-28 07:21",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -1029,18 +1053,18 @@
         "final": false
       }
     ],
-    "count": 99,
-    "final_count": 92
+    "count": 103,
+    "final_count": 96
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "d76f23a chore: update skill-stats pointer",
       "89f2f77 chore: update skill-stats pointer",
       "c34acbb chore: update skill-stats pointer",
       "2abe439 chore: update skill-stats pointer",
-      "47ed212 chore: update skill-stats pointer",
-      "606e585 chore: update skill-stats pointer"
+      "47ed212 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1631,7 +1655,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-28 06:30 IST",
+    "api_fetched_at": "2026-03-28 07:00 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1640,7 +1664,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-28 07:00 IST",
+    "ts": "2026-03-28 07:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
