@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-29T00:00:01.645453+05:30",
-  "generated_at_human": "2026-03-29 00:00 IST",
-  "next_post": "00:10 IST (queue empty \u2014 will generate fresh reels)",
+  "generated_at": "2026-03-29T00:30:01.439635+05:30",
+  "generated_at_human": "2026-03-29 00:30 IST",
+  "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "4h 39m",
+    "uptime": "5h 9m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1492.6,
-    "disk_free_gb": 2443.1,
+    "disk_used_gb": 1492.5,
+    "disk_free_gb": 2443.2,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 2461,
-    "mem_free_mb": 5352,
-    "mem_pct": 31.5,
-    "load_1m": 4.81,
-    "load_5m": 2.65,
-    "load_15m": 1.44
+    "mem_used_mb": 3229,
+    "mem_free_mb": 4584,
+    "mem_pct": 41.3,
+    "load_1m": 0.39,
+    "load_5m": 1.59,
+    "load_15m": 1.35
   },
   "services": [
     {
@@ -1030,6 +1030,18 @@
         "final": true
       },
       {
+        "name": "auto_202603282358_02_nvidia-s-approach-to-physical-ai-and-robotics_final.mp4",
+        "size_mb": 1.6,
+        "modified": "03-29 00:00",
+        "final": true
+      },
+      {
+        "name": "auto_202603290000_03_gemini-robotics-bringing-ai-into-the-physical-worl_final.mp4",
+        "size_mb": 1.6,
+        "modified": "03-29 00:01",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -1108,18 +1120,18 @@
         "final": false
       }
     ],
-    "count": 110,
-    "final_count": 102
+    "count": 112,
+    "final_count": 104
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "bebb2a0 chore: update skill-stats pointer",
       "d53f7be chore: update skill-stats pointer",
       "9fdfc69 feat: learning\u2192generation feedback loop \u2014 category weights, hook rotation, outcome-first beats",
       "9cd925c chore: update skill-stats pointer",
-      "610284e chore: update skill-stats pointer",
-      "9bb24a0 fix: stop 3x TG flood from dashboard \u2014 set DRISHTI_SUBPROCESS in tests"
+      "610284e chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1278,7 +1290,6 @@
         "30 4 * * * TG_SIDDHANTH_TOKEN=\"8729630743:AAGC-UAMLK5Uce2mHsIG5nL0MHwK6EKIM6M\" TG_CHAT_ID=\"-5258949798\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/daily_360.py >> /tmp/daily_360.log 2>&1",
         "40 4 * * * TG_DRISHTI_TOKEN=\"8640924847:AAHdi4Q0KfkVRcHGMle3yQMWZ-bx7539bXI\" TG_CHAT_ID=\"-5258949798\" python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/cron_notify.py --skill METER --bot drishti --brief -- python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/cloud-meter-skill/scripts/usage_report.py --brief >> /tmp/meter_tg.log 2>&1",
         "0 * * * * /usr/bin/python3 /home/rick/Documents/playground/Claude_Code_Skills/Tasks/scripts/cron_worker.py >> /home/rick/Documents/playground/Claude_Code_Skills/Tasks/tasks.log 2>&1",
-        "10 7 * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/cron_monitor.py --script Skills/instagram-skill/scripts/auto_post.py --log /tmp/ig_auto_post.log\" >> /tmp/ig_auto_post.log 2>&1",
         "10 15 * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/instagram-skill/scripts/cron_monitor.py --script Skills/instagram-skill/scripts/auto_post.py --log /tmp/ig_auto_post.log\" >> /tmp/ig_auto_post.log 2>&1",
         "0 0 * * 0 BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/Documents/playground/Claude_Code_Skills/Skills/cloud-meter-skill/scripts/weekly_ai_batch.sh >> /tmp/weekly_ai_batch.log 2>&1",
         "*/30 * * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/cloud-meter-skill/scripts/check_claude_plan_usage.py --update-budget\" >> /tmp/claude_plan_usage.log 2>&1",
@@ -1286,23 +1297,25 @@
         "10 9 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py >> /tmp/bh_auto_post.log 2>&1",
         "10 17 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py --with-elevenlabs >> /tmp/bh_auto_post.log 2>&1",
         "37 3 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/linkedin-skill/scripts/linkedin_auto_post.py >> /tmp/linkedin_auto_post.log 2>&1",
-        "*/30 * * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/sysmon-skill/scripts/heartbeat.py >> /tmp/heartbeat.log 2>&1"
+        "*/30 * * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/sysmon-skill/scripts/heartbeat.py >> /tmp/heartbeat.log 2>&1",
+        "47 0 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_ts_pipeline.sh >> /tmp/ts_pipeline.log 2>&1",
+        "15 1 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_bh_pipeline.sh >> /tmp/bh_pipeline.log 2>&1"
       ]
     },
-    "total": 25
+    "total": 26
   },
   "logs": {
     "ig_post": [],
     "ig_learning": [],
     "backup": [
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --recover",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
       "  Skills: 18/18 installed",
-      "[2026-03-28 23:30 IST] skill-stats pushed \u2713",
-      "[2026-03-28 23:30 IST] skill-stats pushed \u2713"
+      "[2026-03-29 00:00 IST] skill-stats pushed \u2713",
+      "[2026-03-29 00:00 IST] skill-stats pushed \u2713"
     ]
   },
   "memory": {
@@ -1701,22 +1714,22 @@
   "claude_budget": {
     "date": "2026-03-29",
     "state": "green",
-    "pct": 0.0,
-    "source": "local",
-    "api_5h_pct": 0,
-    "api_7d_pct": 0,
-    "api_overage_pct": 0,
+    "pct": 23.0,
+    "source": "api",
+    "api_5h_pct": 23.0,
+    "api_7d_pct": 11.0,
+    "api_overage_pct": 0.0,
     "api_binding": "five_hour",
-    "api_fetched_at": "",
-    "api_5h_reset_ts": 0,
-    "api_7d_reset_ts": 0
+    "api_fetched_at": "2026-03-29 00:00 IST",
+    "api_5h_reset_ts": 1774735200,
+    "api_7d_reset_ts": 1775304000
   },
   "unit_tests": {
     "status": "PASS",
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 00:00 IST",
+    "ts": "2026-03-29 00:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
