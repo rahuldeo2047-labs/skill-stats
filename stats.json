@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-28T12:00:01.498423+05:30",
-  "generated_at_human": "2026-03-28 12:00 IST",
-  "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
+  "generated_at": "2026-03-28T12:30:02.064780+05:30",
+  "generated_at_human": "2026-03-28 12:30 IST",
+  "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "11h 45m",
+    "uptime": "12h 15m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1492.0,
     "disk_free_gb": 2443.7,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4516,
-    "mem_free_mb": 3297,
-    "mem_pct": 57.8,
-    "load_1m": 0.0,
-    "load_5m": 0.09,
-    "load_15m": 0.1
+    "mem_used_mb": 4687,
+    "mem_free_mb": 3126,
+    "mem_pct": 60.0,
+    "load_1m": 0.39,
+    "load_5m": 0.81,
+    "load_15m": 0.71
   },
   "services": [
     {
@@ -1057,14 +1057,14 @@
     "final_count": 96
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --recover",
-    "last_error": "backup.py: error: unrecognized arguments: --recover",
+    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
+    "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "5d2acde chore: update skill-stats pointer",
       "a3147b9 chore: update skill-stats pointer",
       "6f1a32d chore: update skill-stats pointer",
       "cca69e3 chore: update skill-stats pointer",
-      "373a4f2 chore: update skill-stats pointer",
-      "a7df251 chore: update skill-stats pointer"
+      "373a4f2 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1243,9 +1243,9 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --recover"
+      "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
       "hint: the same ref. If you want to integrate the remote changes, use",
@@ -1655,7 +1655,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-28 11:30 IST",
+    "api_fetched_at": "2026-03-28 12:00 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1664,7 +1664,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-28 12:00 IST",
+    "ts": "2026-03-28 12:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
