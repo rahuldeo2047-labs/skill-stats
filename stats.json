@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-28T22:00:01.257007+05:30",
-  "generated_at_human": "2026-03-28 22:00 IST",
+  "generated_at": "2026-03-28T22:30:01.752418+05:30",
+  "generated_at_human": "2026-03-28 22:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "2h 39m",
+    "uptime": "3h 9m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1491.9,
-    "disk_free_gb": 2443.8,
+    "disk_used_gb": 1492.2,
+    "disk_free_gb": 2443.5,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 2472,
-    "mem_free_mb": 5341,
-    "mem_pct": 31.6,
-    "load_1m": 1.19,
-    "load_5m": 0.65,
-    "load_15m": 0.44
+    "mem_used_mb": 2764,
+    "mem_free_mb": 5049,
+    "mem_pct": 35.4,
+    "load_1m": 2.95,
+    "load_5m": 1.45,
+    "load_15m": 1.06
   },
   "services": [
     {
@@ -1100,14 +1100,14 @@
     "final_count": 100
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --recover",
-    "last_error": "backup.py: error: unrecognized arguments: --recover",
+    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
+    "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
-      "7d04140 restore-point: pre-code-review-fixes 2026-03-28",
-      "a4d830e chore: update skill-stats pointer",
-      "03b0297 chore: update skill-stats pointer",
-      "4f47d98 chore: update skill-stats pointer",
-      "d14f920 chore: update skill-stats pointer"
+      "9bb24a0 fix: stop 3x TG flood from dashboard \u2014 set DRISHTI_SUBPROCESS in tests",
+      "4642658 fix(heartbeat): stop flood \u2014 handle 'not modified', only new msg on error-state change",
+      "a3ee7c3 fix: code review fixes \u2014 dedup, OAuth, paths, heartbeat + 32 new tests",
+      "aa64293 chore: update skill-stats pointer",
+      "7d04140 restore-point: pre-code-review-fixes 2026-03-28"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1117,7 +1117,7 @@
       "name": "KAVACH",
       "desc": "System monitor + internet check",
       "installed": true,
-      "scripts": 16
+      "scripts": 17
     },
     {
       "id": "backup-skill",
@@ -1131,7 +1131,7 @@
       "name": "REACH",
       "desc": "3-account IG management + learning loop",
       "installed": true,
-      "scripts": 14
+      "scripts": 15
     },
     {
       "id": "instagram_content_skill",
@@ -1273,23 +1273,24 @@
         "0 */3 * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/energy_news_watcher.py >> /tmp/energy_news.log 2>&1",
         "10 9 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py >> /tmp/bh_auto_post.log 2>&1",
         "10 17 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py --with-elevenlabs >> /tmp/bh_auto_post.log 2>&1",
-        "37 3 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/linkedin-skill/scripts/linkedin_auto_post.py >> /tmp/linkedin_auto_post.log 2>&1"
+        "37 3 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/linkedin-skill/scripts/linkedin_auto_post.py >> /tmp/linkedin_auto_post.log 2>&1",
+        "*/30 * * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/sysmon-skill/scripts/heartbeat.py >> /tmp/heartbeat.log 2>&1"
       ]
     },
-    "total": 24
+    "total": 25
   },
   "logs": {
     "ig_post": [],
     "ig_learning": [],
     "backup": [
-      "backup.py: error: unrecognized arguments: --recover",
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
-      "hint: the same ref. If you want to integrate the remote changes, use",
-      "hint: 'git pull' before pushing again.",
-      "hint: See the 'Note about fast-forwards' in 'git push --help' for details."
+      "  Skills: 18/18 installed",
+      "[2026-03-28 22:00 IST] skill-stats pushed \u2713",
+      "[2026-03-28 22:00 IST] skill-stats pushed \u2713"
     ]
   },
   "memory": {
@@ -1687,14 +1688,14 @@
   },
   "claude_budget": {
     "date": "2026-03-28",
-    "state": "green",
-    "pct": 39.0,
+    "state": "yellow",
+    "pct": 66.0,
     "source": "api",
-    "api_5h_pct": 39.0,
-    "api_7d_pct": 4.0,
+    "api_5h_pct": 66.0,
+    "api_7d_pct": 7.0,
     "api_overage_pct": 0.0,
     "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-28 21:30 IST",
+    "api_fetched_at": "2026-03-28 22:16 IST",
     "api_5h_reset_ts": 1774717200,
     "api_7d_reset_ts": 1775304000
   },
@@ -1703,7 +1704,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-28 22:00 IST",
+    "ts": "2026-03-28 22:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
