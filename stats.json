@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-28T23:30:01.647416+05:30",
-  "generated_at_human": "2026-03-28 23:30 IST",
-  "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
+  "generated_at": "2026-03-29T00:00:01.645453+05:30",
+  "generated_at_human": "2026-03-29 00:00 IST",
+  "next_post": "00:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "4h 9m",
+    "uptime": "4h 39m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1492.4,
-    "disk_free_gb": 2443.3,
+    "disk_used_gb": 1492.6,
+    "disk_free_gb": 2443.1,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3140,
-    "mem_free_mb": 4673,
-    "mem_pct": 40.2,
-    "load_1m": 0.59,
-    "load_5m": 0.38,
-    "load_15m": 0.37
+    "mem_used_mb": 2461,
+    "mem_free_mb": 5352,
+    "mem_pct": 31.5,
+    "load_1m": 4.81,
+    "load_5m": 2.65,
+    "load_15m": 1.44
   },
   "services": [
     {
@@ -44,7 +44,7 @@
         "role": "learning/lab",
         "phase": 1,
         "token_expires": "2026-05-20",
-        "token_days_left": 52,
+        "token_days_left": 51,
         "followers": 123,
         "status": "active"
       },
@@ -53,7 +53,7 @@
         "ig_id": "17841464494421993",
         "role": "pure-learning/experiments",
         "token_expires": "2026-05-24",
-        "token_days_left": 56,
+        "token_days_left": 55,
         "status": "active"
       },
       {
@@ -398,8 +398,8 @@
   },
   "linkedin": {
     "total_posted": 5,
-    "today_pillar": "quantum",
-    "today_pillar_label": "DIY Quantum",
+    "today_pillar": "author",
+    "today_pillar_label": "Author/Ideas",
     "posts": [
       {
         "ts": "2026-03-28T19:33",
@@ -1018,6 +1018,18 @@
         "final": true
       },
       {
+        "name": "auto_202603282356_00_binary-number-system-pingala-s-chhandas-shastra-pr_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-28 23:57",
+        "final": true
+      },
+      {
+        "name": "auto_202603282357_01_world-simulation-with-video-foundation-models-for_final.mp4",
+        "size_mb": 1.8,
+        "modified": "03-28 23:58",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -1096,18 +1108,18 @@
         "final": false
       }
     ],
-    "count": 108,
-    "final_count": 100
+    "count": 110,
+    "final_count": 102
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "d53f7be chore: update skill-stats pointer",
       "9fdfc69 feat: learning\u2192generation feedback loop \u2014 category weights, hook rotation, outcome-first beats",
       "9cd925c chore: update skill-stats pointer",
       "610284e chore: update skill-stats pointer",
-      "9bb24a0 fix: stop 3x TG flood from dashboard \u2014 set DRISHTI_SUBPROCESS in tests",
-      "4642658 fix(heartbeat): stop flood \u2014 handle 'not modified', only new msg on error-state change"
+      "9bb24a0 fix: stop 3x TG flood from dashboard \u2014 set DRISHTI_SUBPROCESS in tests"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1283,14 +1295,14 @@
     "ig_post": [],
     "ig_learning": [],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
+      "backup.py: error: unrecognized arguments: --recover",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
       "  Skills: 18/18 installed",
-      "[2026-03-28 23:00 IST] skill-stats pushed \u2713",
-      "[2026-03-28 23:00 IST] skill-stats pushed \u2713"
+      "[2026-03-28 23:30 IST] skill-stats pushed \u2713",
+      "[2026-03-28 23:30 IST] skill-stats pushed \u2713"
     ]
   },
   "memory": {
@@ -1567,7 +1579,7 @@
       "flexible": "Friday, Saturday",
       "note": "Autonomous tasks continue after hard close; no Rahul input requested."
     },
-    "boundary": "HARD CLOSE \u2014 stop requesting input",
+    "boundary": null,
     "logs": [
       {
         "file": "signals.jsonl",
@@ -1687,24 +1699,24 @@
     "major_suggestion": "Create shared env_loader.sh sourced by all cron jobs \u2014 30 min, eliminates 70% of recurring cron failures. Then: narrate and final-render the NeckGuardian reel (pending 3+ sessions, highest creative ROI)."
   },
   "claude_budget": {
-    "date": "2026-03-28",
+    "date": "2026-03-29",
     "state": "green",
-    "pct": 6.0,
-    "source": "api",
-    "api_5h_pct": 6.0,
-    "api_7d_pct": 9.0,
-    "api_overage_pct": 0.0,
+    "pct": 0.0,
+    "source": "local",
+    "api_5h_pct": 0,
+    "api_7d_pct": 0,
+    "api_overage_pct": 0,
     "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-28 23:00 IST",
-    "api_5h_reset_ts": 1774735200,
-    "api_7d_reset_ts": 1775304000
+    "api_fetched_at": "",
+    "api_5h_reset_ts": 0,
+    "api_7d_reset_ts": 0
   },
   "unit_tests": {
     "status": "PASS",
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-28 23:30 IST",
+    "ts": "2026-03-29 00:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
