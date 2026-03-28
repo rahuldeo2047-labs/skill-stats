@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-29T01:00:02.046226+05:30",
-  "generated_at_human": "2026-03-29 01:00 IST",
-  "next_post": "12:10 IST",
+  "generated_at": "2026-03-29T01:30:02.061648+05:30",
+  "generated_at_human": "2026-03-29 01:30 IST",
+  "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "5h 39m",
+    "uptime": "6h 9m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1492.5,
     "disk_free_gb": 2443.2,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 2922,
-    "mem_free_mb": 4891,
-    "mem_pct": 37.4,
-    "load_1m": 1.71,
-    "load_5m": 0.92,
-    "load_15m": 0.94
+    "mem_used_mb": 3206,
+    "mem_free_mb": 4607,
+    "mem_pct": 41.0,
+    "load_1m": 0.56,
+    "load_5m": 0.61,
+    "load_15m": 0.66
   },
   "services": [
     {
@@ -69,11 +69,9 @@
     "d3_count": 86,
     "d7_count": 55,
     "d0_count": 8,
-    "queue_depth": 1,
-    "queue_next": "ai-overly-affirms-users-asking-for-personal-advice",
-    "queue_topics": [
-      "ai-overly-affirms-users-asking-for-personal-advice"
-    ],
+    "queue_depth": 0,
+    "queue_next": null,
+    "queue_topics": [],
     "recent_posts": [
       {
         "post_id": "18093949748034847",
@@ -241,10 +239,34 @@
     ]
   },
   "biohacking": {
-    "total_posted": 25,
+    "total_posted": 27,
     "queue_depth": 0,
     "d3_count": 0,
     "posts": [
+      {
+        "topic": "assessment-of-safety-of-a-fully-implante",
+        "title": "Assessment of Safety of a Fully Implanted Endovascular Brain",
+        "category": "neuroscience",
+        "voice_name": "Edge/Guy",
+        "voice_slot": 1,
+        "tts_chars": 304,
+        "media_id": "17890004895450843",
+        "ts_posted": "2026-03-29T01:20",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "guidelines-and-recommendations-for-labor",
+        "title": "Guidelines and Recommendations for Laboratory Analysis in th",
+        "category": "wearables",
+        "voice_name": "Edge/Jenny",
+        "voice_slot": 0,
+        "tts_chars": 272,
+        "media_id": "17878704717546564",
+        "ts_posted": "2026-03-29T01:19",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
       {
         "topic": "evaluation-of-a-continuous-blood-glucose",
         "title": "Evaluation of a Continuous Blood Glucose Monitor: A Novel an",
@@ -364,36 +386,12 @@
         "ts_posted": "2026-03-27T17:20",
         "d3_reach": "\u2014",
         "d3_saves": "\u2014"
-      },
-      {
-        "topic": "applications-of-artificial-intelligence",
-        "title": "Applications of Artificial Intelligence, Machine Learning, a",
-        "category": "neuroscience",
-        "voice_name": "Edge/Guy",
-        "voice_slot": 1,
-        "tts_chars": 304,
-        "media_id": "18384823756080507",
-        "ts_posted": "2026-03-27T17:18",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
-      },
-      {
-        "topic": "evaluation-of-a-continuous-blood-glucose",
-        "title": "Evaluation of a Continuous Blood Glucose Monitor: A Novel an",
-        "category": "wearables",
-        "voice_name": "Edge/Jenny",
-        "voice_slot": 0,
-        "tts_chars": 308,
-        "media_id": "18125476459519757",
-        "ts_posted": "2026-03-27T17:17",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
       }
     ],
     "categories": {
       "longevity": 1,
-      "wearables": 12,
-      "neuroscience": 12
+      "wearables": 13,
+      "neuroscience": 13
     },
     "ig_id": "17841464494421993",
     "token_expires": "2026-05-24"
@@ -1153,11 +1151,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "ad6d756 chore: update skill-stats pointer",
       "40406b4 chore: update skill-stats pointer",
       "bebb2a0 chore: update skill-stats pointer",
       "d53f7be chore: update skill-stats pointer",
-      "9fdfc69 feat: learning\u2192generation feedback loop \u2014 category weights, hook rotation, outcome-first beats",
-      "9cd925c chore: update skill-stats pointer"
+      "9fdfc69 feat: learning\u2192generation feedback loop \u2014 category weights, hook rotation, outcome-first beats"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1324,9 +1322,9 @@
         "10 17 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py --with-elevenlabs >> /tmp/bh_auto_post.log 2>&1",
         "37 3 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/linkedin-skill/scripts/linkedin_auto_post.py >> /tmp/linkedin_auto_post.log 2>&1",
         "*/30 * * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/sysmon-skill/scripts/heartbeat.py >> /tmp/heartbeat.log 2>&1",
-        "47 0 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_ts_pipeline.sh >> /tmp/ts_pipeline.log 2>&1",
         "15 1 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_bh_pipeline.sh >> /tmp/bh_pipeline.log 2>&1",
-        "0 8 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_morning_check.sh >> /tmp/morning_check.log 2>&1"
+        "0 8 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_morning_check.sh >> /tmp/morning_check.log 2>&1",
+        "35 1 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_ts_pipeline.sh >> /tmp/ts_pipeline.log 2>&1"
       ]
     },
     "total": 27
@@ -1340,9 +1338,9 @@
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
-      "  Skills: 18/18 installed",
-      "[2026-03-29 00:30 IST] skill-stats pushed \u2713",
-      "[2026-03-29 00:30 IST] skill-stats pushed \u2713"
+      "hint: the same ref. If you want to integrate the remote changes, use",
+      "hint: 'git pull' before pushing again.",
+      "hint: See the 'Note about fast-forwards' in 'git push --help' for details."
     ]
   },
   "memory": {
@@ -1741,13 +1739,13 @@
   "claude_budget": {
     "date": "2026-03-29",
     "state": "green",
-    "pct": 34.0,
+    "pct": 37.0,
     "source": "api",
-    "api_5h_pct": 34.0,
+    "api_5h_pct": 37.0,
     "api_7d_pct": 12.0,
     "api_overage_pct": 0.0,
     "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-29 00:30 IST",
+    "api_fetched_at": "2026-03-29 01:00 IST",
     "api_5h_reset_ts": 1774735200,
     "api_7d_reset_ts": 1775304000
   },
@@ -1756,7 +1754,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 01:00 IST",
+    "ts": "2026-03-29 01:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
