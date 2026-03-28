@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-28T21:30:01.448197+05:30",
-  "generated_at_human": "2026-03-28 21:30 IST",
+  "generated_at": "2026-03-28T22:00:01.257007+05:30",
+  "generated_at_human": "2026-03-28 22:00 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "2h 9m",
+    "uptime": "2h 39m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1491.9,
     "disk_free_gb": 2443.8,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 2323,
-    "mem_free_mb": 5490,
-    "mem_pct": 29.7,
-    "load_1m": 0.22,
-    "load_5m": 0.3,
-    "load_15m": 0.69
+    "mem_used_mb": 2472,
+    "mem_free_mb": 5341,
+    "mem_pct": 31.6,
+    "load_1m": 1.19,
+    "load_5m": 0.65,
+    "load_15m": 0.44
   },
   "services": [
     {
@@ -43,15 +43,23 @@
         "ig_id": "17841462814013579",
         "role": "learning/lab",
         "phase": 1,
-        "token_days": 59,
-        "token_from": "2026-03-22",
+        "token_expires": "2026-05-20",
+        "token_days_left": 52,
         "followers": 123,
+        "status": "active"
+      },
+      {
+        "handle": "@tech.biohacking",
+        "ig_id": "17841464494421993",
+        "role": "pure-learning/experiments",
+        "token_expires": "2026-05-24",
+        "token_days_left": 56,
         "status": "active"
       },
       {
         "handle": "@rahuldeo2047",
         "ig_id": "17841408407454953",
-        "role": "builder",
+        "role": "builder/NeckGuardian",
         "token_note": "MISSING instagram_basic \u2014 fix before next ad deploy",
         "ad_account": "act_136931240",
         "status": "paused"
@@ -217,10 +225,7 @@
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
       "Best avg watch: 15.4s \u2014 [contrarian] lecun-ami-labs-world-models-vs-llms",
       "Total reach across 8 tracked posts: 140 | Total views: 158",
-      "Zero interactions on all posts \u2014 engagement rate 0%. Captions lacked hashtags (now fixed).",
-      "Caption bug fixed: caption now included in container creation step (was silently dropped).",
-      "Duplicate uploads detected: 18 topics posted >1x. Next batch: 1 post per reel.",
-      "Queue refilled: 4 reels with improved captions + 15 hashtags each, ordered by d0 performance."
+      "Duplicate topics: 18 posted >1x \u2014 ['quantum-computing-transistor-moment-2026', 'lecun-ami-labs-world-models-vs-llms', 'deepx-dx-m2-100b-5w-edge-ai']"
     ],
     "topic_rotation": [
       "Quantum Computing",
@@ -392,10 +397,18 @@
     "token_expires": "2026-05-24"
   },
   "linkedin": {
-    "total_posted": 4,
+    "total_posted": 5,
     "today_pillar": "quantum",
     "today_pillar_label": "DIY Quantum",
     "posts": [
+      {
+        "ts": "2026-03-28T19:33",
+        "type": "text",
+        "pillar": "quantum",
+        "post_urn": "urn:li:share:7443659074275110912",
+        "char_count": 210,
+        "caption": "**March 28, 2026**\n\nTwo years into this garage quantum venture, and the line between sheer audacity and delusional optim"
+      },
       {
         "ts": "2026-03-28T03:37",
         "type": "text",
@@ -1087,14 +1100,14 @@
     "final_count": 100
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
-    "last_error": "backup.py: error: unrecognized arguments: --check-large",
+    "last_ok": "backup.py: error: unrecognized arguments: --recover",
+    "last_error": "backup.py: error: unrecognized arguments: --recover",
     "recent_commits": [
-      "69b6b1a chore: update skill-stats pointer",
-      "ec0dc7b chore: update skill-stats pointer",
-      "f89cd16 chore: update skill-stats pointer",
-      "a0938c3 chore: update skill-stats pointer",
-      "eaedcc7 chore: update skill-stats pointer"
+      "7d04140 restore-point: pre-code-review-fixes 2026-03-28",
+      "a4d830e chore: update skill-stats pointer",
+      "03b0297 chore: update skill-stats pointer",
+      "4f47d98 chore: update skill-stats pointer",
+      "d14f920 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1104,7 +1117,7 @@
       "name": "KAVACH",
       "desc": "System monitor + internet check",
       "installed": true,
-      "scripts": 15
+      "scripts": 16
     },
     {
       "id": "backup-skill",
@@ -1269,14 +1282,14 @@
     "ig_post": [],
     "ig_learning": [],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
-      "  Projects: 20 | Open tasks: 12",
-      "  Skills: 18/18 installed",
-      "[2026-03-28 21:15 IST] skill-stats pushed \u2713"
+      "hint: the same ref. If you want to integrate the remote changes, use",
+      "hint: 'git pull' before pushing again.",
+      "hint: See the 'Note about fast-forwards' in 'git push --help' for details."
     ]
   },
   "memory": {
@@ -1675,22 +1688,22 @@
   "claude_budget": {
     "date": "2026-03-28",
     "state": "green",
-    "pct": 0.0,
+    "pct": 39.0,
     "source": "api",
-    "api_5h_pct": 0.0,
-    "api_7d_pct": 0.0,
+    "api_5h_pct": 39.0,
+    "api_7d_pct": 4.0,
     "api_overage_pct": 0.0,
-    "api_binding": "unknown",
-    "api_fetched_at": "2026-03-28 21:00 IST",
-    "api_5h_reset_ts": 0,
-    "api_7d_reset_ts": 0
+    "api_binding": "five_hour",
+    "api_fetched_at": "2026-03-28 21:30 IST",
+    "api_5h_reset_ts": 1774717200,
+    "api_7d_reset_ts": 1775304000
   },
   "unit_tests": {
     "status": "PASS",
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-28 21:30 IST",
+    "ts": "2026-03-28 22:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
