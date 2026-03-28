@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-28T22:30:01.752418+05:30",
-  "generated_at_human": "2026-03-28 22:30 IST",
+  "generated_at": "2026-03-28T23:00:01.432863+05:30",
+  "generated_at_human": "2026-03-28 23:00 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "3h 9m",
+    "uptime": "3h 39m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1492.2,
-    "disk_free_gb": 2443.5,
+    "disk_used_gb": 1492.4,
+    "disk_free_gb": 2443.3,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 2764,
-    "mem_free_mb": 5049,
-    "mem_pct": 35.4,
-    "load_1m": 2.95,
-    "load_5m": 1.45,
-    "load_15m": 1.06
+    "mem_used_mb": 3047,
+    "mem_free_mb": 4766,
+    "mem_pct": 39.0,
+    "load_1m": 1.36,
+    "load_5m": 0.94,
+    "load_15m": 0.87
   },
   "services": [
     {
@@ -1103,11 +1103,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "610284e chore: update skill-stats pointer",
       "9bb24a0 fix: stop 3x TG flood from dashboard \u2014 set DRISHTI_SUBPROCESS in tests",
       "4642658 fix(heartbeat): stop flood \u2014 handle 'not modified', only new msg on error-state change",
       "a3ee7c3 fix: code review fixes \u2014 dedup, OAuth, paths, heartbeat + 32 new tests",
-      "aa64293 chore: update skill-stats pointer",
-      "7d04140 restore-point: pre-code-review-fixes 2026-03-28"
+      "aa64293 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1289,8 +1289,8 @@
     ],
     "dashboard": [
       "  Skills: 18/18 installed",
-      "[2026-03-28 22:00 IST] skill-stats pushed \u2713",
-      "[2026-03-28 22:00 IST] skill-stats pushed \u2713"
+      "[2026-03-28 22:30 IST] skill-stats pushed \u2713",
+      "[2026-03-28 22:30 IST] skill-stats pushed \u2713"
     ]
   },
   "memory": {
@@ -1567,7 +1567,7 @@
       "flexible": "Friday, Saturday",
       "note": "Autonomous tasks continue after hard close; no Rahul input requested."
     },
-    "boundary": null,
+    "boundary": "SOFT CLOSE \u2014 flag upcoming session end",
     "logs": [
       {
         "file": "signals.jsonl",
@@ -1688,15 +1688,15 @@
   },
   "claude_budget": {
     "date": "2026-03-28",
-    "state": "yellow",
-    "pct": 66.0,
+    "state": "green",
+    "pct": 0.0,
     "source": "api",
-    "api_5h_pct": 66.0,
-    "api_7d_pct": 7.0,
+    "api_5h_pct": 0.0,
+    "api_7d_pct": 8.0,
     "api_overage_pct": 0.0,
     "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-28 22:16 IST",
-    "api_5h_reset_ts": 1774717200,
+    "api_fetched_at": "2026-03-28 22:30 IST",
+    "api_5h_reset_ts": 1774735200,
     "api_7d_reset_ts": 1775304000
   },
   "unit_tests": {
@@ -1704,7 +1704,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-28 22:30 IST",
+    "ts": "2026-03-28 23:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
