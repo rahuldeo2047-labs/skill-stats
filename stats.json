@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-28T20:30:01.624957+05:30",
-  "generated_at_human": "2026-03-28 20:30 IST",
+  "generated_at": "2026-03-28T21:00:01.357048+05:30",
+  "generated_at_human": "2026-03-28 21:00 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "1h 9m",
+    "uptime": "1h 39m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1491.8,
     "disk_free_gb": 2443.9,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1532,
-    "mem_free_mb": 6281,
-    "mem_pct": 19.6,
-    "load_1m": 0.05,
-    "load_5m": 0.01,
-    "load_15m": 0.14
+    "mem_used_mb": 1551,
+    "mem_free_mb": 6262,
+    "mem_pct": 19.9,
+    "load_1m": 0.0,
+    "load_5m": 0.0,
+    "load_15m": 0.0
   },
   "services": [
     {
@@ -1084,11 +1084,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "f89cd16 chore: update skill-stats pointer",
       "a0938c3 chore: update skill-stats pointer",
       "eaedcc7 chore: update skill-stats pointer",
       "9b37a8d chore: update skill-stats pointer",
-      "5dc2009 chore: update skill-stats pointer",
-      "17e914a chore: update skill-stats pointer"
+      "5dc2009 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1263,7 +1263,7 @@
     "ig_post": [],
     "ig_learning": [],
     "backup": [
-      "backup.py: error: unrecognized arguments: --recover",
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -1675,7 +1675,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-28 20:00 IST",
+    "api_fetched_at": "2026-03-28 20:30 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1684,7 +1684,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-28 20:30 IST",
+    "ts": "2026-03-28 21:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
