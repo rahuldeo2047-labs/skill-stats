@@ -1,26 +1,24 @@
 {
-  "generated_at": "2026-03-29T03:30:01.317617+05:30",
-  "generated_at_human": "2026-03-29 03:30 IST",
+  "generated_at": "2026-03-29T04:00:01.287326+05:30",
+  "generated_at_human": "2026-03-29 04:00 IST",
   "next_post": "12:10 IST",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
-      "192.168.0.100",
-      "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "8h 9m",
+    "uptime": "8h 39m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1492.6,
-    "disk_free_gb": 2443.2,
+    "disk_free_gb": 2443.1,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3676,
-    "mem_free_mb": 4137,
-    "mem_pct": 47.0,
-    "load_1m": 0.15,
-    "load_5m": 0.1,
-    "load_15m": 0.09
+    "mem_used_mb": 3694,
+    "mem_free_mb": 4119,
+    "mem_pct": 47.3,
+    "load_1m": 1.05,
+    "load_5m": 0.43,
+    "load_15m": 0.21
   },
   "services": [
     {
@@ -399,10 +397,18 @@
     "token_expires": "2026-05-24"
   },
   "linkedin": {
-    "total_posted": 6,
+    "total_posted": 7,
     "today_pillar": "author",
     "today_pillar_label": "Author/Ideas",
     "posts": [
+      {
+        "ts": "2026-03-29T03:37",
+        "type": "text",
+        "pillar": "author",
+        "post_urn": "urn:li:share:7443780771204546560",
+        "char_count": 2064,
+        "caption": "Here's a sharp LinkedIn post for your niche:\n\nThe most profound technological breakthroughs of the next decade won't be "
+      },
       {
         "ts": "2026-03-29T01:55",
         "type": "text",
@@ -1167,11 +1173,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "4bab577 chore: update skill-stats pointer",
       "a10fc76 chore: update skill-stats pointer",
       "4bd2898 chore: update skill-stats pointer",
       "6492be7 Fix BH category diversity: expand PubMed queries, blacklist wearables",
-      "961015c chore: update skill-stats pointer",
-      "81b1da0 chore: update skill-stats pointer"
+      "961015c chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1351,14 +1357,14 @@
     "ig_post": [],
     "ig_learning": [],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
-      "  Skills: 18/18 installed",
-      "[2026-03-29 03:00 IST] skill-stats pushed \u2713",
-      "[2026-03-29 03:00 IST] skill-stats pushed \u2713"
+      "To github.com:rahuldeo2047-labs/claude-skills.git",
+      " ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at e4fabbb105752e9e72218307aa54187b6e2acd12 but expected a10fc769e3df13eb56003b7ef050338ddb0fc8e0)",
+      "error: failed to push some refs to 'github.com:rahuldeo2047-labs/claude-skills.git'"
     ]
   },
   "memory": {
@@ -1763,7 +1769,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-29 03:00 IST",
+    "api_fetched_at": "2026-03-29 03:30 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1772,7 +1778,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 03:30 IST",
+    "ts": "2026-03-29 04:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
