@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-29T02:00:01.374385+05:30",
-  "generated_at_human": "2026-03-29 02:00 IST",
-  "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
+  "generated_at": "2026-03-29T02:30:01.263683+05:30",
+  "generated_at_human": "2026-03-29 02:30 IST",
+  "next_post": "12:10 IST",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "6h 39m",
+    "uptime": "7h 9m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1492.5,
+    "disk_used_gb": 1492.6,
     "disk_free_gb": 2443.2,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3615,
-    "mem_free_mb": 4198,
-    "mem_pct": 46.3,
-    "load_1m": 0.72,
-    "load_5m": 1.29,
-    "load_15m": 1.29
+    "mem_used_mb": 3645,
+    "mem_free_mb": 4168,
+    "mem_pct": 46.7,
+    "load_1m": 0.14,
+    "load_5m": 0.62,
+    "load_15m": 1.16
   },
   "services": [
     {
@@ -69,9 +69,11 @@
     "d3_count": 86,
     "d7_count": 55,
     "d0_count": 8,
-    "queue_depth": 0,
-    "queue_next": null,
-    "queue_topics": [],
+    "queue_depth": 1,
+    "queue_next": "sim-to-real-physical-ai-2026",
+    "queue_topics": [
+      "sim-to-real-physical-ai-2026"
+    ],
     "recent_posts": [
       {
         "post_id": "18093949748034847",
@@ -240,7 +242,7 @@
   },
   "biohacking": {
     "total_posted": 27,
-    "queue_depth": 5,
+    "queue_depth": 6,
     "d3_count": 0,
     "posts": [
       {
@@ -1080,6 +1082,12 @@
         "final": true
       },
       {
+        "name": "featured_ts_20260329_022146.mp4",
+        "size_mb": 4.7,
+        "modified": "03-29 02:21",
+        "final": false
+      },
+      {
         "name": "reel001_quantum.mp4",
         "size_mb": 1.8,
         "modified": "03-22 15:43",
@@ -1152,18 +1160,18 @@
         "final": false
       }
     ],
-    "count": 116,
+    "count": 117,
     "final_count": 108
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
-      "77dfef9 chore: update skill-stats pointer",
-      "ad6d756 chore: update skill-stats pointer",
-      "40406b4 chore: update skill-stats pointer",
-      "bebb2a0 chore: update skill-stats pointer",
-      "d53f7be chore: update skill-stats pointer"
+      "6492be7 Fix BH category diversity: expand PubMed queries, blacklist wearables",
+      "961015c chore: update skill-stats pointer",
+      "81b1da0 chore: update skill-stats pointer",
+      "1757346 chore: update skill-stats pointer",
+      "660c0c3 backup: 2026-03-29 \u2014 mem:telegram_sessions"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1331,16 +1339,19 @@
         "37 3 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/linkedin-skill/scripts/linkedin_auto_post.py >> /tmp/linkedin_auto_post.log 2>&1",
         "*/30 * * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/sysmon-skill/scripts/heartbeat.py >> /tmp/heartbeat.log 2>&1",
         "15 1 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_bh_pipeline.sh >> /tmp/bh_pipeline.log 2>&1",
-        "0 8 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_morning_check.sh >> /tmp/morning_check.log 2>&1"
+        "0 8 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_morning_check.sh >> /tmp/morning_check.log 2>&1",
+        "53 20 28 3 * python3 /home/rick/.local/bin/tg_send.py \"VS Code exiting now. Reel posting pipeline starting. BH at 02:25 IST, TS at 02:40 IST.\" && sleep 3 && pkill -f \"code\" >> /tmp/vscode_exit.log 2>&1",
+        "55 20 28 3 * BASH_ENV=\"/home/rick/.drishti_env\" cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/instagram-skill/scripts/auto_post_biohacking.py >> /tmp/featured_bh_post.log 2>&1",
+        "10 21 28 3 * BASH_ENV=\"/home/rick/.drishti_env\" cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/instagram-skill/scripts/auto_post.py >> /tmp/featured_ts_post.log 2>&1"
       ]
     },
-    "total": 26
+    "total": 29
   },
   "logs": {
     "ig_post": [],
     "ig_learning": [],
     "backup": [
-      "backup.py: error: unrecognized arguments: --recover",
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -1745,14 +1756,14 @@
   },
   "claude_budget": {
     "date": "2026-03-29",
-    "state": "green",
-    "pct": 46.0,
+    "state": "yellow",
+    "pct": 73.0,
     "source": "api",
-    "api_5h_pct": 46.0,
-    "api_7d_pct": 13.0,
+    "api_5h_pct": 73.0,
+    "api_7d_pct": 16.0,
     "api_overage_pct": 0.0,
     "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-29 01:30 IST",
+    "api_fetched_at": "2026-03-29 02:00 IST",
     "api_5h_reset_ts": 1774735200,
     "api_7d_reset_ts": 1775304000
   },
@@ -1761,7 +1772,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 02:00 IST",
+    "ts": "2026-03-29 02:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
