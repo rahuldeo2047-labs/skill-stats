@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-29T19:00:01.591829+05:30",
-  "generated_at_human": "2026-03-29 19:00 IST",
+  "generated_at": "2026-03-29T19:30:02.087413+05:30",
+  "generated_at_human": "2026-03-29 19:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "23h 39m",
+    "uptime": "24h 9m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1493.2,
     "disk_free_gb": 2442.5,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4520,
-    "mem_free_mb": 3293,
-    "mem_pct": 57.9,
-    "load_1m": 0.76,
-    "load_5m": 1.08,
-    "load_15m": 0.96
+    "mem_used_mb": 2717,
+    "mem_free_mb": 5096,
+    "mem_pct": 34.8,
+    "load_1m": 1.06,
+    "load_5m": 2.38,
+    "load_15m": 2.59
   },
   "services": [
     {
@@ -65,14 +65,86 @@
         "status": "paused"
       }
     ],
-    "total_posted": 101,
-    "d3_count": 97,
+    "total_posted": 105,
+    "d3_count": 101,
     "d7_count": 55,
     "d0_count": 8,
     "queue_depth": 0,
     "queue_next": null,
     "queue_topics": [],
     "recent_posts": [
+      {
+        "post_id": "17865066636657158",
+        "topic": "the-failure-of-the-thermodynamics-of-computation-2",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-29T19:22",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18015131294671217",
+        "topic": "show-hn-public-transit-systems-as-data-lines-stati",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-29T19:21",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18086514767195687",
+        "topic": "miasma-a-tool-to-trap-ai-web-scrapers-in-an-endles",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-29T19:21",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18024833090805885",
+        "topic": "nadi-shodhana-alternate-nostril-breathing-synchron",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-29T19:20",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
       {
         "post_id": "17881935174490427",
         "topic": "siclair-microvision-1977",
@@ -83,12 +155,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 16,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -96,60 +168,6 @@
         "topic": "cosmos-world-foundation-models-for-physical-ai",
         "hook_type": "historical-revelation",
         "ts_posted": "2026-03-29T17:22",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": false,
-        "has_d7": false
-      },
-      {
-        "post_id": "18114870931670455",
-        "topic": "generative-physical-ai-in-vision-a-survey",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-29T17:21",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": false,
-        "has_d7": false
-      },
-      {
-        "post_id": "18071598893256370",
-        "topic": "vastu-shastra-encodes-passive-cooling-ancient-indi",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-29T17:21",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": false,
-        "has_d7": false
-      },
-      {
-        "post_id": "18577229632002643",
-        "topic": "gemini-robotics-bringing-ai-into-the-physical-worl",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-29T15:21",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
@@ -164,16 +182,16 @@
         "has_d7": false
       },
       {
-        "post_id": "17870715123477253",
-        "topic": "nvidia-s-approach-to-physical-ai-and-robotics",
+        "post_id": "18114870931670455",
+        "topic": "generative-physical-ai-in-vision-a-survey",
         "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-29T15:20",
+        "ts_posted": "2026-03-29T17:21",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 38,
+        "d3_reach": 23,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -182,34 +200,16 @@
         "has_d7": false
       },
       {
-        "post_id": "18004556696715715",
-        "topic": "world-simulation-with-video-foundation-models-for",
+        "post_id": "18071598893256370",
+        "topic": "vastu-shastra-encodes-passive-cooling-ancient-indi",
         "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-29T15:19",
+        "ts_posted": "2026-03-29T17:21",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 5,
-        "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "18114551068676626",
-        "topic": "chakra-system-maps-precisely-onto-the-endocrine-au",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-29T15:19",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 88,
+        "d3_reach": 79,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -219,7 +219,7 @@
       }
     ],
     "phase": 1,
-    "phase_note": "Phase 1 \u2014 organic only. 101 posts live. 1/3 posts hit threshold (saves>2% or ER>5% of reach).",
+    "phase_note": "Phase 1 \u2014 organic only. 105 posts live. 1/3 posts hit threshold (saves>2% or ER>5% of reach).",
     "phase_pct": 100,
     "learnings": [
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
@@ -1198,6 +1198,30 @@
         "final": true
       },
       {
+        "name": "auto_202603291913_00_nadi-shodhana-alternate-nostril-breathing-synchron_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-29 19:15",
+        "final": true
+      },
+      {
+        "name": "auto_202603291915_01_miasma-a-tool-to-trap-ai-web-scrapers-in-an-endles_final.mp4",
+        "size_mb": 1.7,
+        "modified": "03-29 19:16",
+        "final": true
+      },
+      {
+        "name": "auto_202603291916_02_show-hn-public-transit-systems-as-data-lines-stati_final.mp4",
+        "size_mb": 1.7,
+        "modified": "03-29 19:18",
+        "final": true
+      },
+      {
+        "name": "auto_202603291918_03_the-failure-of-the-thermodynamics-of-computation-2_final.mp4",
+        "size_mb": 1.7,
+        "modified": "03-29 19:20",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -1282,18 +1306,18 @@
         "final": false
       }
     ],
-    "count": 135,
-    "final_count": 126
+    "count": 139,
+    "final_count": 130
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "aa2e450 chore: update skill-stats pointer",
       "b279149 chore: update skill-stats pointer",
       "71ad22e chore: update skill-stats pointer",
       "d733566 chore: update skill-stats pointer",
-      "c37ad0a chore: update skill-stats pointer",
-      "90ef411 chore: update skill-stats pointer"
+      "c37ad0a chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1900,7 +1924,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 19:00 IST",
+    "ts": "2026-03-29 19:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
