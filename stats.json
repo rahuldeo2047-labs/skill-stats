@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-29T15:00:01.719196+05:30",
-  "generated_at_human": "2026-03-29 15:00 IST",
+  "generated_at": "2026-03-29T15:30:01.859713+05:30",
+  "generated_at_human": "2026-03-29 15:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "19h 39m",
+    "uptime": "20h 9m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1493.1,
     "disk_free_gb": 2442.6,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4354,
-    "mem_free_mb": 3459,
+    "mem_used_mb": 4351,
+    "mem_free_mb": 3462,
     "mem_pct": 55.7,
-    "load_1m": 1.36,
-    "load_5m": 0.78,
-    "load_15m": 0.78
+    "load_1m": 2.1,
+    "load_5m": 1.76,
+    "load_15m": 1.63
   },
   "services": [
     {
@@ -65,8 +65,8 @@
         "status": "paused"
       }
     ],
-    "total_posted": 93,
-    "d3_count": 89,
+    "total_posted": 97,
+    "d3_count": 93,
     "d7_count": 55,
     "d0_count": 8,
     "queue_depth": 0,
@@ -74,10 +74,10 @@
     "queue_topics": [],
     "recent_posts": [
       {
-        "post_id": "17939249607177562",
-        "topic": "the-first-40-months-of-the-ai-era",
+        "post_id": "18577229632002643",
+        "topic": "gemini-robotics-bringing-ai-into-the-physical-worl",
         "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-29T10:06",
+        "ts_posted": "2026-03-29T15:21",
         "d0_reach": "\u2014",
         "d0_views": "\u2014",
         "d0_avg_watch_s": "\u2014",
@@ -89,6 +89,78 @@
         "d7_saves": "\u2014",
         "has_d0": false,
         "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "17870715123477253",
+        "topic": "nvidia-s-approach-to-physical-ai-and-robotics",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-29T15:20",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18004556696715715",
+        "topic": "world-simulation-with-video-foundation-models-for",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-29T15:19",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18114551068676626",
+        "topic": "chakra-system-maps-precisely-onto-the-endocrine-au",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-29T15:19",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "17939249607177562",
+        "topic": "the-first-40-months-of-the-ai-era",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-29T10:06",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": 100,
+        "d3_saves": 0,
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -101,12 +173,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 92,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -119,12 +191,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 102,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -137,79 +209,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": false,
-        "has_d7": false
-      },
-      {
-        "post_id": "18093949748034847",
-        "topic": "cern-uses-ultra-compact-ai-models-on-fpgas-for-rea",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-29T00:55",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 60,
-        "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "17910028620186178",
-        "topic": "further-human-ai-proof-assistant-work-on-knuth-s-c",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-29T00:54",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 64,
-        "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "18125949823511685",
-        "topic": "binary-number-system-pingala-s-chhandas-shastra-pr",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-29T00:54",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 80,
-        "d3_saves": 1,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "17998199117746939",
-        "topic": "radiation-safety-considerations-for-ultrafast-lase",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-28T15:20",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 109,
+        "d3_reach": 27,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -219,7 +219,7 @@
       }
     ],
     "phase": 1,
-    "phase_note": "Phase 1 \u2014 organic only. 93 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
+    "phase_note": "Phase 1 \u2014 organic only. 97 posts live. 1/3 posts hit threshold (saves>2% or ER>5% of reach).",
     "phase_pct": 100,
     "learnings": [
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
@@ -1150,6 +1150,30 @@
         "final": true
       },
       {
+        "name": "auto_202603291513_00_chakra-system-maps-precisely-onto-the-endocrine-au_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-29 15:14",
+        "final": true
+      },
+      {
+        "name": "auto_202603291514_01_world-simulation-with-video-foundation-models-for_final.mp4",
+        "size_mb": 1.8,
+        "modified": "03-29 15:16",
+        "final": true
+      },
+      {
+        "name": "auto_202603291516_02_nvidia-s-approach-to-physical-ai-and-robotics_final.mp4",
+        "size_mb": 1.6,
+        "modified": "03-29 15:17",
+        "final": true
+      },
+      {
+        "name": "auto_202603291517_03_gemini-robotics-bringing-ai-into-the-physical-worl_final.mp4",
+        "size_mb": 1.6,
+        "modified": "03-29 15:18",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -1234,18 +1258,18 @@
         "final": false
       }
     ],
-    "count": 127,
-    "final_count": 118
+    "count": 131,
+    "final_count": 122
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "ebeeb1b chore: update skill-stats pointer",
       "7270db1 chore: update skill-stats pointer",
       "5c594b6 Fix dual audio, cover image, LinkedIn 401; add Viswakarma memory",
       "6e2ca34 chore: update skill-stats pointer",
-      "9ff873e chore: update skill-stats pointer",
-      "b508962 chore: update skill-stats pointer"
+      "9ff873e chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1437,8 +1461,8 @@
     ],
     "dashboard": [
       "  Skills: 18/18 installed",
-      "[2026-03-29 14:30 IST] skill-stats pushed \u2713",
-      "[2026-03-29 14:30 IST] skill-stats pushed \u2713"
+      "[2026-03-29 15:00 IST] skill-stats pushed \u2713",
+      "[2026-03-29 15:00 IST] skill-stats pushed \u2713"
     ]
   },
   "memory": {
@@ -1836,23 +1860,23 @@
   },
   "claude_budget": {
     "date": "2026-03-29",
-    "state": "yellow",
-    "pct": 65.0,
+    "state": "green",
+    "pct": 0.0,
     "source": "api",
-    "api_5h_pct": 65.0,
-    "api_7d_pct": 37.0,
+    "api_5h_pct": 0.0,
+    "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
-    "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-29 14:30 IST",
-    "api_5h_reset_ts": 1774789200,
-    "api_7d_reset_ts": 1775304000
+    "api_binding": "unknown",
+    "api_fetched_at": "2026-03-29 15:00 IST",
+    "api_5h_reset_ts": 0,
+    "api_7d_reset_ts": 0
   },
   "unit_tests": {
     "status": "PASS",
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 15:00 IST",
+    "ts": "2026-03-29 15:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
