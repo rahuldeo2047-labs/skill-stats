@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-29T22:00:01.686708+05:30",
-  "generated_at_human": "2026-03-29 22:00 IST",
+  "generated_at": "2026-03-29T22:30:01.426320+05:30",
+  "generated_at_human": "2026-03-29 22:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "1h 50m",
+    "uptime": "2h 20m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.8,
     "disk_free_gb": 2437.9,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4005,
-    "mem_free_mb": 3808,
-    "mem_pct": 51.3,
-    "load_1m": 1.28,
-    "load_5m": 1.09,
-    "load_15m": 0.95
+    "mem_used_mb": 4018,
+    "mem_free_mb": 3795,
+    "mem_pct": 51.4,
+    "load_1m": 0.96,
+    "load_5m": 0.94,
+    "load_15m": 0.94
   },
   "services": [
     {
@@ -1313,11 +1313,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "332d279 chore: update skill-stats pointer",
       "6396199 chore: update skill-stats pointer",
       "59fa99e chore: update skill-stats pointer",
       "39b4bde chore: update skill-stats pointer",
-      "27fa4d4 chore: update skill-stats pointer",
-      "074eda0 chore: update skill-stats pointer"
+      "27fa4d4 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1497,13 +1497,14 @@
     "ig_post": [],
     "ig_learning": [],
     "backup": [
-      "backup.py: error: unrecognized arguments: --recover",
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
-      "Please make sure you have the correct access rights",
-      "and the repository exists."
+      "hint: the same ref. If you want to integrate the remote changes, use",
+      "hint: 'git pull' before pushing again.",
+      "hint: See the 'Note about fast-forwards' in 'git push --help' for details."
     ]
   },
   "memory": {
@@ -1901,23 +1902,23 @@
   },
   "claude_budget": {
     "date": "2026-03-29",
-    "state": "red",
-    "pct": 88.0,
+    "state": "green",
+    "pct": 0.0,
     "source": "api",
-    "api_5h_pct": 88.0,
-    "api_7d_pct": 51.0,
+    "api_5h_pct": 0.0,
+    "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
-    "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-29 21:00 IST",
-    "api_5h_reset_ts": 1774807200,
-    "api_7d_reset_ts": 1775304000
+    "api_binding": "unknown",
+    "api_fetched_at": "2026-03-29 22:00 IST",
+    "api_5h_reset_ts": 0,
+    "api_7d_reset_ts": 0
   },
   "unit_tests": {
     "status": "PASS",
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 22:00 IST",
+    "ts": "2026-03-29 22:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
