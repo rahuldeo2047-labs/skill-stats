@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-29T09:30:01.303517+05:30",
-  "generated_at_human": "2026-03-29 09:30 IST",
+  "generated_at": "2026-03-29T10:00:01.776017+05:30",
+  "generated_at_human": "2026-03-29 10:00 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "14h 9m",
+    "uptime": "14h 39m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1492.6,
-    "disk_free_gb": 2443.1,
+    "disk_used_gb": 1492.8,
+    "disk_free_gb": 2442.9,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 2593,
-    "mem_free_mb": 5220,
-    "mem_pct": 33.2,
-    "load_1m": 0.0,
-    "load_5m": 0.54,
-    "load_15m": 1.43
+    "mem_used_mb": 3934,
+    "mem_free_mb": 3879,
+    "mem_pct": 50.4,
+    "load_1m": 2.78,
+    "load_5m": 1.2,
+    "load_15m": 1.05
   },
   "services": [
     {
@@ -83,7 +83,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 28,
+        "d3_reach": 60,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -101,7 +101,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 28,
+        "d3_reach": 64,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -119,7 +119,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 47,
+        "d3_reach": 80,
         "d3_saves": 1,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -137,7 +137,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 107,
+        "d3_reach": 109,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -155,7 +155,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 52,
+        "d3_reach": 82,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -173,7 +173,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 74,
+        "d3_reach": 101,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -219,7 +219,7 @@
       }
     ],
     "phase": 1,
-    "phase_note": "Phase 1 \u2014 organic only. 89 posts live. 2/3 posts hit threshold (saves>2% or ER>5% of reach).",
+    "phase_note": "Phase 1 \u2014 organic only. 89 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
     "phase_pct": 100,
     "learnings": [
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
@@ -239,10 +239,22 @@
     ]
   },
   "biohacking": {
-    "total_posted": 30,
+    "total_posted": 31,
     "queue_depth": 0,
     "d3_count": 0,
     "posts": [
+      {
+        "topic": "longevity-nad-aging-final",
+        "title": "NAD+ and Aging \u2014 What the Research Shows",
+        "category": "longevity",
+        "voice_name": "baked_audio",
+        "voice_slot": 0,
+        "tts_chars": 0,
+        "media_id": "17992078517947508",
+        "ts_posted": "2026-03-29T09:44",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
       {
         "topic": "longevity-nad-aging-v3",
         "title": "NAD+ and Aging \u2014 What the Research Shows",
@@ -374,22 +386,10 @@
         "ts_posted": "2026-03-28T09:22",
         "d3_reach": "\u2014",
         "d3_saves": "\u2014"
-      },
-      {
-        "topic": "guidelines-and-recommendations-for-labor",
-        "title": "Guidelines and Recommendations for Laboratory Analysis in th",
-        "category": "wearables",
-        "voice_name": "Edge/Guy",
-        "voice_slot": 1,
-        "tts_chars": 272,
-        "media_id": "18334125784301186",
-        "ts_posted": "2026-03-28T09:20",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
       }
     ],
     "categories": {
-      "longevity": 4,
+      "longevity": 5,
       "wearables": 13,
       "neuroscience": 13
     },
@@ -1209,11 +1209,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "6fe2ece chore: update skill-stats pointer",
       "2689e79 chore: update skill-stats pointer",
       "21dd71e chore: update skill-stats pointer",
       "5e867ca chore: update skill-stats pointer",
-      "7a33ec9 chore: update skill-stats pointer",
-      "dca16cf chore: update skill-stats pointer"
+      "7a33ec9 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1399,7 +1399,7 @@
       "KeyError: 'reach'"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -1804,14 +1804,14 @@
   },
   "claude_budget": {
     "date": "2026-03-29",
-    "state": "green",
-    "pct": 58.0,
+    "state": "black",
+    "pct": 108.0,
     "source": "api",
-    "api_5h_pct": 58.0,
-    "api_7d_pct": 25.0,
+    "api_5h_pct": 108.0,
+    "api_7d_pct": 30.0,
     "api_overage_pct": 0.0,
     "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-29 09:00 IST",
+    "api_fetched_at": "2026-03-29 10:00 IST",
     "api_5h_reset_ts": 1774771200,
     "api_7d_reset_ts": 1775304000
   },
@@ -1820,7 +1820,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 09:30 IST",
+    "ts": "2026-03-29 10:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
