@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-29T16:00:01.761995+05:30",
-  "generated_at_human": "2026-03-29 16:00 IST",
+  "generated_at": "2026-03-29T16:30:01.354720+05:30",
+  "generated_at_human": "2026-03-29 16:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "20h 39m",
+    "uptime": "21h 9m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1493.1,
-    "disk_free_gb": 2442.6,
+    "disk_used_gb": 1493.2,
+    "disk_free_gb": 2442.5,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4535,
-    "mem_free_mb": 3278,
-    "mem_pct": 58.0,
-    "load_1m": 0.9,
-    "load_5m": 0.47,
-    "load_15m": 0.52
+    "mem_used_mb": 4134,
+    "mem_free_mb": 3679,
+    "mem_pct": 52.9,
+    "load_1m": 0.63,
+    "load_5m": 1.41,
+    "load_15m": 2.02
   },
   "services": [
     {
@@ -239,10 +239,58 @@
     ]
   },
   "biohacking": {
-    "total_posted": 35,
+    "total_posted": 39,
     "queue_depth": 0,
     "d3_count": 0,
     "posts": [
+      {
+        "topic": "molecular-mechanisms-of-dietary-restrict",
+        "title": "Molecular mechanisms of dietary restriction promoting health",
+        "category": "longevity",
+        "voice_name": "ElevenLabs/George",
+        "voice_slot": 3,
+        "tts_chars": 304,
+        "media_id": "17901307578402242",
+        "ts_posted": "2026-03-29T16:23",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "task-related-brain-functional-network-re",
+        "title": "Task-related brain functional network reconfigurations relat",
+        "category": "neuroscience",
+        "voice_name": "Edge/Aria",
+        "voice_slot": 2,
+        "tts_chars": 304,
+        "media_id": "18118341841651017",
+        "ts_posted": "2026-03-29T16:21",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "sleep-dependent-memory-consolidation-in",
+        "title": "Sleep-Dependent Memory Consolidation in a Neuromorphic Nanow",
+        "category": "neuroscience",
+        "voice_name": "Edge/Guy",
+        "voice_slot": 1,
+        "tts_chars": 151,
+        "media_id": "18116099146709699",
+        "ts_posted": "2026-03-29T16:20",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "lt-102-an-ampa-receptor-potentiator-alle",
+        "title": "LT-102, an AMPA receptor potentiator, alleviates depression-",
+        "category": "neuroscience",
+        "voice_name": "Edge/Jenny",
+        "voice_slot": 0,
+        "tts_chars": 304,
+        "media_id": "18031366895793248",
+        "ts_posted": "2026-03-29T16:19",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
       {
         "topic": "molecular-mechanisms-of-dietary-restrict",
         "title": "Molecular mechanisms of dietary restriction promoting health",
@@ -338,60 +386,12 @@
         "ts_posted": "2026-03-29T08:43",
         "d3_reach": "\u2014",
         "d3_saves": "\u2014"
-      },
-      {
-        "topic": "assessment-of-safety-of-a-fully-implante",
-        "title": "Assessment of Safety of a Fully Implanted Endovascular Brain",
-        "category": "neuroscience",
-        "voice_name": "Edge/Guy",
-        "voice_slot": 1,
-        "tts_chars": 304,
-        "media_id": "17890004895450843",
-        "ts_posted": "2026-03-29T01:20",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
-      },
-      {
-        "topic": "guidelines-and-recommendations-for-labor",
-        "title": "Guidelines and Recommendations for Laboratory Analysis in th",
-        "category": "wearables",
-        "voice_name": "Edge/Jenny",
-        "voice_slot": 0,
-        "tts_chars": 272,
-        "media_id": "17878704717546564",
-        "ts_posted": "2026-03-29T01:19",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
-      },
-      {
-        "topic": "evaluation-of-a-continuous-blood-glucose",
-        "title": "Evaluation of a Continuous Blood Glucose Monitor: A Novel an",
-        "category": "wearables",
-        "voice_name": "ElevenLabs/George",
-        "voice_slot": 3,
-        "tts_chars": 308,
-        "media_id": "17898603702262060",
-        "ts_posted": "2026-03-28T17:20",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
-      },
-      {
-        "topic": "wearable-aptasensors",
-        "title": "Wearable Aptasensors.",
-        "category": "wearables",
-        "voice_name": "Edge/Aria",
-        "voice_slot": 2,
-        "tts_chars": 308,
-        "media_id": "17936126367038167",
-        "ts_posted": "2026-03-28T17:19",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
       }
     ],
     "categories": {
-      "longevity": 6,
+      "longevity": 7,
       "wearables": 13,
-      "neuroscience": 16
+      "neuroscience": 19
     },
     "ig_id": "17841464494421993",
     "token_expires": "2026-05-24"
@@ -1262,14 +1262,14 @@
     "final_count": 122
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --recover",
-    "last_error": "backup.py: error: unrecognized arguments: --recover",
+    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
+    "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "ef3b6df chore: update skill-stats pointer",
       "115c50d chore: update skill-stats pointer",
       "ebeeb1b chore: update skill-stats pointer",
       "7270db1 chore: update skill-stats pointer",
-      "5c594b6 Fix dual audio, cover image, LinkedIn 401; add Viswakarma memory",
-      "6e2ca34 chore: update skill-stats pointer"
+      "5c594b6 Fix dual audio, cover image, LinkedIn 401; add Viswakarma memory"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1455,9 +1455,9 @@
       "KeyError: 'reach'"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --recover"
+      "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
       "hint: the same ref. If you want to integrate the remote changes, use",
@@ -1867,7 +1867,7 @@
     "api_7d_pct": 41.0,
     "api_overage_pct": 0.0,
     "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-29 15:30 IST",
+    "api_fetched_at": "2026-03-29 16:00 IST",
     "api_5h_reset_ts": 1774789200,
     "api_7d_reset_ts": 1775304000
   },
@@ -1876,7 +1876,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 16:00 IST",
+    "ts": "2026-03-29 16:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
