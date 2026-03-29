@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-29T14:00:01.562859+05:30",
-  "generated_at_human": "2026-03-29 14:00 IST",
+  "generated_at": "2026-03-29T14:30:01.329540+05:30",
+  "generated_at_human": "2026-03-29 14:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "18h 39m",
+    "uptime": "19h 9m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1493.1,
     "disk_free_gb": 2442.6,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3648,
-    "mem_free_mb": 4165,
-    "mem_pct": 46.7,
-    "load_1m": 0.67,
-    "load_5m": 0.51,
-    "load_15m": 0.4
+    "mem_used_mb": 3515,
+    "mem_free_mb": 4298,
+    "mem_pct": 45.0,
+    "load_1m": 0.42,
+    "load_5m": 0.69,
+    "load_15m": 0.61
   },
   "services": [
     {
@@ -397,10 +397,18 @@
     "token_expires": "2026-05-24"
   },
   "linkedin": {
-    "total_posted": 7,
+    "total_posted": 8,
     "today_pillar": "author",
     "today_pillar_label": "Author/Ideas",
     "posts": [
+      {
+        "ts": "2026-03-29T14:00",
+        "type": "text",
+        "pillar": "author",
+        "post_urn": "urn:li:share:7443937667249061888",
+        "char_count": 1743,
+        "caption": "The most advanced technology of the 21st century isn't artificial intelligence; it's self-awareness. This statement, oft"
+      },
       {
         "ts": "2026-03-29T03:37",
         "type": "text",
@@ -1230,14 +1238,14 @@
     "final_count": 118
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --recover",
-    "last_error": "backup.py: error: unrecognized arguments: --recover",
+    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
+    "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
-      "65daa25 chore: update skill-stats pointer",
-      "c659d98 chore: update skill-stats pointer",
-      "b23e650 chore: update skill-stats pointer",
-      "533bd71 chore: update skill-stats pointer",
-      "29ee6d6 chore: update skill-stats pointer"
+      "5c594b6 Fix dual audio, cover image, LinkedIn 401; add Viswakarma memory",
+      "6e2ca34 chore: update skill-stats pointer",
+      "9ff873e chore: update skill-stats pointer",
+      "b508962 chore: update skill-stats pointer",
+      "55fb3b8 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1402,7 +1410,8 @@
         "0 */3 * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/energy_news_watcher.py >> /tmp/energy_news.log 2>&1",
         "10 6 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py >> /tmp/bh_auto_post.log 2>&1",
         "10 16 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py --with-elevenlabs >> /tmp/bh_auto_post.log 2>&1",
-        "00 3 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/linkedin-skill/scripts/linkedin_auto_post.py >> /tmp/linkedin_auto_post.log 2>&1",
+        "00 3 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && source /home/rick/.drishti_env 2>/dev/null && python3 Skills/linkedin-skill/scripts/linkedin_auto_post.py 2>&1 | tee /tmp/linkedin_post_now.log",
+        "00 15 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && source /home/rick/.drishti_env 2>/dev/null && python3 Skills/linkedin-skill/scripts/linkedin_auto_post.py 2>&1 | tee /tmp/linkedin_post_now.log",
         "10 7 * * * BASH_ENV=\"/home/rick/.drishti_env\" cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/instagram-skill/scripts/auto_post.py >> /tmp/featured_ts_post.log 2>&1",
         "10 17 * * * BASH_ENV=\"/home/rick/.drishti_env\" cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/instagram-skill/scripts/auto_post.py >> /tmp/featured_ts_post.log 2>&1",
         "*/30 * * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/sysmon-skill/scripts/heartbeat.py >> /tmp/heartbeat.log 2>&1",
@@ -1410,7 +1419,7 @@
         "0 8 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_morning_check.sh >> /tmp/morning_check.log 2>&1"
       ]
     },
-    "total": 28
+    "total": 29
   },
   "logs": {
     "ig_post": [],
@@ -1422,7 +1431,7 @@
       "KeyError: 'reach'"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --recover",
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -1828,22 +1837,22 @@
   "claude_budget": {
     "date": "2026-03-29",
     "state": "green",
-    "pct": 0.0,
+    "pct": 10.0,
     "source": "api",
-    "api_5h_pct": 0.0,
-    "api_7d_pct": 0.0,
+    "api_5h_pct": 10.0,
+    "api_7d_pct": 31.0,
     "api_overage_pct": 0.0,
-    "api_binding": "unknown",
-    "api_fetched_at": "2026-03-29 13:30 IST",
-    "api_5h_reset_ts": 0,
-    "api_7d_reset_ts": 0
+    "api_binding": "five_hour",
+    "api_fetched_at": "2026-03-29 14:00 IST",
+    "api_5h_reset_ts": 1774789200,
+    "api_7d_reset_ts": 1775304000
   },
   "unit_tests": {
     "status": "PASS",
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 14:00 IST",
+    "ts": "2026-03-29 14:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
