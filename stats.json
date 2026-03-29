@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-29T20:30:01.724354+05:30",
-  "generated_at_human": "2026-03-29 20:30 IST",
+  "generated_at": "2026-03-29T21:00:02.354795+05:30",
+  "generated_at_human": "2026-03-29 21:00 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "0h 20m",
+    "uptime": "0h 50m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.8,
     "disk_free_gb": 2437.9,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 2823,
-    "mem_free_mb": 4990,
-    "mem_pct": 36.1,
-    "load_1m": 0.72,
-    "load_5m": 1.35,
-    "load_15m": 1.95
+    "mem_used_mb": 3745,
+    "mem_free_mb": 4068,
+    "mem_pct": 47.9,
+    "load_1m": 0.73,
+    "load_5m": 0.69,
+    "load_15m": 0.72
   },
   "services": [
     {
@@ -1313,11 +1313,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "39b4bde chore: update skill-stats pointer",
       "27fa4d4 chore: update skill-stats pointer",
       "074eda0 chore: update skill-stats pointer",
       "aa2e450 chore: update skill-stats pointer",
-      "b279149 chore: update skill-stats pointer",
-      "71ad22e chore: update skill-stats pointer"
+      "b279149 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1497,10 +1497,15 @@
     "ig_post": [],
     "ig_learning": [],
     "backup": [
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
-    "dashboard": []
+    "dashboard": [
+      "hint: the same ref. If you want to integrate the remote changes, use",
+      "hint: 'git pull' before pushing again.",
+      "hint: See the 'Note about fast-forwards' in 'git push --help' for details."
+    ]
   },
   "memory": {
     "projects": [
@@ -1897,14 +1902,14 @@
   },
   "claude_budget": {
     "date": "2026-03-29",
-    "state": "green",
-    "pct": 48.0,
+    "state": "red",
+    "pct": 88.0,
     "source": "api",
-    "api_5h_pct": 48.0,
-    "api_7d_pct": 46.0,
+    "api_5h_pct": 88.0,
+    "api_7d_pct": 51.0,
     "api_overage_pct": 0.0,
     "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-29 20:00 IST",
+    "api_fetched_at": "2026-03-29 21:00 IST",
     "api_5h_reset_ts": 1774807200,
     "api_7d_reset_ts": 1775304000
   },
@@ -1913,7 +1918,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 20:30 IST",
+    "ts": "2026-03-29 21:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
