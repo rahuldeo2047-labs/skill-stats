@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-30T03:30:02.044283+05:30",
-  "generated_at_human": "2026-03-30 03:30 IST",
+  "generated_at": "2026-03-30T04:00:01.709719+05:30",
+  "generated_at_human": "2026-03-30 04:00 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,17 +9,17 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "7h 20m",
+    "uptime": "7h 50m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.8,
     "disk_free_gb": 2437.9,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1711,
-    "mem_free_mb": 6102,
-    "mem_pct": 21.9,
+    "mem_used_mb": 1721,
+    "mem_free_mb": 6092,
+    "mem_pct": 22.0,
     "load_1m": 0.0,
-    "load_5m": 0.01,
+    "load_5m": 0.02,
     "load_15m": 0.0
   },
   "services": [
@@ -1310,14 +1310,14 @@
     "final_count": 130
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --heartbeat",
-    "last_error": "backup.py: error: unrecognized arguments: --heartbeat",
+    "last_ok": "Pushed: 'backup: 2026-03-30 \u2014 routine'",
+    "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "b5854e1 chore: update skill-stats pointer",
       "1c2c8ac chore: update skill-stats pointer",
       "f4c5f32 chore: update skill-stats pointer",
       "4a88934 chore: update skill-stats pointer",
-      "48cad3d chore: update skill-stats pointer",
-      "833f448 chore: update skill-stats pointer"
+      "48cad3d chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1497,9 +1497,9 @@
     "ig_post": [],
     "ig_learning": [],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
-      "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --heartbeat"
+      "  46 files synced",
+      "  1 file(s) changed",
+      "  Pushed: 'backup: 2026-03-30 \u2014 routine'"
     ],
     "dashboard": [
       "hint: the same ref. If you want to integrate the remote changes, use",
@@ -1909,7 +1909,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-30 03:00 IST",
+    "api_fetched_at": "2026-03-30 03:30 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1918,7 +1918,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-30 03:30 IST",
+    "ts": "2026-03-30 04:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
