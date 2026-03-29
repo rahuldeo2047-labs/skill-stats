@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-29T23:30:01.353029+05:30",
-  "generated_at_human": "2026-03-29 23:30 IST",
-  "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
+  "generated_at": "2026-03-30T00:00:02.004728+05:30",
+  "generated_at_human": "2026-03-30 00:00 IST",
+  "next_post": "00:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "3h 20m",
+    "uptime": "3h 50m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.8,
     "disk_free_gb": 2437.9,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1706,
-    "mem_free_mb": 6107,
-    "mem_pct": 21.8,
+    "mem_used_mb": 1726,
+    "mem_free_mb": 6087,
+    "mem_pct": 22.1,
     "load_1m": 0.0,
-    "load_5m": 0.07,
-    "load_15m": 0.57
+    "load_5m": 0.0,
+    "load_15m": 0.06
   },
   "services": [
     {
@@ -44,7 +44,7 @@
         "role": "learning/lab",
         "phase": 1,
         "token_expires": "2026-05-20",
-        "token_days_left": 51,
+        "token_days_left": 50,
         "followers": 123,
         "status": "active"
       },
@@ -53,7 +53,7 @@
         "ig_id": "17841464494421993",
         "role": "pure-learning/experiments",
         "token_expires": "2026-05-24",
-        "token_days_left": 55,
+        "token_days_left": 54,
         "status": "active"
       },
       {
@@ -398,8 +398,8 @@
   },
   "linkedin": {
     "total_posted": 8,
-    "today_pillar": "author",
-    "today_pillar_label": "Author/Ideas",
+    "today_pillar": "phyai",
+    "today_pillar_label": "Physical AI",
     "posts": [
       {
         "ts": "2026-03-29T14:00",
@@ -1310,14 +1310,14 @@
     "final_count": 130
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
-    "last_error": "backup.py: error: unrecognized arguments: --check-large",
+    "last_ok": "backup.py: error: unrecognized arguments: --recover",
+    "last_error": "backup.py: error: unrecognized arguments: --recover",
     "recent_commits": [
+      "43bf741 chore: update skill-stats pointer",
       "6a6cdb2 chore: update skill-stats pointer",
       "154e8bb chore: update skill-stats pointer",
       "332d279 chore: update skill-stats pointer",
-      "6396199 chore: update skill-stats pointer",
-      "59fa99e chore: update skill-stats pointer"
+      "6396199 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1499,7 +1499,7 @@
     "backup": [
       "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --check-large"
+      "backup.py: error: unrecognized arguments: --recover"
     ],
     "dashboard": [
       "hint: the same ref. If you want to integrate the remote changes, use",
@@ -1781,7 +1781,7 @@
       "flexible": "Friday, Saturday",
       "note": "Autonomous tasks continue after hard close; no Rahul input requested."
     },
-    "boundary": "HARD CLOSE \u2014 stop requesting input",
+    "boundary": null,
     "logs": [
       {
         "file": "signals.jsonl",
@@ -1902,15 +1902,15 @@
   },
   "claude_budget": {
     "date": "2026-03-29",
-    "state": "red",
-    "pct": 95.0,
+    "state": "green",
+    "pct": 0.0,
     "source": "api",
-    "api_5h_pct": 95.0,
+    "api_5h_pct": 0.0,
     "api_7d_pct": 52.0,
     "api_overage_pct": 0.0,
     "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-29 23:00 IST",
-    "api_5h_reset_ts": 1774807200,
+    "api_fetched_at": "2026-03-29 23:30 IST",
+    "api_5h_reset_ts": 1774825200,
     "api_7d_reset_ts": 1775304000
   },
   "unit_tests": {
@@ -1918,7 +1918,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 23:30 IST",
+    "ts": "2026-03-30 00:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
