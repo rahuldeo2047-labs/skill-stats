@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-29T08:30:01.387672+05:30",
-  "generated_at_human": "2026-03-29 08:30 IST",
-  "next_post": "12:10 IST",
+  "generated_at": "2026-03-29T09:00:03.117045+05:30",
+  "generated_at_human": "2026-03-29 09:00 IST",
+  "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "13h 9m",
+    "uptime": "13h 39m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1492.6,
     "disk_free_gb": 2443.1,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3563,
-    "mem_free_mb": 4250,
-    "mem_pct": 45.6,
-    "load_1m": 0.38,
-    "load_5m": 0.14,
-    "load_15m": 0.04
+    "mem_used_mb": 3097,
+    "mem_free_mb": 4716,
+    "mem_pct": 39.6,
+    "load_1m": 2.75,
+    "load_5m": 1.74,
+    "load_15m": 1.51
   },
   "services": [
     {
@@ -69,11 +69,9 @@
     "d3_count": 89,
     "d7_count": 55,
     "d0_count": 8,
-    "queue_depth": 1,
-    "queue_next": "sim-to-real-physical-ai-2026",
-    "queue_topics": [
-      "sim-to-real-physical-ai-2026"
-    ],
+    "queue_depth": 0,
+    "queue_next": null,
+    "queue_topics": [],
     "recent_posts": [
       {
         "post_id": "18093949748034847",
@@ -241,10 +239,22 @@
     ]
   },
   "biohacking": {
-    "total_posted": 27,
-    "queue_depth": 6,
+    "total_posted": 28,
+    "queue_depth": 0,
     "d3_count": 0,
     "posts": [
+      {
+        "topic": "longevity-nad-aging",
+        "title": "NAD+ and Aging \u2014 What the Research Shows",
+        "category": "longevity",
+        "voice_name": "Edge/Jenny",
+        "voice_slot": 0,
+        "tts_chars": 159,
+        "media_id": "18116477617725217",
+        "ts_posted": "2026-03-29T08:43",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
       {
         "topic": "assessment-of-safety-of-a-fully-implante",
         "title": "Assessment of Safety of a Fully Implanted Endovascular Brain",
@@ -376,22 +386,10 @@
         "ts_posted": "2026-03-27T17:21",
         "d3_reach": "\u2014",
         "d3_saves": "\u2014"
-      },
-      {
-        "topic": "ai-driven-innovations-in-alzheimer-s-dis",
-        "title": "AI-driven innovations in Alzheimer's disease: Integrating ea",
-        "category": "neuroscience",
-        "voice_name": "Edge/Aria",
-        "voice_slot": 2,
-        "tts_chars": 304,
-        "media_id": "17871867915580132",
-        "ts_posted": "2026-03-27T17:20",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
       }
     ],
     "categories": {
-      "longevity": 1,
+      "longevity": 2,
       "wearables": 13,
       "neuroscience": 13
     },
@@ -1084,6 +1082,42 @@
         "final": true
       },
       {
+        "name": "auto_202603290839_00_turiya-the-fourth-state-of-consciousness-quantum-m_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-29 08:40",
+        "final": true
+      },
+      {
+        "name": "auto_202603290840_01_ai-overly-affirms-users-asking-for-personal-advice_final.mp4",
+        "size_mb": 1.7,
+        "modified": "03-29 08:41",
+        "final": true
+      },
+      {
+        "name": "auto_202603290841_02_the-first-40-months-of-the-ai-era_final.mp4",
+        "size_mb": 1.6,
+        "modified": "03-29 08:42",
+        "final": true
+      },
+      {
+        "name": "auto_202603290842_03_inpharmd-yc-w21-is-hiring-senior-ruby-on-rails-dev_final.mp4",
+        "size_mb": 1.7,
+        "modified": "03-29 08:43",
+        "final": true
+      },
+      {
+        "name": "auto_202603290845_00_turiya-the-fourth-state-of-consciousness-quantum-m_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-29 08:46",
+        "final": true
+      },
+      {
+        "name": "auto_202603290846_01_world-simulation-with-video-foundation-models-for_final.mp4",
+        "size_mb": 1.8,
+        "modified": "03-29 08:48",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -1168,18 +1202,18 @@
         "final": false
       }
     ],
-    "count": 117,
-    "final_count": 108
+    "count": 123,
+    "final_count": 114
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "21dd71e chore: update skill-stats pointer",
       "5e867ca chore: update skill-stats pointer",
       "7a33ec9 chore: update skill-stats pointer",
       "dca16cf chore: update skill-stats pointer",
-      "81a344c chore: update skill-stats pointer",
-      "12db92c chore: update skill-stats pointer"
+      "81a344c chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1365,7 +1399,7 @@
       "KeyError: 'reach'"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --recover",
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -1777,7 +1811,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-29 08:00 IST",
+    "api_fetched_at": "2026-03-29 08:30 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1786,7 +1820,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 08:30 IST",
+    "ts": "2026-03-29 09:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
