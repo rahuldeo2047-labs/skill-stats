@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-29T15:30:01.859713+05:30",
-  "generated_at_human": "2026-03-29 15:30 IST",
+  "generated_at": "2026-03-29T16:00:01.761995+05:30",
+  "generated_at_human": "2026-03-29 16:00 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "20h 9m",
+    "uptime": "20h 39m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1493.1,
     "disk_free_gb": 2442.6,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 4351,
-    "mem_free_mb": 3462,
-    "mem_pct": 55.7,
-    "load_1m": 2.1,
-    "load_5m": 1.76,
-    "load_15m": 1.63
+    "mem_used_mb": 4535,
+    "mem_free_mb": 3278,
+    "mem_pct": 58.0,
+    "load_1m": 0.9,
+    "load_5m": 0.47,
+    "load_15m": 0.52
   },
   "services": [
     {
@@ -1262,14 +1262,14 @@
     "final_count": 122
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
-    "last_error": "backup.py: error: unrecognized arguments: --check-large",
+    "last_ok": "backup.py: error: unrecognized arguments: --recover",
+    "last_error": "backup.py: error: unrecognized arguments: --recover",
     "recent_commits": [
+      "115c50d chore: update skill-stats pointer",
       "ebeeb1b chore: update skill-stats pointer",
       "7270db1 chore: update skill-stats pointer",
       "5c594b6 Fix dual audio, cover image, LinkedIn 401; add Viswakarma memory",
-      "6e2ca34 chore: update skill-stats pointer",
-      "9ff873e chore: update skill-stats pointer"
+      "6e2ca34 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1457,12 +1457,12 @@
     "backup": [
       "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --check-large"
+      "backup.py: error: unrecognized arguments: --recover"
     ],
     "dashboard": [
-      "  Skills: 18/18 installed",
-      "[2026-03-29 15:00 IST] skill-stats pushed \u2713",
-      "[2026-03-29 15:00 IST] skill-stats pushed \u2713"
+      "hint: the same ref. If you want to integrate the remote changes, use",
+      "hint: 'git pull' before pushing again.",
+      "hint: See the 'Note about fast-forwards' in 'git push --help' for details."
     ]
   },
   "memory": {
@@ -1860,23 +1860,23 @@
   },
   "claude_budget": {
     "date": "2026-03-29",
-    "state": "green",
-    "pct": 0.0,
+    "state": "black",
+    "pct": 100.0,
     "source": "api",
-    "api_5h_pct": 0.0,
-    "api_7d_pct": 0.0,
+    "api_5h_pct": 100.0,
+    "api_7d_pct": 41.0,
     "api_overage_pct": 0.0,
-    "api_binding": "unknown",
-    "api_fetched_at": "2026-03-29 15:00 IST",
-    "api_5h_reset_ts": 0,
-    "api_7d_reset_ts": 0
+    "api_binding": "five_hour",
+    "api_fetched_at": "2026-03-29 15:30 IST",
+    "api_5h_reset_ts": 1774789200,
+    "api_7d_reset_ts": 1775304000
   },
   "unit_tests": {
     "status": "PASS",
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 15:30 IST",
+    "ts": "2026-03-29 16:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
