@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-29T10:00:01.776017+05:30",
-  "generated_at_human": "2026-03-29 10:00 IST",
+  "generated_at": "2026-03-29T10:30:01.838864+05:30",
+  "generated_at_human": "2026-03-29 10:30 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "14h 39m",
+    "uptime": "15h 9m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1492.8,
-    "disk_free_gb": 2442.9,
+    "disk_used_gb": 1492.7,
+    "disk_free_gb": 2443.0,
     "disk_pct": 37.9,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3934,
-    "mem_free_mb": 3879,
-    "mem_pct": 50.4,
-    "load_1m": 2.78,
-    "load_5m": 1.2,
-    "load_15m": 1.05
+    "mem_used_mb": 2637,
+    "mem_free_mb": 5176,
+    "mem_pct": 33.8,
+    "load_1m": 0.11,
+    "load_5m": 0.47,
+    "load_15m": 1.11
   },
   "services": [
     {
@@ -65,7 +65,7 @@
         "status": "paused"
       }
     ],
-    "total_posted": 89,
+    "total_posted": 93,
     "d3_count": 89,
     "d7_count": 55,
     "d0_count": 8,
@@ -73,6 +73,78 @@
     "queue_next": null,
     "queue_topics": [],
     "recent_posts": [
+      {
+        "post_id": "17939249607177562",
+        "topic": "the-first-40-months-of-the-ai-era",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-29T10:06",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "17942811468158823",
+        "topic": "ai-overly-affirms-users-asking-for-personal-advice",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-29T10:05",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18207507826330674",
+        "topic": "self-thermometry-measurements-of-the-adiabatic-tem",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-29T10:05",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18107414599867796",
+        "topic": "turiya-the-fourth-state-of-consciousness-quantum-m",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-29T10:04",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
       {
         "post_id": "18093949748034847",
         "topic": "cern-uses-ultra-compact-ai-models-on-fpgas-for-rea",
@@ -144,82 +216,10 @@
         "has_d0": false,
         "has_d3": true,
         "has_d7": false
-      },
-      {
-        "post_id": "18456398242110684",
-        "topic": "electrostatic-photoluminescence-tuning-in-all-soli",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-28T15:20",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 82,
-        "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "18158903896440448",
-        "topic": "provably-efficient-long-time-exponential-decomposi",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-28T15:19",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 101,
-        "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "17907175818204760",
-        "topic": "indus-valley-metallurgy-iron-pillar-of-delhi-has-n",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-28T15:18",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 100,
-        "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
-      },
-      {
-        "post_id": "18086691110336363",
-        "topic": "critical-curve-of-two-matrix-models-abba-a-b-a-b-a",
-        "hook_type": "contrarian",
-        "ts_posted": "2026-03-28T07:23",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 215,
-        "d3_saves": 1,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": false
       }
     ],
     "phase": 1,
-    "phase_note": "Phase 1 \u2014 organic only. 89 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
+    "phase_note": "Phase 1 \u2014 organic only. 93 posts live. 0/3 posts hit threshold (saves>2% or ER>5% of reach).",
     "phase_pct": 100,
     "learnings": [
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
@@ -239,10 +239,58 @@
     ]
   },
   "biohacking": {
-    "total_posted": 31,
+    "total_posted": 35,
     "queue_depth": 0,
     "d3_count": 0,
     "posts": [
+      {
+        "topic": "molecular-mechanisms-of-dietary-restrict",
+        "title": "Molecular mechanisms of dietary restriction promoting health",
+        "category": "longevity",
+        "voice_name": "Edge/Jenny",
+        "voice_slot": 3,
+        "tts_chars": 304,
+        "media_id": "17875863207434979",
+        "ts_posted": "2026-03-29T10:23",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "task-related-brain-functional-network-re",
+        "title": "Task-related brain functional network reconfigurations relat",
+        "category": "neuroscience",
+        "voice_name": "Edge/Aria",
+        "voice_slot": 2,
+        "tts_chars": 304,
+        "media_id": "17979840608826268",
+        "ts_posted": "2026-03-29T10:22",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "sleep-dependent-memory-consolidation-in",
+        "title": "Sleep-Dependent Memory Consolidation in a Neuromorphic Nanow",
+        "category": "neuroscience",
+        "voice_name": "Edge/Guy",
+        "voice_slot": 1,
+        "tts_chars": 151,
+        "media_id": "18226173751312098",
+        "ts_posted": "2026-03-29T10:21",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "lt-102-an-ampa-receptor-potentiator-alle",
+        "title": "LT-102, an AMPA receptor potentiator, alleviates depression-",
+        "category": "neuroscience",
+        "voice_name": "Edge/Jenny",
+        "voice_slot": 0,
+        "tts_chars": 304,
+        "media_id": "17978901842990312",
+        "ts_posted": "2026-03-29T10:19",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
       {
         "topic": "longevity-nad-aging-final",
         "title": "NAD+ and Aging \u2014 What the Research Shows",
@@ -338,60 +386,12 @@
         "ts_posted": "2026-03-28T17:19",
         "d3_reach": "\u2014",
         "d3_saves": "\u2014"
-      },
-      {
-        "topic": "continuous-glucose-monitoring-sensors-fo",
-        "title": "Continuous Glucose Monitoring Sensors for Diabetes Managemen",
-        "category": "wearables",
-        "voice_name": "Edge/Guy",
-        "voice_slot": 1,
-        "tts_chars": 308,
-        "media_id": "17901661035405209",
-        "ts_posted": "2026-03-28T17:17",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
-      },
-      {
-        "topic": "guidelines-and-recommendations-for-labor",
-        "title": "Guidelines and Recommendations for Laboratory Analysis in th",
-        "category": "wearables",
-        "voice_name": "Edge/Jenny",
-        "voice_slot": 0,
-        "tts_chars": 272,
-        "media_id": "18131919025543572",
-        "ts_posted": "2026-03-28T17:16",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
-      },
-      {
-        "topic": "wearable-aptasensors",
-        "title": "Wearable Aptasensors.",
-        "category": "wearables",
-        "voice_name": "Edge/Jenny",
-        "voice_slot": 3,
-        "tts_chars": 308,
-        "media_id": "18080679788527863",
-        "ts_posted": "2026-03-28T09:23",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
-      },
-      {
-        "topic": "continuous-glucose-monitoring-sensors-fo",
-        "title": "Continuous Glucose Monitoring Sensors for Diabetes Managemen",
-        "category": "wearables",
-        "voice_name": "Edge/Aria",
-        "voice_slot": 2,
-        "tts_chars": 308,
-        "media_id": "18122419003611849",
-        "ts_posted": "2026-03-28T09:22",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
       }
     ],
     "categories": {
-      "longevity": 5,
+      "longevity": 6,
       "wearables": 13,
-      "neuroscience": 13
+      "neuroscience": 16
     },
     "ig_id": "17841464494421993",
     "token_expires": "2026-05-24"
@@ -1118,6 +1118,30 @@
         "final": true
       },
       {
+        "name": "auto_202603290959_00_turiya-the-fourth-state-of-consciousness-quantum-m_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-29 10:00",
+        "final": true
+      },
+      {
+        "name": "auto_202603291000_01_self-thermometry-measurements-of-the-adiabatic-tem_final.mp4",
+        "size_mb": 1.9,
+        "modified": "03-29 10:01",
+        "final": true
+      },
+      {
+        "name": "auto_202603291001_02_ai-overly-affirms-users-asking-for-personal-advice_final.mp4",
+        "size_mb": 1.7,
+        "modified": "03-29 10:02",
+        "final": true
+      },
+      {
+        "name": "auto_202603291002_03_the-first-40-months-of-the-ai-era_final.mp4",
+        "size_mb": 1.6,
+        "modified": "03-29 10:03",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -1202,18 +1226,18 @@
         "final": false
       }
     ],
-    "count": 123,
-    "final_count": 114
+    "count": 127,
+    "final_count": 118
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "01e3d13 chore: update skill-stats pointer",
       "6fe2ece chore: update skill-stats pointer",
       "2689e79 chore: update skill-stats pointer",
       "21dd71e chore: update skill-stats pointer",
-      "5e867ca chore: update skill-stats pointer",
-      "7a33ec9 chore: update skill-stats pointer"
+      "5e867ca chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1376,18 +1400,17 @@
         "0 0 * * 0 BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/Documents/playground/Claude_Code_Skills/Skills/cloud-meter-skill/scripts/weekly_ai_batch.sh >> /tmp/weekly_ai_batch.log 2>&1",
         "*/30 * * * * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash -c \"python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/cloud-meter-skill/scripts/check_claude_plan_usage.py --update-budget\" >> /tmp/claude_plan_usage.log 2>&1",
         "0 */3 * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/telegram-skill/scripts/energy_news_watcher.py >> /tmp/energy_news.log 2>&1",
-        "10 9 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py >> /tmp/bh_auto_post.log 2>&1",
-        "10 17 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py --with-elevenlabs >> /tmp/bh_auto_post.log 2>&1",
-        "37 3 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/linkedin-skill/scripts/linkedin_auto_post.py >> /tmp/linkedin_auto_post.log 2>&1",
+        "10 6 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py >> /tmp/bh_auto_post.log 2>&1",
+        "10 16 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && /usr/bin/python3 Skills/instagram-skill/scripts/auto_post_biohacking.py --with-elevenlabs >> /tmp/bh_auto_post.log 2>&1",
+        "00 3 * * * cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/linkedin-skill/scripts/linkedin_auto_post.py >> /tmp/linkedin_auto_post.log 2>&1",
+        "10 7 * * * BASH_ENV=\"/home/rick/.drishti_env\" cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/instagram-skill/scripts/auto_post.py >> /tmp/featured_ts_post.log 2>&1",
+        "10 17 * * * BASH_ENV=\"/home/rick/.drishti_env\" cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/instagram-skill/scripts/auto_post.py >> /tmp/featured_ts_post.log 2>&1",
         "*/30 * * * * python3 /home/rick/Documents/playground/Claude_Code_Skills/Skills/sysmon-skill/scripts/heartbeat.py >> /tmp/heartbeat.log 2>&1",
         "15 1 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_bh_pipeline.sh >> /tmp/bh_pipeline.log 2>&1",
-        "0 8 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_morning_check.sh >> /tmp/morning_check.log 2>&1",
-        "53 20 28 3 * python3 /home/rick/.local/bin/tg_send.py \"VS Code exiting now. Reel posting pipeline starting. BH at 02:25 IST, TS at 02:40 IST.\" && sleep 3 && pkill -f \"code\" >> /tmp/vscode_exit.log 2>&1",
-        "55 20 28 3 * BASH_ENV=\"/home/rick/.drishti_env\" cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/instagram-skill/scripts/auto_post_biohacking.py >> /tmp/featured_bh_post.log 2>&1",
-        "10 21 28 3 * BASH_ENV=\"/home/rick/.drishti_env\" cd /home/rick/Documents/playground/Claude_Code_Skills && python3 Skills/instagram-skill/scripts/auto_post.py >> /tmp/featured_ts_post.log 2>&1"
+        "0 8 29 3 * BASH_ENV=\"/home/rick/.drishti_env\" /bin/bash /home/rick/.local/bin/drishti_morning_check.sh >> /tmp/morning_check.log 2>&1"
       ]
     },
-    "total": 29
+    "total": 28
   },
   "logs": {
     "ig_post": [],
@@ -1399,7 +1422,7 @@
       "KeyError: 'reach'"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --recover",
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -1820,7 +1843,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-29 10:00 IST",
+    "ts": "2026-03-29 10:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
