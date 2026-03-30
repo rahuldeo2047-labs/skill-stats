@@ -1,24 +1,26 @@
 {
-  "generated_at": "2026-03-30T11:30:01.406212+05:30",
-  "generated_at_human": "2026-03-30 11:30 IST",
+  "generated_at": "2026-03-30T12:00:02.011780+05:30",
+  "generated_at_human": "2026-03-30 12:00 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
+      "192.168.0.100",
+      "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "15h 20m",
+    "uptime": "15h 50m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.8,
     "disk_free_gb": 2437.9,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1483,
-    "mem_free_mb": 6330,
-    "mem_pct": 19.0,
-    "load_1m": 0.01,
-    "load_5m": 0.05,
-    "load_15m": 0.07
+    "mem_used_mb": 1512,
+    "mem_free_mb": 6301,
+    "mem_pct": 19.4,
+    "load_1m": 0.0,
+    "load_5m": 0.02,
+    "load_15m": 0.0
   },
   "services": [
     {
@@ -1335,11 +1337,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "d4a916c chore: update skill-stats pointer",
       "9e0a11e chore: update skill-stats pointer",
       "e19816b chore: update skill-stats pointer",
       "6ea4444 chore: update skill-stats pointer",
-      "f508f2e chore: update skill-stats pointer",
-      "0f4f650 chore: update skill-stats pointer"
+      "f508f2e chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1522,14 +1524,13 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
-      "hint: the same ref. If you want to integrate the remote changes, use",
-      "hint: 'git pull' before pushing again.",
-      "hint: See the 'Note about fast-forwards' in 'git push --help' for details."
+      "Please make sure you have the correct access rights",
+      "and the repository exists."
     ]
   },
   "memory": {
@@ -1943,7 +1944,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-30 11:30 IST",
+    "ts": "2026-03-30 12:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
