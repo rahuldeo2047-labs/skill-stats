@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-31T04:00:01.319758+05:30",
-  "generated_at_human": "2026-03-31 04:00 IST",
+  "generated_at": "2026-03-31T04:30:02.012961+05:30",
+  "generated_at_human": "2026-03-31 04:30 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "31h 50m",
+    "uptime": "32h 20m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.9,
     "disk_free_gb": 2437.8,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1564,
-    "mem_free_mb": 6249,
+    "mem_used_mb": 1559,
+    "mem_free_mb": 6254,
     "mem_pct": 20.0,
     "load_1m": 0.0,
-    "load_5m": 0.08,
-    "load_15m": 0.07
+    "load_5m": 0.0,
+    "load_15m": 0.0
   },
   "services": [
     {
@@ -66,8 +66,8 @@
       }
     ],
     "total_posted": 114,
-    "d3_count": 110,
-    "d7_count": 65,
+    "d3_count": 113,
+    "d7_count": 74,
     "d0_count": 8,
     "queue_depth": 0,
     "queue_next": null,
@@ -83,13 +83,13 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d3_reach": 102,
+        "d3_saves": 0,
+        "d7_reach": 102,
+        "d7_saves": 0,
         "has_d0": false,
-        "has_d3": false,
-        "has_d7": false
+        "has_d3": true,
+        "has_d7": true
       },
       {
         "post_id": "17946034380133897",
@@ -101,13 +101,13 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d3_reach": 68,
+        "d3_saves": 0,
+        "d7_reach": 68,
+        "d7_saves": 0,
         "has_d0": false,
-        "has_d3": false,
-        "has_d7": false
+        "has_d3": true,
+        "has_d7": true
       },
       {
         "post_id": "18076019780153324",
@@ -119,13 +119,13 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d3_reach": 41,
+        "d3_saves": 0,
+        "d7_reach": 41,
+        "d7_saves": 0,
         "has_d0": false,
-        "has_d3": false,
-        "has_d7": false
+        "has_d3": true,
+        "has_d7": true
       },
       {
         "post_id": "18083759852056941",
@@ -139,11 +139,11 @@
         "d0_er": 0,
         "d3_reach": "\u2014",
         "d3_saves": "\u2014",
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d7_reach": 74,
+        "d7_saves": 0,
         "has_d0": false,
         "has_d3": false,
-        "has_d7": false
+        "has_d7": true
       },
       {
         "post_id": "18356605027225397",
@@ -157,11 +157,11 @@
         "d0_er": 0,
         "d3_reach": 17,
         "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d7_reach": 123,
+        "d7_saves": 2,
         "has_d0": false,
         "has_d3": true,
-        "has_d7": false
+        "has_d7": true
       },
       {
         "post_id": "18075918260437415",
@@ -175,11 +175,11 @@
         "d0_er": 0,
         "d3_reach": 88,
         "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d7_reach": 103,
+        "d7_saves": 0,
         "has_d0": false,
         "has_d3": true,
-        "has_d7": false
+        "has_d7": true
       },
       {
         "post_id": "17845794936696866",
@@ -193,11 +193,11 @@
         "d0_er": 0,
         "d3_reach": 103,
         "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d7_reach": 103,
+        "d7_saves": 0,
         "has_d0": false,
         "has_d3": true,
-        "has_d7": false
+        "has_d7": true
       },
       {
         "post_id": "18211482727324688",
@@ -211,11 +211,11 @@
         "d0_er": 0,
         "d3_reach": 108,
         "d3_saves": 0,
-        "d7_reach": "\u2014",
-        "d7_saves": "\u2014",
+        "d7_reach": 108,
+        "d7_saves": 0,
         "has_d0": false,
         "has_d3": true,
-        "has_d7": false
+        "has_d7": true
       }
     ],
     "phase": 1,
@@ -1364,14 +1364,14 @@
     "final_count": 139
   },
   "backup": {
-    "last_ok": "Pushed: 'backup: 2026-03-31 \u2014 routine'",
+    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "c2bbee2 chore: update skill-stats pointer",
       "d7bfd4f chore: update skill-stats pointer",
       "9b06cd3 chore: update skill-stats pointer",
       "5261493 chore: update skill-stats pointer",
-      "792434a chore: update skill-stats pointer",
-      "71a458c chore: update skill-stats pointer"
+      "792434a chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1554,9 +1554,9 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "  46 files synced",
-      "  1 file(s) changed",
-      "  Pushed: 'backup: 2026-03-31 \u2014 routine'"
+      "backup.py: error: unrecognized arguments: --recover",
+      "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
+      "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
       "hint: the same ref. If you want to integrate the remote changes, use",
@@ -1966,7 +1966,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-31 03:30 IST",
+    "api_fetched_at": "2026-03-31 04:00 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1975,7 +1975,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-31 04:00 IST",
+    "ts": "2026-03-31 04:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
