@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-30T17:30:01.545677+05:30",
-  "generated_at_human": "2026-03-30 17:30 IST",
+  "generated_at": "2026-03-30T18:00:01.328083+05:30",
+  "generated_at_human": "2026-03-30 18:00 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "21h 20m",
+    "uptime": "21h 50m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.9,
     "disk_free_gb": 2437.8,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1533,
-    "mem_free_mb": 6280,
-    "mem_pct": 19.6,
+    "mem_used_mb": 1556,
+    "mem_free_mb": 6257,
+    "mem_pct": 19.9,
     "load_1m": 0.0,
-    "load_5m": 0.22,
-    "load_15m": 0.49
+    "load_5m": 0.02,
+    "load_15m": 0.07
   },
   "services": [
     {
@@ -1364,14 +1364,14 @@
     "final_count": 139
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
-    "last_error": "backup.py: error: unrecognized arguments: --check-large",
+    "last_ok": "backup.py: error: unrecognized arguments: --recover",
+    "last_error": "backup.py: error: unrecognized arguments: --recover",
     "recent_commits": [
+      "6b14a10 chore: update skill-stats pointer",
       "1071677 chore: update skill-stats pointer",
       "7c96ce0 chore: update skill-stats pointer",
       "e2bcb1e chore: update skill-stats pointer",
-      "fe6cb7a chore: update skill-stats pointer",
-      "6c037b5 chore: update skill-stats pointer"
+      "fe6cb7a chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1554,7 +1554,7 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -1966,7 +1966,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-30 17:00 IST",
+    "api_fetched_at": "2026-03-30 17:30 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1975,7 +1975,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-30 17:30 IST",
+    "ts": "2026-03-30 18:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
