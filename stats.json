@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-30T15:30:01.220782+05:30",
-  "generated_at_human": "2026-03-30 15:30 IST",
+  "generated_at": "2026-03-30T16:00:01.890171+05:30",
+  "generated_at_human": "2026-03-30 16:00 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "19h 20m",
+    "uptime": "19h 50m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.8,
     "disk_free_gb": 2437.9,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1517,
-    "mem_free_mb": 6296,
-    "mem_pct": 19.4,
-    "load_1m": 0.51,
-    "load_5m": 0.21,
-    "load_15m": 0.17
+    "mem_used_mb": 1531,
+    "mem_free_mb": 6282,
+    "mem_pct": 19.6,
+    "load_1m": 0.0,
+    "load_5m": 0.0,
+    "load_15m": 0.0
   },
   "services": [
     {
@@ -1340,14 +1340,14 @@
     "final_count": 135
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
-    "last_error": "backup.py: error: unrecognized arguments: --check-large",
+    "last_ok": "backup.py: error: unrecognized arguments: --recover",
+    "last_error": "backup.py: error: unrecognized arguments: --recover",
     "recent_commits": [
+      "fe6cb7a chore: update skill-stats pointer",
       "6c037b5 chore: update skill-stats pointer",
       "3a80b25 chore: update skill-stats pointer",
       "570afe0 chore: update skill-stats pointer",
-      "526a311 chore: update skill-stats pointer",
-      "58ea931 chore: update skill-stats pointer"
+      "526a311 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1532,11 +1532,12 @@
     "backup": [
       "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --check-large"
+      "backup.py: error: unrecognized arguments: --recover"
     ],
     "dashboard": [
-      "Please make sure you have the correct access rights",
-      "and the repository exists."
+      "hint: the same ref. If you want to integrate the remote changes, use",
+      "hint: 'git pull' before pushing again.",
+      "hint: See the 'Note about fast-forwards' in 'git push --help' for details."
     ]
   },
   "memory": {
@@ -1941,7 +1942,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-30 14:00 IST",
+    "api_fetched_at": "2026-03-30 15:30 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1950,7 +1951,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-30 15:30 IST",
+    "ts": "2026-03-30 16:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
