@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-31T00:00:01.756068+05:30",
-  "generated_at_human": "2026-03-31 00:00 IST",
-  "next_post": "00:10 IST (queue empty \u2014 will generate fresh reels)",
+  "generated_at": "2026-03-31T00:30:01.936078+05:30",
+  "generated_at_human": "2026-03-31 00:30 IST",
+  "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
     "lan_ips": [
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "27h 50m",
+    "uptime": "28h 20m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.9,
     "disk_free_gb": 2437.8,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1575,
-    "mem_free_mb": 6238,
-    "mem_pct": 20.2,
-    "load_1m": 0.04,
-    "load_5m": 0.06,
-    "load_15m": 0.01
+    "mem_used_mb": 1550,
+    "mem_free_mb": 6263,
+    "mem_pct": 19.8,
+    "load_1m": 0.29,
+    "load_5m": 0.07,
+    "load_15m": 0.02
   },
   "services": [
     {
@@ -1364,14 +1364,14 @@
     "final_count": 139
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --recover",
-    "last_error": "backup.py: error: unrecognized arguments: --recover",
+    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
+    "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "7fa13f6 chore: update skill-stats pointer",
       "ca57bd1 chore: update skill-stats pointer",
       "2c28c96 chore: update skill-stats pointer",
       "8cb2f96 chore: update skill-stats pointer",
-      "eb900b0 chore: update skill-stats pointer",
-      "8509c9d chore: update skill-stats pointer"
+      "eb900b0 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1554,9 +1554,9 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --recover"
+      "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
       "hint: the same ref. If you want to integrate the remote changes, use",
@@ -1958,7 +1958,7 @@
     "major_suggestion": "Create shared env_loader.sh sourced by all cron jobs \u2014 30 min, eliminates 70% of recurring cron failures. Then: narrate and final-render the NeckGuardian reel (pending 3+ sessions, highest creative ROI)."
   },
   "claude_budget": {
-    "date": "2026-03-30",
+    "date": "2026-03-31",
     "state": "green",
     "pct": 0.0,
     "source": "api",
@@ -1966,7 +1966,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-30 23:30 IST",
+    "api_fetched_at": "2026-03-31 00:00 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1975,7 +1975,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-31 00:00 IST",
+    "ts": "2026-03-31 00:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
