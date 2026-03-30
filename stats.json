@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-30T20:00:01.226458+05:30",
-  "generated_at_human": "2026-03-30 20:00 IST",
+  "generated_at": "2026-03-30T20:30:02.062940+05:30",
+  "generated_at_human": "2026-03-30 20:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,15 +9,15 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "23h 50m",
+    "uptime": "24h 20m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.9,
     "disk_free_gb": 2437.8,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1565,
-    "mem_free_mb": 6248,
-    "mem_pct": 20.0,
+    "mem_used_mb": 1556,
+    "mem_free_mb": 6257,
+    "mem_pct": 19.9,
     "load_1m": 0.0,
     "load_5m": 0.0,
     "load_15m": 0.0
@@ -1364,14 +1364,14 @@
     "final_count": 139
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --recover",
-    "last_error": "backup.py: error: unrecognized arguments: --recover",
+    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
+    "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "071a84c chore: update skill-stats pointer",
       "5686153 chore: update skill-stats pointer",
       "812cc86 chore: update skill-stats pointer",
       "6d60bed chore: update skill-stats pointer",
-      "abc951b chore: update skill-stats pointer",
-      "6b14a10 chore: update skill-stats pointer"
+      "abc951b chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1554,9 +1554,9 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --recover"
+      "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
       "hint: the same ref. If you want to integrate the remote changes, use",
@@ -1966,7 +1966,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-30 19:30 IST",
+    "api_fetched_at": "2026-03-30 20:00 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1975,7 +1975,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-30 20:00 IST",
+    "ts": "2026-03-30 20:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
