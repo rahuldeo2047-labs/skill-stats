@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-30T23:00:01.139462+05:30",
-  "generated_at_human": "2026-03-30 23:00 IST",
+  "generated_at": "2026-03-30T23:30:01.377996+05:30",
+  "generated_at_human": "2026-03-30 23:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,15 +9,15 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "26h 50m",
+    "uptime": "27h 20m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.9,
     "disk_free_gb": 2437.8,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1559,
-    "mem_free_mb": 6254,
-    "mem_pct": 20.0,
+    "mem_used_mb": 1550,
+    "mem_free_mb": 6263,
+    "mem_pct": 19.8,
     "load_1m": 0.0,
     "load_5m": 0.0,
     "load_15m": 0.0
@@ -1367,11 +1367,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "2c28c96 chore: update skill-stats pointer",
       "8cb2f96 chore: update skill-stats pointer",
       "eb900b0 chore: update skill-stats pointer",
       "8509c9d chore: update skill-stats pointer",
-      "209224b chore: update skill-stats pointer",
-      "3878aaa chore: update skill-stats pointer"
+      "209224b chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1838,7 +1838,7 @@
       "flexible": "Friday, Saturday",
       "note": "Autonomous tasks continue after hard close; no Rahul input requested."
     },
-    "boundary": "SOFT CLOSE \u2014 flag upcoming session end",
+    "boundary": "HARD CLOSE \u2014 stop requesting input",
     "logs": [
       {
         "file": "signals.jsonl",
@@ -1966,7 +1966,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-30 22:30 IST",
+    "api_fetched_at": "2026-03-30 23:00 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1975,7 +1975,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-30 23:00 IST",
+    "ts": "2026-03-30 23:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
