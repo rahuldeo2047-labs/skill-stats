@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-31T07:00:01.914741+05:30",
-  "generated_at_human": "2026-03-31 07:00 IST",
+  "generated_at": "2026-03-31T07:30:01.404091+05:30",
+  "generated_at_human": "2026-03-31 07:30 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "34h 50m",
+    "uptime": "35h 20m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.9,
     "disk_free_gb": 2437.8,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 2473,
-    "mem_free_mb": 5340,
-    "mem_pct": 31.7,
-    "load_1m": 0.35,
-    "load_5m": 0.31,
-    "load_15m": 0.7
+    "mem_used_mb": 2810,
+    "mem_free_mb": 5003,
+    "mem_pct": 36.0,
+    "load_1m": 0.16,
+    "load_5m": 0.62,
+    "load_15m": 1.0
   },
   "services": [
     {
@@ -65,14 +65,86 @@
         "status": "paused"
       }
     ],
-    "total_posted": 114,
-    "d3_count": 113,
+    "total_posted": 118,
+    "d3_count": 114,
     "d7_count": 74,
     "d0_count": 8,
     "queue_depth": 0,
     "queue_next": null,
     "queue_topics": [],
     "recent_posts": [
+      {
+        "post_id": "17940553884178063",
+        "topic": "contramap-contrastive-uncertainty-mapping-for-robo",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-31T07:19",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "17973482420856112",
+        "topic": "eva-an-evidence-first-audio-understanding-paradigm",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-31T07:18",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18043040249749313",
+        "topic": "progressvla-progress-guided-diffusion-policy-for-v",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-31T07:18",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18150413638414386",
+        "topic": "panini-s-grammar-the-world-s-first-formal-language",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-31T07:17",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
       {
         "post_id": "17959764174073231",
         "topic": "when-embodied-ai-meets-industry-5-0-human-centered",
@@ -101,7 +173,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 68,
+        "d3_reach": 73,
         "d3_saves": 0,
         "d7_reach": 68,
         "d7_saves": 0,
@@ -119,7 +191,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 41,
+        "d3_reach": 50,
         "d3_saves": 0,
         "d7_reach": 41,
         "d7_saves": 0,
@@ -137,81 +209,9 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 85,
+        "d3_saves": 0,
         "d7_reach": 74,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": false,
-        "has_d7": true
-      },
-      {
-        "post_id": "18356605027225397",
-        "topic": "sanskrit-is-the-only-human-language-formally-verif",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-30T15:12",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 17,
-        "d3_saves": 0,
-        "d7_reach": 123,
-        "d7_saves": 2,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18075918260437415",
-        "topic": "i-ll-buy-your-electronics-to-feed-our-robot",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-30T07:19",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 88,
-        "d3_saves": 0,
-        "d7_reach": 103,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "17845794936696866",
-        "topic": "midnight-train-from-ga-a-view-of-america-from-the",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-30T07:19",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 103,
-        "d3_saves": 0,
-        "d7_reach": 103,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18211482727324688",
-        "topic": "claude-code-runs-git-reset-hard-origin-main-agains",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-30T07:18",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 108,
-        "d3_saves": 0,
-        "d7_reach": 108,
         "d7_saves": 0,
         "has_d0": false,
         "has_d3": true,
@@ -219,13 +219,13 @@
       }
     ],
     "phase": 1,
-    "phase_note": "Phase 1 \u2014 organic only. 114 posts live. 2/3 posts hit threshold (saves>2% or ER>5% of reach).",
+    "phase_note": "Phase 1 \u2014 organic only. 118 posts live. 2/3 posts hit threshold (saves>2% or ER>5% of reach).",
     "phase_pct": 100,
     "learnings": [
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
       "Best avg watch: 15.4s \u2014 [contrarian] lecun-ami-labs-world-models-vs-llms",
       "Total reach across 8 tracked posts: 140 | Total views: 158",
-      "Duplicate topics: 18 posted >1x \u2014 ['quantum-computing-transistor-moment-2026', 'lecun-ami-labs-world-models-vs-llms', 'deepx-dx-m2-100b-5w-edge-ai']"
+      "Duplicate topics: 19 posted >1x \u2014 ['quantum-computing-transistor-moment-2026', 'lecun-ami-labs-world-models-vs-llms', 'deepx-dx-m2-100b-5w-edge-ai']"
     ],
     "topic_rotation": [
       "Quantum Computing",
@@ -1292,6 +1292,30 @@
         "final": true
       },
       {
+        "name": "auto_202603310712_00_panini-s-grammar-the-world-s-first-formal-language_final.mp4",
+        "size_mb": 1.9,
+        "modified": "03-31 07:13",
+        "final": true
+      },
+      {
+        "name": "auto_202603310713_01_progressvla-progress-guided-diffusion-policy-for-v_final.mp4",
+        "size_mb": 1.9,
+        "modified": "03-31 07:14",
+        "final": true
+      },
+      {
+        "name": "auto_202603310714_02_eva-an-evidence-first-audio-understanding-paradigm_final.mp4",
+        "size_mb": 1.9,
+        "modified": "03-31 07:15",
+        "final": true
+      },
+      {
+        "name": "auto_202603310715_03_contramap-contrastive-uncertainty-mapping-for-robo_final.mp4",
+        "size_mb": 1.9,
+        "modified": "03-31 07:17",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -1376,18 +1400,18 @@
         "final": false
       }
     ],
-    "count": 148,
-    "final_count": 139
+    "count": 152,
+    "final_count": 143
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "a4f8ef1 chore: update skill-stats pointer",
       "55bba9e chore: update skill-stats pointer",
       "b830be9 chore: update skill-stats pointer",
       "ddb65ca chore: update skill-stats pointer",
-      "3759468 chore: update skill-stats pointer",
-      "1a8d827 chore: update skill-stats pointer"
+      "3759468 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1976,13 +2000,13 @@
   "claude_budget": {
     "date": "2026-03-31",
     "state": "green",
-    "pct": 7.0,
+    "pct": 10.0,
     "source": "api",
-    "api_5h_pct": 7.0,
-    "api_7d_pct": 54.0,
+    "api_5h_pct": 10.0,
+    "api_7d_pct": 55.0,
     "api_overage_pct": 0.0,
     "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-31 06:30 IST",
+    "api_fetched_at": "2026-03-31 07:00 IST",
     "api_5h_reset_ts": 1774933200,
     "api_7d_reset_ts": 1775304000
   },
@@ -1991,7 +2015,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-31 07:00 IST",
+    "ts": "2026-03-31 07:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
