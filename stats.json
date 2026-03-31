@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-31T21:30:02.146012+05:30",
-  "generated_at_human": "2026-03-31 21:30 IST",
+  "generated_at": "2026-03-31T22:00:01.263180+05:30",
+  "generated_at_human": "2026-03-31 22:00 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "49h 20m",
+    "uptime": "49h 50m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1499.9,
     "disk_free_gb": 2435.8,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 2480,
-    "mem_free_mb": 5333,
-    "mem_pct": 31.7,
-    "load_1m": 0.67,
-    "load_5m": 1.73,
-    "load_15m": 1.75
+    "mem_used_mb": 3298,
+    "mem_free_mb": 4515,
+    "mem_pct": 42.2,
+    "load_1m": 0.28,
+    "load_5m": 0.58,
+    "load_15m": 1.05
   },
   "services": [
     {
@@ -1431,11 +1431,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "61d271f chore: update skill-stats pointer",
       "d874c8e chore: update skill-stats pointer",
       "f82f566 Revert generate_batch.py arXiv change \u2014 caused SyntaxError + made 429s worse",
       "77da7e2 chore: update skill-stats pointer",
-      "c196907 chore: update skill-stats pointer",
-      "a07d8ed chore: update skill-stats pointer"
+      "c196907 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1618,14 +1618,14 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
-      "  Skills: 18/18 installed",
-      "[2026-03-31 21:00 IST] skill-stats pushed \u2713",
-      "[2026-03-31 21:00 IST] skill-stats pushed \u2713"
+      "hint: the same ref. If you want to integrate the remote changes, use",
+      "hint: 'git pull' before pushing again.",
+      "hint: See the 'Note about fast-forwards' in 'git push --help' for details."
     ]
   },
   "memory": {
@@ -2024,13 +2024,13 @@
   "claude_budget": {
     "date": "2026-03-31",
     "state": "green",
-    "pct": 21.0,
+    "pct": 35.0,
     "source": "api",
-    "api_5h_pct": 21.0,
-    "api_7d_pct": 73.0,
+    "api_5h_pct": 35.0,
+    "api_7d_pct": 74.0,
     "api_overage_pct": 0.0,
     "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-31 21:00 IST",
+    "api_fetched_at": "2026-03-31 21:30 IST",
     "api_5h_reset_ts": 1774987200,
     "api_7d_reset_ts": 1775304000
   },
@@ -2039,7 +2039,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-31 21:30 IST",
+    "ts": "2026-03-31 22:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
