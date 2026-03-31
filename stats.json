@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-31T13:00:01.992918+05:30",
-  "generated_at_human": "2026-03-31 13:00 IST",
+  "generated_at": "2026-03-31T13:30:01.841520+05:30",
+  "generated_at_human": "2026-03-31 13:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "40h 50m",
+    "uptime": "41h 20m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1500.0,
     "disk_free_gb": 2435.7,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1310,
-    "mem_free_mb": 6503,
-    "mem_pct": 16.8,
-    "load_1m": 0.01,
-    "load_5m": 0.03,
-    "load_15m": 0.47
+    "mem_used_mb": 1462,
+    "mem_free_mb": 6351,
+    "mem_pct": 18.7,
+    "load_1m": 0.02,
+    "load_5m": 0.26,
+    "load_15m": 0.24
   },
   "services": [
     {
@@ -1407,11 +1407,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "6eceaf2 chore: update skill-stats pointer",
       "e7071c0 chore: update skill-stats pointer",
       "21b05a6 Extend /post command to all niche categories + examples in /help",
       "daddcd8 Add NicheNewsReel + RahulDualStack pipelines for @tech.biohacking and @rahuldeo2047",
-      "9a63544 chore: update skill-stats pointer",
-      "1e2bd81 chore: update skill-stats pointer"
+      "9a63544 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1600,8 +1600,8 @@
     ],
     "dashboard": [
       "  Skills: 18/18 installed",
-      "[2026-03-31 12:30 IST] skill-stats pushed \u2713",
-      "[2026-03-31 12:30 IST] skill-stats pushed \u2713"
+      "[2026-03-31 13:00 IST] skill-stats pushed \u2713",
+      "[2026-03-31 13:00 IST] skill-stats pushed \u2713"
     ]
   },
   "memory": {
@@ -1999,23 +1999,23 @@
   },
   "claude_budget": {
     "date": "2026-03-31",
-    "state": "yellow",
-    "pct": 77.0,
+    "state": "green",
+    "pct": 0.0,
     "source": "api",
-    "api_5h_pct": 77.0,
-    "api_7d_pct": 70.0,
+    "api_5h_pct": 0.0,
+    "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
-    "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-31 12:30 IST",
-    "api_5h_reset_ts": 1774951200,
-    "api_7d_reset_ts": 1775304000
+    "api_binding": "unknown",
+    "api_fetched_at": "2026-03-31 13:00 IST",
+    "api_5h_reset_ts": 0,
+    "api_7d_reset_ts": 0
   },
   "unit_tests": {
     "status": "FAIL",
     "total": 34,
     "passed": 29,
     "failed": 5,
-    "ts": "2026-03-31 13:00 IST",
+    "ts": "2026-03-31 13:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
