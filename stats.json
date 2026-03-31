@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-31T06:30:01.549922+05:30",
-  "generated_at_human": "2026-03-31 06:30 IST",
+  "generated_at": "2026-03-31T07:00:01.914741+05:30",
+  "generated_at_human": "2026-03-31 07:00 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "34h 20m",
+    "uptime": "34h 50m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.9,
     "disk_free_gb": 2437.8,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 2457,
-    "mem_free_mb": 5356,
-    "mem_pct": 31.4,
-    "load_1m": 0.23,
-    "load_5m": 0.81,
-    "load_15m": 1.76
+    "mem_used_mb": 2473,
+    "mem_free_mb": 5340,
+    "mem_pct": 31.7,
+    "load_1m": 0.35,
+    "load_5m": 0.31,
+    "load_15m": 0.7
   },
   "services": [
     {
@@ -397,10 +397,34 @@
     "token_expires": "2026-05-24"
   },
   "linkedin": {
-    "total_posted": 8,
+    "total_posted": 11,
     "today_pillar": "bio",
     "today_pillar_label": "Biohacking",
     "posts": [
+      {
+        "ts": "2026-03-31T06:41",
+        "type": "text",
+        "pillar": "robotics",
+        "post_urn": "urn:li:share:7444551811627335680",
+        "char_count": 1889,
+        "caption": "\"It worked in simulation\" is a phrase that sends a shiver down the spine of any embedded robotics engineer who\u2019s had to "
+      },
+      {
+        "ts": "2026-03-31T06:31",
+        "type": "text",
+        "pillar": "bio",
+        "post_urn": "urn:li:share:7444549424673955840",
+        "char_count": 2125,
+        "caption": "My 7-day average morning HRV (RMSSD) shifted from 58ms to 72ms over a three-week period ending March 28th. This coincide"
+      },
+      {
+        "ts": "2026-03-31T06:30",
+        "type": "text",
+        "pillar": "bio",
+        "post_urn": "urn:li:share:7444549227671728129",
+        "char_count": 1770,
+        "caption": "For the past three weeks, my average post-prandial glucose spike (measured via CGM) has been consistently 30% lower than"
+      },
       {
         "ts": "2026-03-29T14:00",
         "type": "text",
@@ -456,14 +480,6 @@
         "post_urn": "urn:li:share:7442966365369425922",
         "char_count": 1743,
         "caption": "# The Embodiment Bottleneck Nobody Talks About\n\nMost AI labs are still treating embodiment as an implementation detail. "
-      },
-      {
-        "ts": "2026-03-26T09:55",
-        "type": "text",
-        "pillar": "phyai",
-        "post_urn": "urn:li:share:7442788879130345472",
-        "char_count": 1760,
-        "caption": "# The Simulation Trap Is Killing Real Robotics\n\nWe've spent the last decade training robots in perfect digital worlds. M"
       }
     ],
     "token_expires": "2026-05-23",
@@ -1364,14 +1380,14 @@
     "final_count": 139
   },
   "backup": {
-    "last_ok": "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-    "last_error": "backup.py: error: unrecognized arguments: --recover",
+    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
+    "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "55bba9e chore: update skill-stats pointer",
       "b830be9 chore: update skill-stats pointer",
       "ddb65ca chore: update skill-stats pointer",
       "3759468 chore: update skill-stats pointer",
-      "1a8d827 chore: update skill-stats pointer",
-      "c2bbee2 chore: update skill-stats pointer"
+      "1a8d827 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1554,7 +1570,7 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --recover",
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -1960,22 +1976,22 @@
   "claude_budget": {
     "date": "2026-03-31",
     "state": "green",
-    "pct": 0.0,
+    "pct": 7.0,
     "source": "api",
-    "api_5h_pct": 0.0,
-    "api_7d_pct": 0.0,
+    "api_5h_pct": 7.0,
+    "api_7d_pct": 54.0,
     "api_overage_pct": 0.0,
-    "api_binding": "unknown",
-    "api_fetched_at": "2026-03-31 06:00 IST",
-    "api_5h_reset_ts": 0,
-    "api_7d_reset_ts": 0
+    "api_binding": "five_hour",
+    "api_fetched_at": "2026-03-31 06:30 IST",
+    "api_5h_reset_ts": 1774933200,
+    "api_7d_reset_ts": 1775304000
   },
   "unit_tests": {
     "status": "PASS",
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-31 06:30 IST",
+    "ts": "2026-03-31 07:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
