@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-31T22:00:01.263180+05:30",
-  "generated_at_human": "2026-03-31 22:00 IST",
+  "generated_at": "2026-03-31T22:30:01.270422+05:30",
+  "generated_at_human": "2026-03-31 22:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "49h 50m",
+    "uptime": "50h 20m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1499.9,
     "disk_free_gb": 2435.8,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3298,
-    "mem_free_mb": 4515,
-    "mem_pct": 42.2,
-    "load_1m": 0.28,
-    "load_5m": 0.58,
-    "load_15m": 1.05
+    "mem_used_mb": 3358,
+    "mem_free_mb": 4455,
+    "mem_pct": 43.0,
+    "load_1m": 0.01,
+    "load_5m": 0.07,
+    "load_15m": 0.23
   },
   "services": [
     {
@@ -1431,11 +1431,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "0253b7c chore: update skill-stats pointer",
       "61d271f chore: update skill-stats pointer",
       "d874c8e chore: update skill-stats pointer",
       "f82f566 Revert generate_batch.py arXiv change \u2014 caused SyntaxError + made 429s worse",
-      "77da7e2 chore: update skill-stats pointer",
-      "c196907 chore: update skill-stats pointer"
+      "77da7e2 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1618,7 +1618,7 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --recover",
+      "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
       "backup.py: error: unrecognized arguments: --check-large"
     ],
@@ -2024,22 +2024,22 @@
   "claude_budget": {
     "date": "2026-03-31",
     "state": "green",
-    "pct": 35.0,
+    "pct": 0.0,
     "source": "api",
-    "api_5h_pct": 35.0,
-    "api_7d_pct": 74.0,
+    "api_5h_pct": 0.0,
+    "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
-    "api_binding": "five_hour",
-    "api_fetched_at": "2026-03-31 21:30 IST",
-    "api_5h_reset_ts": 1774987200,
-    "api_7d_reset_ts": 1775304000
+    "api_binding": "unknown",
+    "api_fetched_at": "2026-03-31 22:00 IST",
+    "api_5h_reset_ts": 0,
+    "api_7d_reset_ts": 0
   },
   "unit_tests": {
     "status": "PASS",
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-31 22:00 IST",
+    "ts": "2026-03-31 22:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
