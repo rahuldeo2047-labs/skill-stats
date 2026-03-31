@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-31T20:30:01.431888+05:30",
-  "generated_at_human": "2026-03-31 20:30 IST",
+  "generated_at": "2026-03-31T21:00:01.629566+05:30",
+  "generated_at_human": "2026-03-31 21:00 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "48h 20m",
+    "uptime": "48h 50m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1500.1,
-    "disk_free_gb": 2435.6,
+    "disk_used_gb": 1499.7,
+    "disk_free_gb": 2436.0,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1578,
-    "mem_free_mb": 6235,
-    "mem_pct": 20.2,
-    "load_1m": 0.04,
-    "load_5m": 0.07,
-    "load_15m": 0.06
+    "mem_used_mb": 3422,
+    "mem_free_mb": 4391,
+    "mem_pct": 43.8,
+    "load_1m": 0.45,
+    "load_5m": 0.75,
+    "load_15m": 0.49
   },
   "services": [
     {
@@ -1407,11 +1407,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "f82f566 Revert generate_batch.py arXiv change \u2014 caused SyntaxError + made 429s worse",
+      "77da7e2 chore: update skill-stats pointer",
       "c196907 chore: update skill-stats pointer",
       "a07d8ed chore: update skill-stats pointer",
-      "e7fe970 chore: update skill-stats pointer",
-      "f4ba181 chore: update skill-stats pointer",
-      "6227fc1 chore: update skill-stats pointer"
+      "e7fe970 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1600,8 +1600,8 @@
     ],
     "dashboard": [
       "  Skills: 18/18 installed",
-      "[2026-03-31 20:00 IST] skill-stats pushed \u2713",
-      "[2026-03-31 20:00 IST] skill-stats pushed \u2713"
+      "[2026-03-31 20:30 IST] skill-stats pushed \u2713",
+      "[2026-03-31 20:30 IST] skill-stats pushed \u2713"
     ]
   },
   "memory": {
@@ -2006,16 +2006,16 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-31 20:00 IST",
+    "api_fetched_at": "2026-03-31 20:30 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
   "unit_tests": {
-    "status": "FAIL",
+    "status": "PASS",
     "total": 34,
-    "passed": 29,
-    "failed": 5,
-    "ts": "2026-03-31 20:30 IST",
+    "passed": 34,
+    "failed": 0,
+    "ts": "2026-03-31 21:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
