@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-01T03:30:01.482802+05:30",
-  "generated_at_human": "2026-04-01 03:30 IST",
+  "generated_at": "2026-04-01T04:00:01.768549+05:30",
+  "generated_at_human": "2026-04-01 04:00 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "55h 20m",
+    "uptime": "55h 50m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1499.9,
-    "disk_free_gb": 2435.9,
+    "disk_free_gb": 2435.8,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3006,
-    "mem_free_mb": 4807,
-    "mem_pct": 38.5,
-    "load_1m": 0.06,
-    "load_5m": 0.1,
-    "load_15m": 0.07
+    "mem_used_mb": 2486,
+    "mem_free_mb": 5327,
+    "mem_pct": 31.8,
+    "load_1m": 0.09,
+    "load_5m": 0.65,
+    "load_15m": 0.66
   },
   "services": [
     {
@@ -1428,14 +1428,14 @@
     "final_count": 147
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --check-large",
-    "last_error": "backup.py: error: unrecognized arguments: --check-large",
+    "last_ok": "backup.py: error: unrecognized arguments: --recover",
+    "last_error": "backup.py: error: unrecognized arguments: --recover",
     "recent_commits": [
+      "e775658 chore: update skill-stats pointer",
       "11739f5 chore: update skill-stats pointer",
       "350e4f6 chore: update skill-stats pointer",
       "dd888c8 chore: update skill-stats pointer",
-      "a203a08 chore: update skill-stats pointer",
-      "103a121 chore: update skill-stats pointer"
+      "a203a08 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1620,7 +1620,7 @@
     "backup": [
       "backup.py: error: unrecognized arguments: --check-large",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --check-large"
+      "backup.py: error: unrecognized arguments: --recover"
     ],
     "dashboard": [
       "hint: the same ref. If you want to integrate the remote changes, use",
@@ -2030,7 +2030,7 @@
     "api_7d_pct": 75.0,
     "api_overage_pct": 0.0,
     "api_binding": "seven_day",
-    "api_fetched_at": "2026-04-01 03:00 IST",
+    "api_fetched_at": "2026-04-01 03:30 IST",
     "api_5h_reset_ts": 1775008800,
     "api_7d_reset_ts": 1775304000
   },
@@ -2039,7 +2039,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-04-01 03:30 IST",
+    "ts": "2026-04-01 04:00 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
