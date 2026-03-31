@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-31T23:00:01.664672+05:30",
-  "generated_at_human": "2026-03-31 23:00 IST",
+  "generated_at": "2026-03-31T23:30:02.190753+05:30",
+  "generated_at_human": "2026-03-31 23:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "50h 50m",
+    "uptime": "51h 20m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1499.9,
-    "disk_free_gb": 2435.8,
+    "disk_free_gb": 2435.9,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3355,
-    "mem_free_mb": 4458,
-    "mem_pct": 42.9,
-    "load_1m": 5.28,
-    "load_5m": 3.67,
-    "load_15m": 2.06
+    "mem_used_mb": 2570,
+    "mem_free_mb": 5243,
+    "mem_pct": 32.9,
+    "load_1m": 0.29,
+    "load_5m": 0.25,
+    "load_15m": 1.25
   },
   "services": [
     {
@@ -1431,11 +1431,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "617b6f0 chore: update skill-stats pointer",
       "02ead61 chore: update skill-stats pointer",
       "0253b7c chore: update skill-stats pointer",
       "61d271f chore: update skill-stats pointer",
-      "d874c8e chore: update skill-stats pointer",
-      "f82f566 Revert generate_batch.py arXiv change \u2014 caused SyntaxError + made 429s worse"
+      "d874c8e chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1902,7 +1902,7 @@
       "flexible": "Friday, Saturday",
       "note": "Autonomous tasks continue after hard close; no Rahul input requested."
     },
-    "boundary": "SOFT CLOSE \u2014 flag upcoming session end",
+    "boundary": "HARD CLOSE \u2014 stop requesting input",
     "logs": [
       {
         "file": "signals.jsonl",
@@ -2039,7 +2039,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-31 23:00 IST",
+    "ts": "2026-03-31 23:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
