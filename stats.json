@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-31T06:00:01.355729+05:30",
-  "generated_at_human": "2026-03-31 06:00 IST",
+  "generated_at": "2026-03-31T06:30:01.549922+05:30",
+  "generated_at_human": "2026-03-31 06:30 IST",
   "next_post": "12:10 IST (queue empty \u2014 will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "33h 50m",
+    "uptime": "34h 20m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1497.9,
     "disk_free_gb": 2437.8,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1761,
-    "mem_free_mb": 6052,
-    "mem_pct": 22.5,
-    "load_1m": 0.0,
-    "load_5m": 0.0,
-    "load_15m": 0.0
+    "mem_used_mb": 2457,
+    "mem_free_mb": 5356,
+    "mem_pct": 31.4,
+    "load_1m": 0.23,
+    "load_5m": 0.81,
+    "load_15m": 1.76
   },
   "services": [
     {
@@ -239,10 +239,58 @@
     ]
   },
   "biohacking": {
-    "total_posted": 47,
+    "total_posted": 51,
     "queue_depth": 0,
     "d3_count": 0,
     "posts": [
+      {
+        "topic": "molecular-mechanisms-of-dietary-restrict",
+        "title": "Molecular mechanisms of dietary restriction promoting health",
+        "category": "longevity",
+        "voice_name": "Edge/Jenny",
+        "voice_slot": 3,
+        "tts_chars": 304,
+        "media_id": "18110537335701498",
+        "ts_posted": "2026-03-31T06:23",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "task-related-brain-functional-network-re",
+        "title": "Task-related brain functional network reconfigurations relat",
+        "category": "neuroscience",
+        "voice_name": "Edge/Aria",
+        "voice_slot": 2,
+        "tts_chars": 304,
+        "media_id": "18058721063459150",
+        "ts_posted": "2026-03-31T06:21",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "sleep-dependent-memory-consolidation-in",
+        "title": "Sleep-Dependent Memory Consolidation in a Neuromorphic Nanow",
+        "category": "neuroscience",
+        "voice_name": "Edge/Guy",
+        "voice_slot": 1,
+        "tts_chars": 151,
+        "media_id": "18103488850909375",
+        "ts_posted": "2026-03-31T06:20",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
+      {
+        "topic": "lt-102-an-ampa-receptor-potentiator-alle",
+        "title": "LT-102, an AMPA receptor potentiator, alleviates depression-",
+        "category": "neuroscience",
+        "voice_name": "Edge/Jenny",
+        "voice_slot": 0,
+        "tts_chars": 304,
+        "media_id": "18041287007551952",
+        "ts_posted": "2026-03-31T06:19",
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014"
+      },
       {
         "topic": "molecular-mechanisms-of-dietary-restrict",
         "title": "Molecular mechanisms of dietary restriction promoting health",
@@ -338,60 +386,12 @@
         "ts_posted": "2026-03-30T06:16",
         "d3_reach": "\u2014",
         "d3_saves": "\u2014"
-      },
-      {
-        "topic": "molecular-mechanisms-of-dietary-restrict",
-        "title": "Molecular mechanisms of dietary restriction promoting health",
-        "category": "longevity",
-        "voice_name": "ElevenLabs/George",
-        "voice_slot": 3,
-        "tts_chars": 304,
-        "media_id": "17901307578402242",
-        "ts_posted": "2026-03-29T16:23",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
-      },
-      {
-        "topic": "task-related-brain-functional-network-re",
-        "title": "Task-related brain functional network reconfigurations relat",
-        "category": "neuroscience",
-        "voice_name": "Edge/Aria",
-        "voice_slot": 2,
-        "tts_chars": 304,
-        "media_id": "18118341841651017",
-        "ts_posted": "2026-03-29T16:21",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
-      },
-      {
-        "topic": "sleep-dependent-memory-consolidation-in",
-        "title": "Sleep-Dependent Memory Consolidation in a Neuromorphic Nanow",
-        "category": "neuroscience",
-        "voice_name": "Edge/Guy",
-        "voice_slot": 1,
-        "tts_chars": 151,
-        "media_id": "18116099146709699",
-        "ts_posted": "2026-03-29T16:20",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
-      },
-      {
-        "topic": "lt-102-an-ampa-receptor-potentiator-alle",
-        "title": "LT-102, an AMPA receptor potentiator, alleviates depression-",
-        "category": "neuroscience",
-        "voice_name": "Edge/Jenny",
-        "voice_slot": 0,
-        "tts_chars": 304,
-        "media_id": "18031366895793248",
-        "ts_posted": "2026-03-29T16:19",
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014"
       }
     ],
     "categories": {
-      "longevity": 9,
+      "longevity": 10,
       "wearables": 13,
-      "neuroscience": 25
+      "neuroscience": 28
     },
     "ig_id": "17841464494421993",
     "token_expires": "2026-05-24"
@@ -1364,14 +1364,14 @@
     "final_count": 139
   },
   "backup": {
-    "last_ok": "backup.py: error: unrecognized arguments: --recover",
+    "last_ok": "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
     "last_error": "backup.py: error: unrecognized arguments: --recover",
     "recent_commits": [
+      "b830be9 chore: update skill-stats pointer",
       "ddb65ca chore: update skill-stats pointer",
       "3759468 chore: update skill-stats pointer",
       "1a8d827 chore: update skill-stats pointer",
-      "c2bbee2 chore: update skill-stats pointer",
-      "d7bfd4f chore: update skill-stats pointer"
+      "c2bbee2 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1554,9 +1554,9 @@
       "  Saved to experiments.jsonl"
     ],
     "backup": [
-      "backup.py: error: unrecognized arguments: --check-large",
+      "backup.py: error: unrecognized arguments: --recover",
       "usage: backup.py [-h] [--status] [--msg MSG] [--skip-tests]",
-      "backup.py: error: unrecognized arguments: --recover"
+      "backup.py: error: unrecognized arguments: --check-large"
     ],
     "dashboard": [
       "hint: the same ref. If you want to integrate the remote changes, use",
@@ -1966,7 +1966,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-31 05:30 IST",
+    "api_fetched_at": "2026-03-31 06:00 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -1975,7 +1975,7 @@
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-31 06:00 IST",
+    "ts": "2026-03-31 06:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
