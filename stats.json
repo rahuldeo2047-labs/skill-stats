@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-31T15:00:01.297112+05:30",
-  "generated_at_human": "2026-03-31 15:00 IST",
+  "generated_at": "2026-03-31T15:30:01.108987+05:30",
+  "generated_at_human": "2026-03-31 15:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,15 +9,15 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "42h 50m",
+    "uptime": "43h 20m",
     "disk_total_gb": 3935.7,
     "disk_used_gb": 1500.0,
     "disk_free_gb": 2435.7,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 1546,
-    "mem_free_mb": 6267,
-    "mem_pct": 19.8,
+    "mem_used_mb": 1542,
+    "mem_free_mb": 6271,
+    "mem_pct": 19.7,
     "load_1m": 0.0,
     "load_5m": 0.0,
     "load_15m": 0.0
@@ -66,7 +66,7 @@
       }
     ],
     "total_posted": 118,
-    "d3_count": 114,
+    "d3_count": 118,
     "d7_count": 74,
     "d0_count": 8,
     "queue_depth": 0,
@@ -83,12 +83,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 80,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -101,12 +101,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 54,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -119,12 +119,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 100,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -137,12 +137,12 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": "\u2014",
-        "d3_saves": "\u2014",
+        "d3_reach": 38,
+        "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
-        "has_d3": false,
+        "has_d3": true,
         "has_d7": false
       },
       {
@@ -173,7 +173,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 73,
+        "d3_reach": 81,
         "d3_saves": 0,
         "d7_reach": 68,
         "d7_saves": 0,
@@ -191,7 +191,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 50,
+        "d3_reach": 70,
         "d3_saves": 0,
         "d7_reach": 41,
         "d7_saves": 0,
@@ -209,7 +209,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 85,
+        "d3_reach": 104,
         "d3_saves": 0,
         "d7_reach": 74,
         "d7_saves": 0,
@@ -1407,11 +1407,11 @@
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "c35eae6 chore: update skill-stats pointer",
       "3ee5fa6 chore: update skill-stats pointer",
       "c3365f4 chore: update skill-stats pointer",
       "f0f8beb chore: update skill-stats pointer",
-      "6eceaf2 chore: update skill-stats pointer",
-      "e7071c0 chore: update skill-stats pointer"
+      "6eceaf2 chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1600,8 +1600,8 @@
     ],
     "dashboard": [
       "  Skills: 18/18 installed",
-      "[2026-03-31 14:30 IST] skill-stats pushed \u2713",
-      "[2026-03-31 14:30 IST] skill-stats pushed \u2713"
+      "[2026-03-31 15:00 IST] skill-stats pushed \u2713",
+      "[2026-03-31 15:00 IST] skill-stats pushed \u2713"
     ]
   },
   "memory": {
@@ -2006,7 +2006,7 @@
     "api_7d_pct": 0.0,
     "api_overage_pct": 0.0,
     "api_binding": "unknown",
-    "api_fetched_at": "2026-03-31 14:30 IST",
+    "api_fetched_at": "2026-03-31 15:00 IST",
     "api_5h_reset_ts": 0,
     "api_7d_reset_ts": 0
   },
@@ -2015,7 +2015,7 @@
     "total": 34,
     "passed": 29,
     "failed": 5,
-    "ts": "2026-03-31 15:00 IST",
+    "ts": "2026-03-31 15:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
