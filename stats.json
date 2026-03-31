@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-31T21:00:01.629566+05:30",
-  "generated_at_human": "2026-03-31 21:00 IST",
+  "generated_at": "2026-03-31T21:30:02.146012+05:30",
+  "generated_at_human": "2026-03-31 21:30 IST",
   "next_post": "tomorrow 00:10 IST (will generate fresh reels)",
   "system": {
     "hostname": "rick-nas",
@@ -9,18 +9,18 @@
       "192.168.0.11",
       "10.0.3.1"
     ],
-    "uptime": "48h 50m",
+    "uptime": "49h 20m",
     "disk_total_gb": 3935.7,
-    "disk_used_gb": 1499.7,
-    "disk_free_gb": 2436.0,
+    "disk_used_gb": 1499.9,
+    "disk_free_gb": 2435.8,
     "disk_pct": 38.1,
     "mem_total_mb": 7813,
-    "mem_used_mb": 3422,
-    "mem_free_mb": 4391,
-    "mem_pct": 43.8,
-    "load_1m": 0.45,
-    "load_5m": 0.75,
-    "load_15m": 0.49
+    "mem_used_mb": 2480,
+    "mem_free_mb": 5333,
+    "mem_pct": 31.7,
+    "load_1m": 0.67,
+    "load_5m": 1.73,
+    "load_15m": 1.75
   },
   "services": [
     {
@@ -65,7 +65,7 @@
         "status": "paused"
       }
     ],
-    "total_posted": 118,
+    "total_posted": 122,
     "d3_count": 118,
     "d7_count": 74,
     "d0_count": 8,
@@ -73,6 +73,78 @@
     "queue_next": null,
     "queue_topics": [],
     "recent_posts": [
+      {
+        "post_id": "18046011614765593",
+        "topic": "paraspeechclap-a-dual-encoder-speech-text-model-fo",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-31T21:10",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "17854739217650863",
+        "topic": "on-the-fly-repulsion-in-the-contextual-space-for-r",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-31T21:09",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18080018657108767",
+        "topic": "geometry-aware-similarity-metrics-for-neural-repre",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-31T21:09",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
+      {
+        "post_id": "18125181871581829",
+        "topic": "panini-s-grammar-the-world-s-first-formal-language",
+        "hook_type": "historical-revelation",
+        "ts_posted": "2026-03-31T21:08",
+        "d0_reach": "\u2014",
+        "d0_views": "\u2014",
+        "d0_avg_watch_s": "\u2014",
+        "d0_saves": "\u2014",
+        "d0_er": 0,
+        "d3_reach": "\u2014",
+        "d3_saves": "\u2014",
+        "d7_reach": "\u2014",
+        "d7_saves": "\u2014",
+        "has_d0": false,
+        "has_d3": false,
+        "has_d7": false
+      },
       {
         "post_id": "17940553884178063",
         "topic": "contramap-contrastive-uncertainty-mapping-for-robo",
@@ -83,7 +155,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 85,
+        "d3_reach": 100,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -101,7 +173,7 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 61,
+        "d3_reach": 67,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
@@ -137,89 +209,17 @@
         "d0_avg_watch_s": "\u2014",
         "d0_saves": "\u2014",
         "d0_er": 0,
-        "d3_reach": 44,
+        "d3_reach": 51,
         "d3_saves": 0,
         "d7_reach": "\u2014",
         "d7_saves": "\u2014",
         "has_d0": false,
         "has_d3": true,
         "has_d7": false
-      },
-      {
-        "post_id": "17959764174073231",
-        "topic": "when-embodied-ai-meets-industry-5-0-human-centered",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-30T17:20",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 102,
-        "d3_saves": 0,
-        "d7_reach": 102,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "17946034380133897",
-        "topic": "habitat-matterport-3d-dataset-hm3d-1000-large-scal",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-30T17:19",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 82,
-        "d3_saves": 0,
-        "d7_reach": 68,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18076019780153324",
-        "topic": "habitat-a-platform-for-embodied-ai-research",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-30T17:18",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 72,
-        "d3_saves": 0,
-        "d7_reach": 41,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
-      },
-      {
-        "post_id": "18083759852056941",
-        "topic": "zero-was-not-just-a-number-india-invented-the-conc",
-        "hook_type": "historical-revelation",
-        "ts_posted": "2026-03-30T17:18",
-        "d0_reach": "\u2014",
-        "d0_views": "\u2014",
-        "d0_avg_watch_s": "\u2014",
-        "d0_saves": "\u2014",
-        "d0_er": 0,
-        "d3_reach": 104,
-        "d3_saves": 0,
-        "d7_reach": 74,
-        "d7_saves": 0,
-        "has_d0": false,
-        "has_d3": true,
-        "has_d7": true
       }
     ],
     "phase": 1,
-    "phase_note": "Phase 1 \u2014 organic only. 118 posts live. 2/3 posts hit threshold (saves>2% or ER>5% of reach).",
+    "phase_note": "Phase 1 \u2014 organic only. 122 posts live. 2/3 posts hit threshold (saves>2% or ER>5% of reach).",
     "phase_pct": 100,
     "learnings": [
       "Best reach: 63 \u2014 [revelation] quantum-computing-transistor-moment-2026",
@@ -1316,6 +1316,30 @@
         "final": true
       },
       {
+        "name": "auto_202603312103_00_panini-s-grammar-the-world-s-first-formal-language_final.mp4",
+        "size_mb": 1.9,
+        "modified": "03-31 21:04",
+        "final": true
+      },
+      {
+        "name": "auto_202603312104_01_geometry-aware-similarity-metrics-for-neural-repre_final.mp4",
+        "size_mb": 2.0,
+        "modified": "03-31 21:05",
+        "final": true
+      },
+      {
+        "name": "auto_202603312105_02_on-the-fly-repulsion-in-the-contextual-space-for-r_final.mp4",
+        "size_mb": 1.9,
+        "modified": "03-31 21:06",
+        "final": true
+      },
+      {
+        "name": "auto_202603312106_03_paraspeechclap-a-dual-encoder-speech-text-model-fo_final.mp4",
+        "size_mb": 1.8,
+        "modified": "03-31 21:07",
+        "final": true
+      },
+      {
         "name": "curated_ramanujan_final.mp4",
         "size_mb": 1.9,
         "modified": "03-22 23:12",
@@ -1400,18 +1424,18 @@
         "final": false
       }
     ],
-    "count": 152,
-    "final_count": 143
+    "count": 156,
+    "final_count": 147
   },
   "backup": {
     "last_ok": "backup.py: error: unrecognized arguments: --check-large",
     "last_error": "backup.py: error: unrecognized arguments: --check-large",
     "recent_commits": [
+      "d874c8e chore: update skill-stats pointer",
       "f82f566 Revert generate_batch.py arXiv change \u2014 caused SyntaxError + made 429s worse",
       "77da7e2 chore: update skill-stats pointer",
       "c196907 chore: update skill-stats pointer",
-      "a07d8ed chore: update skill-stats pointer",
-      "e7fe970 chore: update skill-stats pointer"
+      "a07d8ed chore: update skill-stats pointer"
     ],
     "repo": "rahuldeo2047-labs/claude-skills"
   },
@@ -1600,8 +1624,8 @@
     ],
     "dashboard": [
       "  Skills: 18/18 installed",
-      "[2026-03-31 20:30 IST] skill-stats pushed \u2713",
-      "[2026-03-31 20:30 IST] skill-stats pushed \u2713"
+      "[2026-03-31 21:00 IST] skill-stats pushed \u2713",
+      "[2026-03-31 21:00 IST] skill-stats pushed \u2713"
     ]
   },
   "memory": {
@@ -2000,22 +2024,22 @@
   "claude_budget": {
     "date": "2026-03-31",
     "state": "green",
-    "pct": 0.0,
+    "pct": 21.0,
     "source": "api",
-    "api_5h_pct": 0.0,
-    "api_7d_pct": 0.0,
+    "api_5h_pct": 21.0,
+    "api_7d_pct": 73.0,
     "api_overage_pct": 0.0,
-    "api_binding": "unknown",
-    "api_fetched_at": "2026-03-31 20:30 IST",
-    "api_5h_reset_ts": 0,
-    "api_7d_reset_ts": 0
+    "api_binding": "five_hour",
+    "api_fetched_at": "2026-03-31 21:00 IST",
+    "api_5h_reset_ts": 1774987200,
+    "api_7d_reset_ts": 1775304000
   },
   "unit_tests": {
     "status": "PASS",
     "total": 34,
     "passed": 34,
     "failed": 0,
-    "ts": "2026-03-31 21:00 IST",
+    "ts": "2026-03-31 21:30 IST",
     "suites": {
       "parse_last_run_log": 5,
       "load_experiments": 4,
